@@ -1,0 +1,36 @@
+{
+  "common": {},
+
+  "commands": [
+    {
+      "name": "ping",
+      "usage": "{{prefix}}ping",
+      "description": "تعطيك سرعة إستجابة البوت"
+    },
+    {
+      "name": "help",
+      "usage": "{{prefix}}help [الأمر]",
+      "description": "تعطيك قائمة المساعدة",
+      "replies": {
+        "noCommand": "هذا الأمر غير موجود",
+        "noDescription": "لا يوجد وصف لهذا الأمر",
+        "noUsage": "لا يوجد إستخدام لهذا الأمر"
+      }
+    },
+    {
+      "name": "tiktok",
+      "usage": "{{prefix}}tiktok [{{link}}]",
+      "description": "{{download}} فيديو من تيك توك"
+    }
+  ],
+  "variables": [
+    {
+      "key": "download",
+      "vlues": ["تحميل", "تنزيل"]
+    },
+    {
+      "key": "link",
+      "vlues": ["رابط", "لينك"]
+    }
+  ]
+}

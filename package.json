@@ -1,0 +1,26 @@
+{
+  "name": "boltbot-v2",
+  "version": "2.0.0",
+  "description": "BoltBot",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "build": "tsc",
+    "dev": "nodemon index.ts"
+  },
+  "author": "Abderrahmane",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/collection": "^1.5.1",
+    "@types/node": "^20.2.5",
+    "axios": "^1.4.0",
+    "chalk": "^4.1.2",
+    "moment": "^2.29.4",
+    "qrcode-terminal": "^0.12.0",
+    "string-similarity": "^4.0.4",
+    "whatsapp-web.js": "^1.21.0"
+  },
+  "devDependencies": {
+    "@types/qrcode-terminal": "^0.12.0"
+  }
+}
