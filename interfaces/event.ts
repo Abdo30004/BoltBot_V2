@@ -1,3 +1,4 @@
+import { Client } from "../base/client";
 type eventNames =
   | "authenticated"
   | "auth_failure"
@@ -28,8 +29,8 @@ type eventNames =
 interface Event {
   name: eventNames;
   once?: boolean;
-  run: (...args: any[]) => Promise<any>;
+  run: (client: Client, ...args: any[]) => Promise<any>;
 }
 
 export default Event;
-export{Event}
+export { Event };

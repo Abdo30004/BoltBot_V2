@@ -1,10 +1,10 @@
-import { Client } from "../base/client";
+
 import { Event } from "../interfaces/event";
 import { Message } from "whatsapp-web.js";
 import { Logger } from "../Util/logger";
 const event: Event = {
   name: "message_create",
-  async run(client: Client, message: Message) {
+  async run(client, message: Message) {
     let prefix = "!";
     if (message.body.indexOf(prefix) !== 0) return;
     let args = message.body.slice(prefix.length).trim().split(/ +/g);
