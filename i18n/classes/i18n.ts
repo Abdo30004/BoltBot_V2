@@ -1,0 +1,38 @@
+import fs from "fs/promises";
+import { Language } from "./language";
+import { Collection } from "@discordjs/collection";
+
+class I18n {
+  public languages: Collection<string, Language>;
+  constructor(config: { path: string }) {
+    this.languages = new Collection();
+    this.init(config.path);
+  }
+
+  async init(path: string) {
+    try {
+      let locales = (await fs.readdir(path)).filter((f) => f.endsWith(".json"));
+      for (let locale of locales) {
+        let id = locale.split(".")[0];
+        let language = new Language({ id, path: `${path}/${locale}` });
+        this.languages.set(id, language);
+      }
+      return true;
+    } catch (e) {
+      console.error(e);
+      return false;
+    }
+  }
+  public getLanguage(id: string) {
+    return this.languages.get(id) || null;
+  }
+
+  public getCommand(id: string, name: string) {
+    let language = this.getLanguage(id);
+    if (!language) return null;
+    return language.getCommand(name);
+  }
+}
+
+export default I18n;
+export { I18n };

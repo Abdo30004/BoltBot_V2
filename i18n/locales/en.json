@@ -1,0 +1,50 @@
+{
+  "common": {},
+  "commands": [
+    {
+      "name": "ping",
+      "usage": "",
+      "description": "Bot's ping",
+      "replies": [
+        {
+          "key": "pong",
+          "value": "Pong!"
+        }
+      ]
+    },
+    {
+      "name": "help",
+      "usage": "[command]",
+      "description": "Shows all commands or info about a specific command",
+      "replies": [
+        {
+          "key": "noCommand",
+          "value": "Command not found"
+        },
+        {
+          "key": "noDescription",
+          "value": "No description"
+        },
+        {
+          "key": "noUsage",
+          "value": "No usage"
+        }
+      ]
+    },
+    {
+      "name": "tiktok",
+      "usage": "tiktok [{{link}}]",
+      "description": "{{download}} a tiktok video"
+    }
+  ],
+  "variables": [
+    {
+      "key": "download",
+      "values": ["download", "send"]
+    },
+    {
+      "key": "link",
+      "values": ["link", "url", "video"]
+    }
+  ]
+}

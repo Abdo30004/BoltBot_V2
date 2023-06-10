@@ -19,10 +19,12 @@ const event: Event = {
     let chat = await message.getChat();
     let author = await message.getContact();
     Logger.logCommandRun(message, author, chat);
-
+    let commandTanslate = client.i18n.getCommand("ar", command.name);
     try {
+      if (!commandTanslate)
+        return await message.reply("Command Still in development");
       await chat.sendStateTyping();
-      await command.execute(client, message, args);
+      await command.execute(client, message, commandTanslate, args);
     } catch (err) {
       console.log(err);
     }
