@@ -14,4 +14,5 @@ interface Command {
 }
 
 export default Command;
+
 export { Command };
