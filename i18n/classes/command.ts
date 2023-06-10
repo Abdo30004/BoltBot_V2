@@ -1,4 +1,8 @@
 import { JsonCommand, Reply } from "../../interfaces/language";
+interface argument {
+  key: string;
+  value: any;
+}
 
 class CommandLocal {
   public name: string;
@@ -11,11 +15,20 @@ class CommandLocal {
     this.usage = cmd.usage;
     this.replies = cmd.replies || null;
   }
-  public getReply(key: string) {
-      if (!this.replies) return "";
-      let reply = this.replies.find((r) => r.key === key);
-        if (!reply) return "";
-    return reply.value;
+
+  private replaceArgs(str: string, args?: argument[]) {
+    return str.replace(/{(\d+)}/g, (match, number) => {
+      let key = match.replace(/{{|}}/g, "");
+      return args?.find((arg) => arg.key == key)
+        ? args?.find((arg) => arg.key == key)?.value
+        : match;
+    });
+  }
+  public getReply(key: string, args?: argument[]) {
+    if (!this.replies) return "";
+    let reply = this.replies.find((r) => r.key === key);
+    if (!reply) return "";
+    return this.replaceArgs(reply.value, args);
   }
 }
 

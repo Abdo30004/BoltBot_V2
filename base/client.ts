@@ -25,6 +25,7 @@ class Client extends BaseClient {
           "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
       },
       authStrategy: new LocalAuth(),
+      ffmpegPath: "C:\\ffmpeg\\bin\\ffmpeg.exe",
     };
     super(Object.assign(defaultOptions, options));
     this.commands = new Collection();
@@ -33,16 +34,16 @@ class Client extends BaseClient {
 
   protected async registerEvents(dir: string, debug = false): Promise<boolean> {
     try {
-      let files = await fs.readdir(dir);
+      let path = `${this.path}\\${dir}\\`;
+      let files = await fs.readdir(path);
 
       for (let file of files) {
-        let filePath = `${this.path}/${dir}/${file}`;
-        let stat = await fs.lstat(filePath);
+        let stat = await fs.lstat(`${path}\\${file}`);
         if (stat.isDirectory()) {
-          await this.registerEvents(filePath);
+          await this.registerEvents(`${dir}\\${file}`);
         }
         if (file.endsWith(".ts")) {
-          let { default: event } = (await import(filePath)) as {
+          let { default: event } = (await import(`${path}\\${file}`)) as {
             default: Event;
           };
           if (event.once) {
@@ -64,15 +65,15 @@ class Client extends BaseClient {
     debug = false
   ): Promise<boolean> {
     try {
-      let files = await fs.readdir(dir);
+      let path = `${this.path}\\${dir}\\`;
+      let files = await fs.readdir(path);
+      console.log(path);
       for (let file of files) {
-        let filePath = `${this.path}/${dir}/${file}`;
-        let stat = await fs.lstat(filePath);
+        let stat = await fs.lstat(`${path}\\${file}`);
         if (stat.isDirectory()) {
-          await this.registerCommands(filePath);
-        }
-        if (file.endsWith(".ts")) {
-          let { default: cmd } = (await import(filePath)) as {
+          await this.registerCommands(`${dir}\\${file}`);
+        } else if (file.endsWith(".ts")) {
+          let { default: cmd } = (await import(`${path}\\${file}`)) as {
             default: Command;
           };
 

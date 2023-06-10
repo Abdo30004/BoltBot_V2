@@ -1,5 +1,5 @@
 {
-  "common": {},
+  "defaults": {},
   "commands": [
     {
       "name": "ping",
@@ -7,8 +7,8 @@
       "description": "تعطيك سرعة إستجابة البوت",
       "replies": [
         {
-          "key": "pong",
-          "value": "مرحبا"
+          "key": "pong!",
+          "value": "ms{{ping}}, بونج!"
         }
       ]
     },
@@ -40,17 +40,11 @@
   "variables": [
     {
       "key": "download",
-      "values": [
-        "تحميل",
-        "تنزيل"
-      ]
+      "values": ["تحميل", "تنزيل"]
     },
     {
       "key": "link",
-      "values": [
-        "رابط",
-        "لينك"
-      ]
+      "values": ["رابط", "لينك"]
     }
   ]
 }

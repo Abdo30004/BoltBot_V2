@@ -8,7 +8,7 @@
       "replies": [
         {
           "key": "pong",
-          "value": "Pong!"
+          "value": "Pong! {{ping}}ms"
         }
       ]
     },
