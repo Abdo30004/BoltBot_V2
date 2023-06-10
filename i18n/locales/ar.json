@@ -15,7 +15,7 @@
     {
       "name": "help",
       "usage": "[الأمر]",
-      "description": "تعطيك قائمة المساعدة",
+      "description": "يعطيك قائمة الأوامر أو معلومات عن أمر محدد",
       "replies": [
         {
           "key": "noCommand",
@@ -28,6 +28,10 @@
         {
           "key": "noUsage",
           "value": "لا يوجد إستخدام لهذا الأمر"
+        },
+        {
+          "key": "commandInfo",
+          "value": "**معلومات الأمر {{command}} :**\n\n{{description}}\n\n**الإستخدام :**\n\n{{usage}}\n\n**الإختصارات :**{{aliases}}"
         }
       ]
     },

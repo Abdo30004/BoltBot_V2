@@ -1,13 +1,16 @@
-
 import { Event } from "../interfaces/event";
 import { Message } from "whatsapp-web.js";
 import { Logger } from "../Util/logger";
+import countries from "../data/countries.json";
+
 const event: Event = {
   name: "message_create",
   async run(client, message: Message) {
-    let prefix = "!";
-    if (message.body.indexOf(prefix) !== 0) return;
-    let args = message.body.slice(prefix.length).trim().split(/ +/g);
+    if (message.body.indexOf(client.config.prefix) !== 0) return;
+    let args = message.body
+      .slice(client.config.prefix.length)
+      .trim()
+      .split(/ +/g);
     let cmdName = args.shift()?.toLowerCase();
     if (!cmdName) return;
     let command =
@@ -16,10 +19,18 @@ const event: Event = {
         (cmd) => cmd.aliases && cmd.aliases?.includes(`${cmdName}`)
       );
     if (!command) return;
+
     let chat = await message.getChat();
     let author = await message.getContact();
+    let countryCode = await author.getCountryCode();
+    let country = countries.find((c) => c.phone.includes(Number(countryCode)));
+
+    let language =
+      country.languages.filter((ln) => client.i18n.locales.includes(ln))[0] ||
+      "en";
     Logger.logCommandRun(message, author, chat);
-    let commandTanslate = client.i18n.getCommand("ar", command.name);
+    let commandTanslate = client.i18n.getCommand(language, command.name);
+
     try {
       if (!commandTanslate)
         return await message.reply("Command Still in development");

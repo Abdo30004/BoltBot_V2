@@ -4,6 +4,8 @@ import { Collection } from "@discordjs/collection";
 
 class I18n {
   public languages: Collection<string, Language>;
+  public locales: string[];
+
   constructor(config: { path: string }) {
     this.languages = new Collection();
     this.init(config.path);
@@ -17,6 +19,7 @@ class I18n {
         let language = new Language({ id, path: `${path}/${locale}` });
         this.languages.set(id, language);
       }
+      this.locales = locales.map((l) => l.split(".")[0]);
       return true;
     } catch (e) {
       console.error(e);

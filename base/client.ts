@@ -13,9 +13,12 @@ import { Event } from "../interfaces/event";
 import { Collection } from "@discordjs/collection";
 import Logger from "../Util/logger";
 import { I18n } from "../i18n/classes/i18n";
+
+import { Config } from "../Util/config";
 class Client extends BaseClient {
   public commands: Collection<string, Command> = new Collection();
   public i18n: I18n = new I18n({ path: `${cwd()}/i18n/locales` });
+  public config: typeof Config = Config;
   private path: string;
 
   constructor(options?: ClientOptions) {
@@ -67,7 +70,7 @@ class Client extends BaseClient {
     try {
       let path = `${this.path}\\${dir}\\`;
       let files = await fs.readdir(path);
-      console.log(path);
+
       for (let file of files) {
         let stat = await fs.lstat(`${path}\\${file}`);
         if (stat.isDirectory()) {
@@ -99,7 +102,7 @@ class Client extends BaseClient {
       debug: false,
     };
     options = Object.assign(defaultOptions, options);
-    //this.i18n = new I18n({ path: "i18n/locales" });
+
     await this.registerEvents(options.eventsDir, options.debug);
     await this.registerCommands(options.commandsDir, options.debug);
     await this.initialize();

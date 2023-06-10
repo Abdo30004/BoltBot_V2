@@ -26,7 +26,6 @@ class Language {
   }
 
   private replace(str: string) {
-
     return str.replace(/{{\S+}}/g, (match) => {
       let key = match.replace(/{{|}}/g, "");
 
@@ -63,7 +62,13 @@ class Language {
 
     let replacedCmd = this.replaceAllStrings(command);
     if (!replacedCmd) return null;
-    return new CommandLocal(replacedCmd);
+    return new CommandLocal(replacedCmd, this.id);
+  }
+  public getDefault(key: string) {
+    if (!this.json) return null;
+    let reply = this.json.defaults.find((r) => r.key === key) || null;
+    if (!reply) return null;
+    return this.replace(reply.value);
   }
 }
 

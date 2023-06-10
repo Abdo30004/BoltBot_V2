@@ -1,4 +1,6 @@
-const config = {};
+const Config = {
+    prefix:"/"
+};
 
-export default config;
-export { config };
+export default Config;
+export { Config };

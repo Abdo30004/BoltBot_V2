@@ -6,8 +6,10 @@
   "scripts": {
     "start": "ts-node index.ts",
     "build": "tsc",
-    "dev": "nodemon index.ts"
+    "dev": "nodemon index.ts",
+    "start-dist": "node dist/index.js"
   },
+
   "author": "Abderrahmane",
   "license": "ISC",
   "dependencies": {

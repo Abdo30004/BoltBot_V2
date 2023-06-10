@@ -9,7 +9,8 @@ class CommandLocal {
   public description: string;
   public usage: string;
   public replies: Reply[] | null;
-  constructor(cmd: JsonCommand) {
+  public local: string;
+  constructor(cmd: JsonCommand, local: string) {
     this.name = cmd.name;
     this.description = cmd.description;
     this.usage = cmd.usage;
