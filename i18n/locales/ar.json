@@ -7,7 +7,7 @@
       "description": "تعطيك سرعة إستجابة البوت",
       "replies": [
         {
-          "key": "pong!",
+          "key": "pong",
           "value": "ms{{ping}}, بونج!"
         }
       ]
