@@ -17,12 +17,13 @@ const command: Command = {
     if (!tiktok) {
       await message.reply(translate.getReply("invalidUrl"));
       return;
-    }
+      }
+      /*
     const buffer = await download(tiktok.link, {
       encoding: "base64",
     });
     const media = new MessageMedia("video/mp4", buffer, "video.mp4");
-
+*/
     await message.reply(media, null);
   },
 };
