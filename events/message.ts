@@ -35,6 +35,7 @@ const event: Event = {
       if (!commandTanslate)
         return await message.reply("Command Still in development");
       await chat.sendStateTyping();
+
       await command.execute(client, message, commandTanslate, args);
     } catch (err) {
       console.log(err);

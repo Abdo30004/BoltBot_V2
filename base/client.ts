@@ -2,6 +2,7 @@ import {
   Client as BaseClient,
   ClientOptions,
   LocalAuth,
+  Message,
 } from "whatsapp-web.js";
 import { cwd } from "process";
 
@@ -106,6 +107,22 @@ class Client extends BaseClient {
     await this.registerEvents(options.eventsDir, options.debug);
     await this.registerCommands(options.commandsDir, options.debug);
     await this.initialize();
+  }
+
+  public awaitMessage(options: {
+    filter: (message: Message) => any;
+    time: number;
+  }): Promise<Message> {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        reject(null);
+      }, options.time);
+      this.on("message", (message) => {
+        if (options.filter(message)) {
+          resolve(message);
+        }
+      });
+    });
   }
 }
 

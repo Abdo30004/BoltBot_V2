@@ -9,7 +9,6 @@
     "dev": "nodemon index.ts",
     "start-dist": "node dist/index.js"
   },
-
   "author": "Abderrahmane",
   "license": "ISC",
   "dependencies": {
@@ -17,6 +16,7 @@
     "@types/node": "^20.2.5",
     "axios": "^1.4.0",
     "chalk": "^4.1.2",
+    "cheerio": "^1.0.0-rc.12",
     "moment": "^2.29.4",
     "qrcode-terminal": "^0.12.0",
     "string-similarity": "^4.0.4",

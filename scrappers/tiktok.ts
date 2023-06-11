@@ -1,0 +1,86 @@
+import axios from "axios";
+import { load } from "cheerio";
+import fs from "fs/promises";
+export const getTiktok = async (url: string) => {
+  let headers: any = {
+    "user-agent":
+      "Mozilla/5.0 (X11; Linux x86_64; rv:92.0) Gecko/20100101 Firefox/92.0",
+  };
+  let { data, headers: resHeaders } = await axios.post(
+    "https://musicaldown.com/",
+    {
+      headers,
+    }
+  );
+  let $ = load(data);
+  let inputs = $.root().find("input");
+  let response = {
+    data: {
+      [inputs.eq(0).attr("name")]: url,
+      [inputs.eq(1).attr("name")]: inputs.eq(1).attr("value"),
+      [inputs.eq(2).attr("name")]: inputs.eq(2).attr("value"),
+    },
+    cookies: resHeaders["set-cookie"][0].split(";"),
+  };
+
+  headers = {
+    ...headers,
+    cookie: response.cookies[0],
+    Accept:
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+    path: "/download",
+    "Accept-Language": "en-US,en;q=0.5",
+    "Accept-Encoding": "gzip, deflate",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Content-Length": "96",
+    Origin: "https://musicaldown.com",
+    Referer: "https://musicaldown.com/en/",
+    "Upgrade-Insecure-Requests": "1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    Te: "trailers",
+  };
+
+  let { data: tiktokData, request } = await axios.post(
+    "https://musicaldown.com/download",
+    new URLSearchParams(response.data),
+    {
+      headers,
+    }
+  );
+  let $tiktok = load(tiktokData);
+  let type = request.res.responseUrl.includes("photo")
+    ? "photos"
+    : request.res.responseUrl.includes("download")
+    ? "video"
+    : "error";
+
+  if (type === "error") return null;
+  if (type === "video") {
+    return {
+      type,
+      link: $tiktok("div[class=row]")
+        .eq(1)
+        .find(`a[class="btn waves-effect waves-light orange"]`)
+        .attr("href"),
+    };
+  }
+  if (type === "photos") {
+    let photos: string[] = $tiktok("div[class=card-image]")
+      .find("img")
+      .map((i, el) => {
+        return $tiktok(el).attr("src");
+      })
+      .toArray();
+    return {
+      type,
+      photos,
+    };
+  }
+};
+
+//getTiktok("https://vm.tiktok.com/ZM2kdUPP8/").then(console.log);
+
+getTiktok("https://vm.tiktok.com/ZM2rRq9qE/").then(console.log);
