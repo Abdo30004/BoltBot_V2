@@ -16,7 +16,11 @@ const command: Command = {
       await message.reply(translate.getReply("invalidUrl"));
       return;
     }
-    let media = await MessageMedia.fromUrl(tiktok.link);
+    let media = await MessageMedia.fromUrl(tiktok.link, {
+      filename: "tiktok.mp4",
+        unsafeMime: true,
+       
+    });
     await message.reply(media);
   },
 };
