@@ -2,6 +2,7 @@ import { getTiktok } from "../../scrappers/tiktok";
 
 import { Command } from "../../interfaces/command";
 import { MessageMedia } from "whatsapp-web.js";
+import download from "download";
 import axios from "axios";
 const command: Command = {
   name: "tiktok",
@@ -17,12 +18,10 @@ const command: Command = {
       await message.reply(translate.getReply("invalidUrl"));
       return;
     }
-    let { data } = await axios.get(tiktok.link, {
-      responseType: "arraybuffer",
+    const buffer = await download(tiktok.link, {
+      encoding: "base64",
     });
-
-    let base64 = Buffer.from(data).toString("base64");
-    let media = new MessageMedia("video/mp4", base64, "tiktok.mp4");
+    const media = new MessageMedia("video/mp4", buffer, "video.mp4");
 
     await message.reply(media, null);
   },
