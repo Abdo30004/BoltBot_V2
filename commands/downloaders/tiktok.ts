@@ -23,7 +23,8 @@ const command: Command = {
 
     let base64 = Buffer.from(data).toString("base64");
     let media = new MessageMedia("video/mp4", base64, "tiktok.mp4");
-    await message.reply(media);
+
+    await message.reply(media, null);
   },
 };
 
