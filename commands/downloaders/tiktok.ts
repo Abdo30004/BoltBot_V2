@@ -24,7 +24,7 @@ const command: Command = {
     });
     const media = new MessageMedia("video/mp4", buffer, "video.mp4");
 */
-    await message.reply(media, null);
+   // await message.reply(media, null);
   },
 };
 
