@@ -1,6 +1,6 @@
 import axios from "axios";
 import { load } from "cheerio";
-import fs from "fs/promises";
+
 export const getTiktok = async (url: string) => {
   let headers: any = {
     "user-agent":
@@ -81,6 +81,3 @@ export const getTiktok = async (url: string) => {
   }
 };
 
-//getTiktok("https://vm.tiktok.com/ZM2kdUPP8/").then(console.log);
-
-getTiktok("https://vm.tiktok.com/ZM2rRq9qE/").then(console.log);
