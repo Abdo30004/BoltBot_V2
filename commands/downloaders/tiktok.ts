@@ -17,14 +17,22 @@ const command: Command = {
     if (!tiktok) {
       await message.reply(translate.getReply("invalidUrl"));
       return;
-      }
-      /*
+    }
+
     const buffer = await download(tiktok.link, {
       encoding: "base64",
     });
-    const media = new MessageMedia("video/mp4", buffer, "video.mp4");
+    const media = new MessageMedia("video/mp4", `${buffer}`, "video.mp4");
+
+    /*
+    const { data } = await axios.get(tiktok.link, {
+      responseType: "arraybuffer",
+    });
+    let buffer = Buffer.from(data, "binary").toString("base64");
+
+    const media = new MessageMedia("video/mp4", data, "video.mp4");
 */
-   // await message.reply(media, null);
+    await message.reply(media, null);
   },
 };
 

@@ -29,7 +29,6 @@ class Client extends BaseClient {
           "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
       },
       authStrategy: new LocalAuth(),
-      ffmpegPath: "C:\\ffmpeg\\bin\\ffmpeg.exe",
     };
     super(Object.assign(defaultOptions, options));
     this.commands = new Collection();
