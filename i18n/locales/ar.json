@@ -37,7 +37,7 @@
     },
     {
       "name": "tiktok",
-      "usage": "tiktok [{{link}}] ({{type}})",
+      "usage": "[{{link}}] ({{type}})",
       "description": "فيديو من تيك توك {{download}}",
       "replies": [
         {

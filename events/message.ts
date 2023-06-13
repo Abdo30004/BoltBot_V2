@@ -4,7 +4,7 @@ import { Logger } from "../Util/logger";
 import countries from "../data/countries.json";
 
 const event: Event = {
-  name: "message_create",
+  name: "message",
   async run(client, message: Message) {
     if (message.body.indexOf(client.config.prefix) !== 0) return;
     let args = message.body
