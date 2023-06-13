@@ -1,4 +1,5 @@
 import { JsonCommand, Reply } from "../../interfaces/language";
+import { Config } from "../../Util/config";
 interface argument {
   key: string;
   value: any;
@@ -13,7 +14,7 @@ class CommandLocal {
   constructor(cmd: JsonCommand, local: string) {
     this.name = cmd.name;
     this.description = cmd.description;
-    this.usage = cmd.usage;
+    this.usage = `${Config.prefix}${cmd.name} ${cmd.usage || ""}`.trim();
     this.replies = cmd.replies || null;
   }
 

@@ -37,8 +37,14 @@
     },
     {
       "name": "tiktok",
-      "usage": "tiktok [{{link}}]",
-      "description": "فيديو من تيك توك {{download}}"
+      "usage": "tiktok [{{link}}] ({{type}})",
+      "description": "فيديو من تيك توك {{download}}",
+      "replies": [
+        {
+          "key": "invalidUrl",
+          "value": "الرجاء إدخال رابط صحيح"
+        }
+      ]
     }
   ],
   "variables": [
@@ -49,6 +55,10 @@
     {
       "key": "link",
       "values": ["رابط", "لينك"]
+    },
+    {
+      "key": "type",
+      "values": ["mp3/mp4", "نوع الملف mp3/mp4"]
     }
   ]
 }

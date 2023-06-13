@@ -28,7 +28,7 @@ const command: Command = {
           },
           {
             key: "usage",
-            value: `\`\`${client.config.prefix}${command.name}\`\` ${translate.usage}`,
+            value: `\`${translate.usage}\``,
           },
           {
             key: "description",
@@ -40,8 +40,6 @@ const command: Command = {
           },
         ])
       );
-
-      
     }
   },
 };
