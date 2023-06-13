@@ -27,9 +27,10 @@ class CommandLocal {
     });
   }
   public getReply(key: string, args?: argument[]) {
-    if (!this.replies) return "";
+    if (!this.replies) return `no replies in (${this.local}.${this.name})`;
     let reply = this.replies.find((r) => r.key === key);
-    if (!reply) return "";
+    if (!reply)
+      return `no reply found with this key (${this.local}.${this.name}.${key})`;
     return this.replaceArgs(reply.value, args);
   }
 }
