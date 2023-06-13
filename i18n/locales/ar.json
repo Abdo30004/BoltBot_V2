@@ -31,7 +31,7 @@
         },
         {
           "key": "commandInfo",
-          "value": "**معلومات الأمر {{command}} :**\n\n{{description}}\n\n**الإستخدام :**\n\n{{usage}}\n\n**الإختصارات :**{{aliases}}"
+          "value": "*معلومات الأمر {{command}} :*\n\n{{description}}\n\n*الإستخدام :*\n\n{{usage}}\n\n*الإختصارات :*{{aliases}}"
         }
       ]
     },
