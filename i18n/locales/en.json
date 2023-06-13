@@ -8,7 +8,7 @@
       "replies": [
         {
           "key": "pong",
-          "value": "Pong! {{ping}}ms"
+          "value": "Pong!"
         }
       ]
     },
@@ -28,6 +28,14 @@
         {
           "key": "noUsage",
           "value": "No usage"
+        },
+        {
+          "key": "commandInfo",
+          "value": "*Command ```{{name}}``` Info*\n\n{{description}}\n\n*Usage:* ```{{usage}}````\n\n*Aliases:* ```{{aliases}}```"
+        },
+        {
+          "key": "commandsList",
+          "value": "*Commands List*\n\n{{commands}}"
         }
       ]
     },

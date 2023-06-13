@@ -32,6 +32,8 @@ const event: Event = {
     let commandTanslate = client.i18n.getCommand(language, command.name);
 
     try {
+
+      await message.react("⏳")
       if (!commandTanslate)
         return await message.reply("Command Still in development");
       await chat.sendSeen();
@@ -39,6 +41,7 @@ const event: Event = {
 
       await command.execute(client, message, commandTanslate, args);
       await chat.clearState();
+      await message.react("⚡")
     } catch (err) {
       console.log(err);
     }

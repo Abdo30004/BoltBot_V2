@@ -40,7 +40,30 @@ const command: Command = {
           },
         ])
       );
+      return;
     }
+
+    let commands = client.commands
+      .map((cmd) => {
+        return {
+          name: cmd.name,
+          aliases: cmd.aliases?.join(", ") || "None",
+        };
+      })
+      .sort((a, b) => a.name.localeCompare(b.name))
+      .map((cmd) => {
+        return `• ${cmd.name} - ${cmd.aliases}`;
+      })
+      .join("\n");
+
+    await message.reply(
+      translate.getReply("commandsList", [
+        {
+          key: "commands",
+          value: commands,
+        },
+      ])
+    );
   },
 };
 
