@@ -45,6 +45,17 @@
           "value": "الرجاء إدخال رابط صحيح"
         }
       ]
+    },
+    {
+      "name": "sicker",
+      "usage": "[{{name}}]",
+      "description": "لصنع ملصقات",
+      "replies": [
+        {
+          "key": "noMedia",
+          "value": "الرجاء إرسال صورة أو فيديو مع الأمر"
+        }
+      ]
     }
   ],
   "variables": [
