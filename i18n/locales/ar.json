@@ -62,21 +62,21 @@
       ]
     },
     {
-      "name":"weather",
-      "usage":"[{{place}}]",
-      "description":"لمعرفة حالة الطقس",
-      "replies":[
+      "name": "weather",
+      "usage": "[{{place}}]",
+      "description": "لمعرفة حالة الطقس",
+      "replies": [
         {
-          "key":"noCity",
-          "value":"الرجاء إدخال إسم المدينة"
+          "key": "noCity",
+          "value": "الرجاء إدخال إسم المدينة"
         },
         {
-          "key":"noData",
-          "value":"لا يوجد بيانات"
+          "key": "noData",
+          "value": "لا يوجد بيانات"
         },
         {
-          "key":"weatherInfo",
-          "value":"*البلد:* {{country}}\n\n*المدينة:* {{city}}\n\n*الحالة:* {{status}}\n\n*الحرارة:* {{temperature}}\n\n*الرطوبة:* {{humidity}}\n\n*الضغط:* {{pressure}}\n\n*الرياح:* {{wind}}\n\n*الشروق:* {{sunrise}}\n\n*الغروب:* {{sunset}}\n\n*التاريخ:* {{date}}\n\n*التوقيت:* {{timezone}}\n\n*الإحداثيات:* {{coordinates}}"
+          "key": "weatherInfo",
+          "value": "*البلد:* {{country}}\n\n*المدينة:* {{city}}\n\n*الحالة:* {{status}}\n\n*الحرارة:* {{temperature}}\n\n*الرطوبة:* {{humidity}}\n\n*الضغط:* {{pressure}}\n\n*الرياح:* {{wind}}\n\n*الشروق:* {{sunrise}}\n\n*الغروب:* {{sunset}}\n\n*التاريخ:* {{date}}\n\n*التوقيت:* {{timezone}}\n\n*الإحداثيات:* {{geo}}"
         }
       ]
     }
@@ -96,7 +96,7 @@
     },
     {
       "key": "place",
-      "values": ["مدينة", "المكان","الدولة","البلد"]
+      "values": ["مدينة", "المكان", "الدولة", "البلد"]
     }
   ]
 }

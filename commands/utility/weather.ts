@@ -7,21 +7,18 @@ function to_km_per_h(speed: number) {
   const turned = speed * 3.6;
   return Math.round((turned + Number.EPSILON) * 100) / 100;
 }
-function timeInfo(data: any, locale: string) {
+function timeInfo(data: any) {
   return {
-    Sunrise: moment(new Date(data.sys.sunrise * 1000))
-      .utcOffset(data.timezone / 3600)
-      .locale(locale),
-    Sunset: moment(new Date(data.sys.sunset * 1000))
-      .utcOffset(data.timezone / 3600)
-      .locale(locale),
-    now: moment(Date.now())
-      .utcOffset(data.timezone / 3600)
-      .locale(locale),
-
+    Sunrise: moment(new Date(data.sys.sunrise * 1000)).utcOffset(
+      data.timezone / 3600
+    ),
+    Sunset: moment(new Date(data.sys.sunset * 1000)).utcOffset(
+      data.timezone / 3600
+    ),
+    now: moment(Date.now()).utcOffset(data.timezone / 3600),
     Timezone: `${moment()
       .utcOffset(data.timezone / 3600)
-      .locale(locale)
+
       .format("UTC(G[M]T)Z")}`,
   };
 }
@@ -66,11 +63,12 @@ const command: Command = {
     } catch (error) {
       media = MessageMedia.fromFilePath(defaultIconPath);
     }
-    let time = timeInfo(data, translate.local);
+    let time = timeInfo(data);
+    let country = countries.find((c) => c.code === data.sys.country);
     let reply = translate.getReply("weatherInfo", [
       {
         key: "country",
-        value: data.sys.country,
+        value: `${country.name} (${country.native})`,
       },
       {
         key: "city",
@@ -115,7 +113,7 @@ const command: Command = {
 
       {
         key: "date",
-        value: time.now.format("LL"),
+        value: time.now.format("LLLL"),
       },
     ]);
     await message.reply(reply, null, { media });
