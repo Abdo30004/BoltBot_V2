@@ -60,6 +60,25 @@
           "value": "الرجاء إرسال صورة أو فيديو مع الأمر"
         }
       ]
+    },
+    {
+      "name":"weather",
+      "usage":"[{{city}}]",
+      "description":"لمعرفة حالة الطقس",
+      "replies":[
+        {
+          "key":"noCity",
+          "value":"الرجاء إدخال إسم المدينة"
+        },
+        {
+          "key":"noData",
+          "value":"لا يوجد بيانات"
+        },
+        {
+          "key":"weatherInfo",
+          "value":"*حالة الطقس في {{city}}*\n\n*الحالة :* {{status}}\n*الحرارة :* {{temp}}\n*الرطوبة :* {{humidity}}\n*الرياح :* {{wind}}\n*الضغط :* {{pressure}}\n*الرؤية :* {{visibility}}"
+        }
+      ]
     }
   ],
   "variables": [

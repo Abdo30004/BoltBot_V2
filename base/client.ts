@@ -20,7 +20,7 @@ class Client extends BaseClient {
   public commands: Collection<string, Command> = new Collection();
   public i18n: I18n = new I18n({ path: `${cwd()}/i18n/locales` });
   public config: typeof Config = Config;
-  private path: string;
+  public path: string;
 
   constructor(options?: ClientOptions) {
     const defaultOptions: ClientOptions = {
