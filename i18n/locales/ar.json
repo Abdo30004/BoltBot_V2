@@ -63,7 +63,7 @@
     },
     {
       "name":"weather",
-      "usage":"[{{city}}]",
+      "usage":"[{{place}}]",
       "description":"لمعرفة حالة الطقس",
       "replies":[
         {
@@ -76,7 +76,7 @@
         },
         {
           "key":"weatherInfo",
-          "value":"*حالة الطقس في {{city}}*\n\n*الحالة :* {{status}}\n*الحرارة :* {{temp}}\n*الرطوبة :* {{humidity}}\n*الرياح :* {{wind}}\n*الضغط :* {{pressure}}\n*الرؤية :* {{visibility}}"
+          "value":"*البلد:* {{country}}\n\n*المدينة:* {{city}}\n\n*الحالة:* {{status}}\n\n*الحرارة:* {{temperature}}\n\n*الرطوبة:* {{humidity}}\n\n*الضغط:* {{pressure}}\n\n*الرياح:* {{wind}}\n\n*الشروق:* {{sunrise}}\n\n*الغروب:* {{sunset}}\n\n*التاريخ:* {{date}}\n\n*التوقيت:* {{timezone}}\n\n*الإحداثيات:* {{coordinates}}"
         }
       ]
     }
@@ -93,6 +93,10 @@
     {
       "key": "type",
       "values": ["mp3/mp4", "نوع الملف mp3/mp4"]
+    },
+    {
+      "key": "place",
+      "values": ["مدينة", "المكان","الدولة","البلد"]
     }
   ]
 }

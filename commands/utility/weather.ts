@@ -7,7 +7,24 @@ function to_km_per_h(speed: number) {
   const turned = speed * 3.6;
   return Math.round((turned + Number.EPSILON) * 100) / 100;
 }
+function timeInfo(data: any, locale: string) {
+  return {
+    Sunrise: moment(new Date(data.sys.sunrise * 1000))
+      .utcOffset(data.timezone / 3600)
+      .locale(locale),
+    Sunset: moment(new Date(data.sys.sunset * 1000))
+      .utcOffset(data.timezone / 3600)
+      .locale(locale),
+    now: moment(Date.now())
+      .utcOffset(data.timezone / 3600)
+      .locale(locale),
 
+    Timezone: `${moment()
+      .utcOffset(data.timezone / 3600)
+      .locale(locale)
+      .format("UTC(G[M]T)Z")}`,
+  };
+}
 const command: Command = {
   name: "weather",
   aliases: ["طقس", "wt"],
@@ -15,8 +32,7 @@ const command: Command = {
     let city = encodeURI(args.join(" "));
     if (!city) {
       let phone = await (await message.getContact()).getCountryCode();
-        city = countries.find((c) => c.phone.includes(parseInt(phone))).capital;
-        
+      city = countries.find((c) => c.phone.includes(parseInt(phone))).capital;
     }
 
     var { data } = await axios
@@ -34,34 +50,12 @@ const command: Command = {
       )
       .catch((err) => null);
     if (!data) {
-      await message.react("❌");
-      await message.reply(translate.getReply("cityNotFound"));
+      await message.reply(translate.getReply("noData"));
       return;
     }
 
-    const string = `*Country:* ${data.sys.country}\n\n*City:* ${
-      data.name
-    }\n\n*Temperature:* ${data.main.temp}°C\n\n*Description:* ${
-      data.weather[0].description
-    }\n\n*Wind:* ${to_km_per_h(data.wind.speed)} km/h\n\n*Humidity:* ${
-      data.main.humidity
-    }%\n\n*Pressure:* ${data.main.pressure} hPa\n\n*Sunrise:* ${moment(
-      new Date(data.sys.sunrise * 1000)
-    )
-      .utcOffset(data.timezone / 3600)
-      .format("LT")} (${moment(new Date(data.sys.sunrise * 1000))
-      .utcOffset(data.timezone / 3600)
-      .fromNow()})\n\n*Sunset:* ${moment(new Date(data.sys.sunset * 1000))
-      .utcOffset(data.timezone / 3600)
-      .format("LT")} (${moment(new Date(data.sys.sunset * 1000))
-      .utcOffset(data.timezone / 3600)
-      .fromNow()})\n\n*Timezone:* ${moment()
-      .utcOffset(data.timezone / 3600)
-      .format("UTC(G[M]T)Z")} hours\n\n*Geo Coordinates:* ${data.coord.lat}, ${
-      data.coord.lon
-    }`;
     const icon = data.weather[0].icon;
-    //const media = await MessageMedia.fromUrl(icon, { unsafeMime: true });
+
     let media;
     const iconPath = `${client.path}\\assets\\Images\\weather\\${
       data.weather[0].description
@@ -72,8 +66,59 @@ const command: Command = {
     } catch (error) {
       media = MessageMedia.fromFilePath(defaultIconPath);
     }
+    let time = timeInfo(data, translate.local);
+    let reply = translate.getReply("weatherInfo", [
+      {
+        key: "country",
+        value: data.sys.country,
+      },
+      {
+        key: "city",
+        value: data.name,
+      },
+      {
+        key: "temperature",
+        value: data.main.temp,
+      },
+      {
+        key: "status",
+        value: data.weather[0].description,
+      },
+      {
+        key: "wind",
+        value: to_km_per_h(data.wind.speed),
+      },
+      {
+        key: "humidity",
+        value: data.main.humidity,
+      },
+      {
+        key: "pressure",
+        value: data.main.pressure,
+      },
+      {
+        key: "sunrise",
+        value: `${time.Sunrise.format("LT")} (${time.Sunrise.fromNow()})`,
+      },
+      {
+        key: "sunset",
+        value: `${time.Sunset.format("LT")} (${time.Sunset.fromNow()})`,
+      },
+      {
+        key: "timezone",
+        value: time.Timezone,
+      },
+      {
+        key: "geo",
+        value: `${data.coord.lat}, ${data.coord.lon}`,
+      },
 
-    await message.reply(string, null, { media });
+      {
+        key: "date",
+        value: time.now.format("LL"),
+      },
+    ]);
+    await message.reply(reply, null, { media });
   },
 };
 
