@@ -25,6 +25,8 @@ const event: Event = {
     let author =
       client.cache.users.get(message.author || message.from) ||
       (await message.getContact());
+    
+    console.log(client.cache.users)
     let countryCode = await author.getCountryCode();
 
     let country = countries.find((c) => c.phone.includes(Number(countryCode)));
