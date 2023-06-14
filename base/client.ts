@@ -133,6 +133,22 @@ class Client extends BaseClient {
       });
     });
   }
+  public async getChatById(chatId: string): Promise<Chat> {
+    let chat = this.cache.chats.get(chatId);
+    if (!chat) {
+      chat = await this.getChatById(chatId);
+      this.cache.chats.set(chatId, chat);
+    }
+    return chat;
+  }
+  public async getContactById(userId: string): Promise<Contact> {
+    let contact = this.cache.users.get(userId);
+    if (!contact) {
+      contact = await this.getContactById(userId);
+      this.cache.users.set(userId, contact);
+    }
+    return contact;
+  }
 }
 
 export default Client;
