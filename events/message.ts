@@ -19,10 +19,17 @@ const event: Event = {
         (cmd) => cmd.aliases && cmd.aliases?.includes(`${cmdName}`)
       );
     if (!command) return;
+    console.log(`author=${message.author}`)
+    console.log(`from=${message.from}`);
+    console.log(`to=${message.to}`);
 
     let chat = await message.getChat();
     let author = await message.getContact();
     let countryCode = await author.getCountryCode();
+    console.log("authorId=" + author.id._serialized)
+    console.log("chatId=" + chat.id._serialized)
+    
+
     let country = countries.find((c) => c.phone.includes(Number(countryCode)));
 
     let language =

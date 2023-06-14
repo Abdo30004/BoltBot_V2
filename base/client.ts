@@ -3,6 +3,8 @@ import {
   ClientOptions,
   LocalAuth,
   Message,
+  Contact,
+  Chat,
 } from "whatsapp-web.js";
 import { cwd } from "process";
 
@@ -20,6 +22,10 @@ class Client extends BaseClient {
   public commands: Collection<string, Command> = new Collection();
   public i18n: I18n = new I18n({ path: `${cwd()}/i18n/locales` });
   public config: typeof Config = Config;
+  public cache: {
+    users: Collection<string, Contact>;
+    chats: Collection<string, Chat>;
+  };
   public path: string;
 
   constructor(options?: ClientOptions) {
@@ -123,6 +129,8 @@ class Client extends BaseClient {
       });
     });
   }
+
+  
 }
 
 export default Client;
