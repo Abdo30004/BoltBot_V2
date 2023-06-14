@@ -38,6 +38,10 @@ class Client extends BaseClient {
     };
     super(Object.assign(defaultOptions, options));
     this.commands = new Collection();
+    this.cache = {
+      users: new Collection(),
+      chats: new Collection(),
+    };
     this.path = cwd();
   }
 
@@ -129,8 +133,6 @@ class Client extends BaseClient {
       });
     });
   }
-
-  
 }
 
 export default Client;
