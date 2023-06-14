@@ -34,7 +34,7 @@
           "value": "*معلومات الأمر ```{{command}}```*\n\n{{description}}\n\n*الإستخدام :*\n\n{{usage}}\n\n*الإختصارات :*{{aliases}}"
         },
         {
-          "key": "commandList",
+          "key": "commandsList",
           "value": "*قائمة الأوامر :*\n\n{{commands}}"
         }
       ]

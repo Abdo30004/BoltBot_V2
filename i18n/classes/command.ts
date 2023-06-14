@@ -15,6 +15,7 @@ class CommandLocal {
     this.name = cmd.name;
     this.description = cmd.description;
     this.usage = `${Config.prefix}${cmd.name} ${cmd.usage || ""}`.trim();
+    this.local = local;
     this.replies = cmd.replies || null;
   }
 
