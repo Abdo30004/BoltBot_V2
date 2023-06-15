@@ -1,5 +1,6 @@
 {
-  "defaults": {},
+  "code":"ar",
+  "defaults": [],
   "commands": [
     {
       "name": "ping",
@@ -97,6 +98,10 @@
     {
       "key": "place",
       "values": ["مدينة", "المكان", "الدولة", "البلد"]
+    }, {
+
+      "key":"name",
+      "values":["اسم","الاسم"]
     }
   ]
 }

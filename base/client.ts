@@ -18,6 +18,8 @@ import Logger from "../Util/logger";
 import { I18n } from "../i18n/classes/i18n";
 
 import { Config } from "../Util/config";
+
+
 class Client extends BaseClient {
   public commands: Collection<string, Command> = new Collection();
   public i18n: I18n = new I18n({ path: `${cwd()}/i18n/locales` });

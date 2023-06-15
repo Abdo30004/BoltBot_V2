@@ -1,5 +1,6 @@
 {
-  "common": {},
+  "code": "en",
+  "defaults": [],
   "commands": [
     {
       "name": "ping",
@@ -41,8 +42,44 @@
     },
     {
       "name": "tiktok",
-      "usage": "tiktok [{{link}}]",
-      "description": "{{download}} a tiktok video"
+      "usage": "[{{link}}] ({{type}})",
+      "description": "{{download}} a tiktok video",
+      "replies": [
+        {
+          "key": "invalidUrl",
+          "value": "Invalid url, please send a valid tiktok url"
+        }
+      ]
+    },
+    {
+      "name": "sticker",
+      "usage": "[{{name}}]",
+      "description": "Sends a sticker",
+      "replies": [
+        {
+          "key": "noMedia",
+          "value": "Please send a video/photo in caption"
+        }
+      ]
+    },
+    {
+      "name": "weather",
+      "usage": "({{place}}])",
+      "description": "Shows weather info about a city (default: capital of your country)",
+      "replies": [
+        {
+          "key": "noCity",
+          "value": "Please send a city name"
+        },
+        {
+          "key": "noData",
+          "value": "City not found"
+        },
+        {
+          "key": "weatherInfo",
+          "value": "*Country:* {{country}}\n\n*City:* {{city}}\n\n*Status:* {{status}}\n\n*Temperature:* {{temperature}}\n\n*Humidity:* {{humidity}}\n\n*Pressure:* {{pressure}}\n\n*Wind:* {{wind}}\n\n*Sunrise:* {{sunrise}}\n\n*Sunset:* {{sunset}}\n\n*Date:* {{date}}\n\n*Timezone:* {{timezone}}\n\n*coordinates:* {{geo}}"
+        }
+      ]
     }
   ],
   "variables": [
@@ -53,6 +90,14 @@
     {
       "key": "link",
       "values": ["link", "url", "video"]
+    },
+    {
+      "key": "name",
+      "values": ["name", "title"]
+    },
+    {
+      "key": "place",
+      "values": ["place", "location", "city", "country", "address"]
     }
   ]
 }

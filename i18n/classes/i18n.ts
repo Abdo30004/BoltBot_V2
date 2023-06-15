@@ -1,7 +1,7 @@
 import fs from "fs/promises";
 import { Language } from "./language";
 import { Collection } from "@discordjs/collection";
-
+import { compareLocales } from "../../Util/check";
 class I18n {
   public languages: Collection<string, Language>;
   public locales: string[];
@@ -20,6 +20,10 @@ class I18n {
         this.languages.set(id, language);
       }
       this.locales = locales.map((l) => l.split(".")[0]);
+      compareLocales(
+        this.languages.get("en").json,
+        this.languages.map((l) => l.json)
+      );
       return true;
     } catch (e) {
       console.error(e);

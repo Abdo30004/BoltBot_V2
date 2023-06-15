@@ -14,6 +14,7 @@ interface JsonCommand {
 }
 
 interface JsonLanguage {
+  code: string;
   commands: JsonCommand[];
   variables: Variable[];
   defaults: Reply[];
