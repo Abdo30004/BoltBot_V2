@@ -24,3 +24,5 @@ const command: Command = {
     return true;
   },
 };
+
+export default command;

@@ -26,7 +26,8 @@ const event: Event = {
     let author =
       client.cache.users.get(message.author || message.from) ||
       (await message.getContact());
-
+    if (command.devOnly && !client.config.devs.includes(author.id._serialized))
+      return;
     let countryCode = await author.getCountryCode();
 
     let country = countries.find((c) => c.phone.includes(Number(countryCode)));
@@ -34,6 +35,7 @@ const event: Event = {
     let language =
       country.languages.filter((ln) => client.i18n.locales.includes(ln))[0] ||
       "en";
+
     if (client.cooldowns.has(author.id._serialized)) {
       let cooldownInfo = client.cooldowns.get(author.id._serialized);
       if (Date.now() - cooldownInfo.time < 10 * 1000) {
