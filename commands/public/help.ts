@@ -1,9 +1,18 @@
 import { Command } from "../../interfaces/command";
 
+declare global {
+  interface String {
+    title(): string;
+  }
+}
+String.prototype.title = function () {
+  return this.charAt(0).toUpperCase() + this.slice(1);
+};
+
 const command: Command = {
   name: "help",
   aliases: ["commands", "أوامر", "اوامر", "مساعدة"],
-
+  category: "public",
   execute: async (client, message, translate, args) => {
     if (args[0]) {
       let command =
@@ -42,25 +51,28 @@ const command: Command = {
       );
       return true;
     }
-
-    let commands = client.commands
-      .map((cmd) => {
-        return {
-          name: cmd.name,
-          aliases: cmd.aliases?.join(", ") || "None",
-        };
+    let categories = ["public", "downloaders", "utility"];
+    let string = categories
+      .map((category) => {
+        let categoryCommands = client.commands
+          .filter((cmd) => cmd.category === category)
+          .map((c) => `\`\`\`/${c.name}\`\`\``);
+        if (!categoryCommands.length) return;
+        return `\n------------ *${category.title()}* ------------\n${categoryCommands.join(
+          "\n"
+        )}`;
       })
-      .sort((a, b) => a.name.localeCompare(b.name))
-      .map((cmd) => {
-        return `• ${cmd.name} - ${cmd.aliases}`;
-      })
+      .map((c) => c)
       .join("\n");
-
     await message.reply(
       translate.getReply("commandsList", [
         {
           key: "commands",
-          value: commands,
+          value: string,
+        },
+        {
+          key: "invite",
+          value: client.config.support,
         },
       ])
     );

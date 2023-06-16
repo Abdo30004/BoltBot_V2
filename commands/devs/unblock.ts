@@ -3,7 +3,8 @@ import { Command } from "../../interfaces/command";
 const command: Command = {
   name: "unblock",
   aliases: ["unblock", "إلغاء-حظر"],
-  devOnly: true,
+    devOnly: true,
+    category: "devs",
   execute: async (client, message, _translate, args) => {
     let unblockedList = await message.getMentions();
     if (!unblockedList.length) {

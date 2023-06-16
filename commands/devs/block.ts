@@ -3,7 +3,8 @@ import { Command } from "../../interfaces/command";
 const command: Command = {
   name: "block",
   aliases: ["block", "حظر"],
-  devOnly: true,
+    devOnly: true,
+  category: "devs",
   execute: async (client, message, _translate, args) => {
     let blockedList = (await message.getMentions()).filter(
       (blocked) => !client.config.devs.includes(blocked.id._serialized)

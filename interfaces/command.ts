@@ -6,6 +6,7 @@ interface Command {
   name: string;
   aliases?: string[];
   devOnly?: boolean;
+  category:"devs" | "public" | "utility" | "groups" | "downloaders";
   execute: (
     client: Client,
     message: Message,

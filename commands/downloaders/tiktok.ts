@@ -7,6 +7,7 @@ import download from "download";
 const command: Command = {
   name: "tiktok",
   aliases: ["tk"],
+  category:"downloaders",
   execute: async (client, message, translate, args) => {
     let url = args[0];
     let type = args[1];

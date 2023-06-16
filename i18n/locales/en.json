@@ -49,7 +49,7 @@
         },
         {
           "key": "commandsList",
-          "value": "*Commands List*\n\n{{commands}}"
+          "value": "*Commands List*\n\n{{commands}}\n\n*Note:* You can use `/help [command]` to get info about a command\n\nBe the first to know about Bolt Bot news : {{invite}}"
         }
       ]
     },

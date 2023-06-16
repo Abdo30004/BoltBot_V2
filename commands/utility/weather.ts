@@ -25,6 +25,7 @@ function timeInfo(data: any) {
 const command: Command = {
   name: "weather",
   aliases: ["طقس", "wt"],
+  category: "utility",
   execute: async (client, message, translate, args) => {
     let city = encodeURI(args.join(" "));
     if (!city) {

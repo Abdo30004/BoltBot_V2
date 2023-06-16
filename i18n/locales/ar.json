@@ -4,13 +4,14 @@
     {
       "key": "noLocaleFound",
       "value": "لم يتم بعد الإنتهاء من الأمر , لازال قيد التطوير حاليا"
-    },{
-      "key":"error",
-      "value":"حدث خطأ ما"
     },
     {
-      "key":"cooldown",
-      "value":"الرجاء الإنتظار {{time}} ثانية قبل إعادة إستخدام الأمر"
+      "key": "error",
+      "value": "حدث خطأ ما"
+    },
+    {
+      "key": "cooldown",
+      "value": "الرجاء الإنتظار {{time}} ثانية قبل إعادة إستخدام الأمر"
     }
   ],
   "commands": [
@@ -48,7 +49,7 @@
         },
         {
           "key": "commandsList",
-          "value": "*قائمة الأوامر :*\n\n{{commands}}"
+          "value": "*قائمة الأوامر :*\n\n{{commands}}\n\n*ملاحظة:* يمكنك إستعمال الأمر ```/help [الأمر]``` لمعرفة معلومات عن أي أمر\n\n*رابط مجموعة دعم البوت {{invite}}"
         }
       ]
     },
@@ -92,21 +93,21 @@
           "value": "*البلد:* {{country}}\n\n*المدينة:* {{city}}\n\n*الحالة:* {{status}}\n\n*الحرارة:* {{temperature}}\n\n*الرطوبة:* {{humidity}}\n\n*الضغط:* {{pressure}}\n\n*الرياح:* {{wind}}\n\n*الشروق:* {{sunrise}}\n\n*الغروب:* {{sunset}}\n\n*التاريخ:* {{date}}\n\n*التوقيت:* {{timezone}}\n\n*الإحداثيات:* {{geo}}"
         }
       ]
-    },{
-      "name":"invite",
-      "usage":"[{{link}}]",
-      "description":"لدعوة البوت إلى مجموعتك",
-      "replies":[
+    },
+    {
+      "name": "invite",
+      "usage": "[{{link}}]",
+      "description": "لدعوة البوت إلى مجموعتك",
+      "replies": [
         {
-          "key":"noValidLink",
-          "value":"الرجاء إدخال رابط دعوة صحيح"
+          "key": "noValidLink",
+          "value": "الرجاء إدخال رابط دعوة صحيح"
         },
         {
-          "key":"acceptedInvite",
-          "value":"تم إضافة البوت إلى المجموعة"
+          "key": "acceptedInvite",
+          "value": "تم إضافة البوت إلى المجموعة"
         }
       ]
-
     }
   ],
   "variables": [

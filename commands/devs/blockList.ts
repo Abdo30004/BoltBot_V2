@@ -3,7 +3,8 @@ import { Command } from "../../interfaces/command";
 const command: Command = {
   name: "blocklist",
   aliases: ["blockList", "قائمة-الحظر"],
-  devOnly: true,
+    devOnly: true,
+    category: "devs",
   execute: async (client, message, _translate, args) => {
     let blockList = await client.getBlockedContacts();
     if (!blockList.length) {

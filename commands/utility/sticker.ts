@@ -6,6 +6,7 @@ import { MessageMedia } from "whatsapp-web.js";
 const command: Command = {
   name: "sticker",
   aliases: ["st", "ملصق"],
+  category: "utility",
   execute: async (client, message, translate, args) => {
     let media = message.hasMedia ? await message.downloadMedia() : null;
     if (!media) {
