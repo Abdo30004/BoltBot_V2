@@ -56,7 +56,6 @@ const event: Event = {
           cooldownInfo.time = Date.now();
           await message.react("⛔");
         }
-        console.log(client.cooldowns);
         return;
       }
     }
