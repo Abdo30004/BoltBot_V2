@@ -49,6 +49,7 @@ const event: Event = {
             ])
           );
         }
+        cooldownInfo.sent = true;
         return;
       }
     }

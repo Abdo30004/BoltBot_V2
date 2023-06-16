@@ -11,7 +11,7 @@
     },
     {
       "key": "cooldown",
-      "value": "Please wait {{cooldown}} seconds before using this command again"
+      "value": "Please wait {{time}} seconds before using this command again"
     }
   ],
   "commands": [
