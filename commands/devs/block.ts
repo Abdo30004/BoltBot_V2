@@ -18,7 +18,7 @@ const command: Command = {
 
     await message.reply(
       `Blocked ${blockedList.length} users\n\n${blockedList
-        .map((blocked, i) => i + blocked.id.user)
+        .map((blocked, i) => `${i+1}-${blocked.id.user}`)
         .join("\n")}}`
     );
     return true;

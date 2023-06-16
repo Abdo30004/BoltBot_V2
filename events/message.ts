@@ -36,7 +36,7 @@ const event: Event = {
       country.languages.filter((ln) => client.i18n.locales.includes(ln))[0] ||
       "en";
 
-    if (client.cooldowns.has(author.id._serialized)) {
+    if (client.cooldowns.has(author.id._serialized) && !client.config.devs.includes(author.id._serialized)) {
       let cooldownInfo = client.cooldowns.get(author.id._serialized);
       if (Date.now() - cooldownInfo.time < 10 * 1000) {
         if (!cooldownInfo.sent) {
