@@ -51,7 +51,7 @@ class Language {
     return replacedCmd;
   }
   private replaceArgs(str: string, args?: argument[]) {
-    if(!args.length) return str
+    if(!args?.length) return str
     return str.replace(/{{\S+}}/g, (match, number) => {
       let key = match.replace(/{{|}}/g, "");
       return args?.find((arg) => arg.key == key)

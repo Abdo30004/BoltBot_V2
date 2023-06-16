@@ -16,7 +16,7 @@ class CommandLocal {
   }
 
   private replaceArgs(str: string, args?: argument[]) {
-    if (!args.length) return str;
+    if (!args?.length) return str;
 
     return str.replace(/{{\S+}}/g, (match, number) => {
       let key = match.replace(/{{|}}/g, "");
