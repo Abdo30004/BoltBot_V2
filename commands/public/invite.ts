@@ -3,7 +3,7 @@ import { Command } from "../../interfaces/command";
 const command: Command = {
   name: "invite",
   aliases: ["دعوة", "join"],
-  cooldown: 60,
+
   execute: async (client, message, commandTanslate, args) => {
     const linkRegex =
       /^(https?:\/\/)?chat\.whatsapp\.com\/(?:invite\/)?([a-zA-Z0-9_-]{22})$/;

@@ -12,7 +12,7 @@ const command: Command = {
           (cmd) =>
             cmd.aliases && cmd.aliases?.includes(`${args[0].toLowerCase()}`)
         );
-      if (!command) {
+      if (!command || command.devOnly) {
         await message.reply(
           translate.getReply("commandNotFound", [
             { key: "command", value: args[0].toLowerCase() },

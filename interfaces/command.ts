@@ -5,7 +5,7 @@ import { CommandLocal } from "../i18n/classes/command";
 interface Command {
   name: string;
   aliases?: string[];
-  cooldown?: number;
+  devOnly?: boolean;
   execute: (
     client: Client,
     message: Message,

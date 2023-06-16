@@ -36,15 +36,15 @@ const event: Event = {
       "en";
     if (client.cooldowns.has(author.id._serialized)) {
       let cooldownInfo = client.cooldowns.get(author.id._serialized);
-      if (Date.now() - cooldownInfo.time < (command.cooldown || 10) * 1000) {
+      if (Date.now() - cooldownInfo.time < 10 * 1000) {
         if (!cooldownInfo.sent) {
           await message.reply(
             client.i18n.getDefault(language, "cooldown", [
               {
                 key: "time",
-                value:
-                  (command.cooldown || 10) -
-                  (Date.now() - cooldownInfo.time) / 1000,
+                value: (10 - (Date.now() - cooldownInfo.time) / 1000).toFixed(
+                  2
+                ),
               },
             ])
           );
@@ -64,7 +64,7 @@ const event: Event = {
 
     try {
       await message.react("⏳");
-      if (!commandTanslate)
+      if (!commandTanslate && !command.devOnly)
         return await message.reply(
           client.i18n.getDefault(language, "noLocaleFound")
         );
