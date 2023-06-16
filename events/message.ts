@@ -49,10 +49,12 @@ const event: Event = {
             ])
           );
         }
+
         cooldownInfo.sent = true;
         cooldownInfo.count++;
         if (cooldownInfo.count % 5 == 0) {
           cooldownInfo.time = Date.now();
+          await message.react("⛔");
         }
         console.log(client.cooldowns);
         return;
