@@ -9,12 +9,7 @@ class I18n {
 
   constructor(config: { path: string }) {
     this.languages = new Collection();
-    this.init(config.path).then(() => {
-      compareLocales(
-        this.languages.get("en").json,
-        this.languages.map((l) => l.json)
-      );
-    });
+    this.init(config.path);
   }
 
   async init(path: string) {

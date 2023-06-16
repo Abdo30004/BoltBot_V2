@@ -35,7 +35,7 @@ const command: Command = {
     var { data } = await axios
       .get(
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=1dc1e6c1abe02c76f6741679a8879119&units=metric&lang=${
-          translate.local || "en"
+          translate.locale || "en"
         }}`,
         {
           headers: {
