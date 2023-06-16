@@ -50,6 +50,11 @@ const event: Event = {
           );
         }
         cooldownInfo.sent = true;
+        cooldownInfo.count++;
+        if (cooldownInfo.count % 5 == 0) {
+          cooldownInfo.time = Date.now();
+        }
+        console.log(client.cooldowns);
         return;
       }
     }
@@ -73,6 +78,7 @@ const event: Event = {
       client.cooldowns.set(author.id._serialized, {
         time: Date.now(),
         sent: false,
+        count: 0,
       });
     } catch (err) {
       console.log(err);
