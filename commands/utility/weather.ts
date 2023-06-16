@@ -48,7 +48,7 @@ const command: Command = {
       .catch((err) => null);
     if (!data) {
       await message.reply(translate.getReply("noData"));
-      return;
+      return false;
     }
 
     const icon = data.weather[0].icon;
@@ -117,6 +117,7 @@ const command: Command = {
       },
     ]);
     await message.reply(reply, null, { media });
+    return true;
   },
 };
 

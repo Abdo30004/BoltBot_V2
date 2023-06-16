@@ -10,7 +10,7 @@ const command: Command = {
     let media = message.hasMedia ? await message.downloadMedia() : null;
     if (!media) {
       await message.reply(translate.getReply("noMedia"));
-      return;
+      return false;
     }
 
     let sticker = new MessageMedia(media.mimetype, media.data, media.filename);
@@ -23,6 +23,7 @@ const command: Command = {
       sendMediaAsSticker: true,
       ...stickerMetadata,
     });
+    return true;
   },
 };
 

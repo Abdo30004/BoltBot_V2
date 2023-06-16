@@ -18,7 +18,7 @@ const command: Command = {
             { key: "command", value: args[0].toLowerCase() },
           ])
         );
-        return;
+        return false;
       }
       await message.reply(
         translate.getReply("commandInfo", [
@@ -40,7 +40,7 @@ const command: Command = {
           },
         ])
       );
-      return;
+      return true;
     }
 
     let commands = client.commands
@@ -64,6 +64,7 @@ const command: Command = {
         },
       ])
     );
+    return true;
   },
 };
 

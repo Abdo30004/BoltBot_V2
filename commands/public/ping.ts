@@ -5,6 +5,7 @@ const command: Command = {
   aliases: ["إستجابة"],
   execute: async (client, message, translate, args) => {
     await message.reply(translate.getReply("pong"));
+    return true;
   },
 };
 

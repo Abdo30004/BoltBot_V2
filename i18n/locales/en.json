@@ -93,6 +93,21 @@
           "value": "*Country:* {{country}}\n\n*City:* {{city}}\n\n*Status:* {{status}}\n\n*Temperature:* {{temperature}}\n\n*Humidity:* {{humidity}}\n\n*Pressure:* {{pressure}}\n\n*Wind:* {{wind}}\n\n*Sunrise:* {{sunrise}}\n\n*Sunset:* {{sunset}}\n\n*Date:* {{date}}\n\n*Timezone:* {{timezone}}\n\n*coordinates:* {{geo}}"
         }
       ]
+    },
+    {
+      "name": "invite",
+      "usage": "[{{link}}]",
+      "description": "invite the bot to your group",
+      "replies": [
+        {
+          "key": "noValidLink",
+          "value": "Please send a valid group invite link"
+        },
+        {
+          "key": "acceptedInvite",
+          "value": "Invite accepted, thanks for adding me to your group"
+        }
+      ]
     }
   ],
   "variables": [

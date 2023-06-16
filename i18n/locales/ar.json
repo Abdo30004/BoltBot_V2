@@ -92,6 +92,21 @@
           "value": "*البلد:* {{country}}\n\n*المدينة:* {{city}}\n\n*الحالة:* {{status}}\n\n*الحرارة:* {{temperature}}\n\n*الرطوبة:* {{humidity}}\n\n*الضغط:* {{pressure}}\n\n*الرياح:* {{wind}}\n\n*الشروق:* {{sunrise}}\n\n*الغروب:* {{sunset}}\n\n*التاريخ:* {{date}}\n\n*التوقيت:* {{timezone}}\n\n*الإحداثيات:* {{geo}}"
         }
       ]
+    },{
+      "name":"invite",
+      "usage":"[{{link}}]",
+      "description":"لدعوة البوت إلى مجموعتك",
+      "replies":[
+        {
+          "key":"noValidLink",
+          "value":"الرجاء إدخال رابط دعوة صحيح"
+        },
+        {
+          "key":"acceptedInvite",
+          "value":"تم إضافة البوت إلى المجموعة"
+        }
+      ]
+
     }
   ],
   "variables": [

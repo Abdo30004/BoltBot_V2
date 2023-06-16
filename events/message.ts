@@ -71,10 +71,15 @@ const event: Event = {
       await chat.sendSeen();
       await chat.sendStateTyping();
 
-      await command.execute(client, message, commandTanslate, args);
+      let status = await command.execute(
+        client,
+        message,
+        commandTanslate,
+        args
+      );
 
       await chat.clearState();
-      await message.react("⚡");
+      await message.react(status === false ? "❌" : "⚡");
 
       client.cooldowns.set(author.id._serialized, {
         time: Date.now(),

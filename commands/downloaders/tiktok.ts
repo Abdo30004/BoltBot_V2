@@ -12,12 +12,12 @@ const command: Command = {
     let type = args[1];
     if (!url) {
       await message.reply(translate.usage);
-      return;
+      return false;
     }
     let tiktok = await getTiktok(url);
     if (!tiktok) {
       await message.reply(translate.getReply("invalidUrl"));
-      return;
+      return false;
     }
 
     if (tiktok.type == "video") {
@@ -27,14 +27,14 @@ const command: Command = {
       let media = new MessageMedia("video/mp4", video, "video.mp4");
 
       await message.reply(media, null);
-      return;
+      return true;
     }
 
     if (tiktok.type == "audio") {
       let audio = (await download(tiktok.audio)).toString("base64");
       let media = new MessageMedia("audio/mp3", audio, "audio.mp3");
       await message.reply(media, null, { sendAudioAsVoice: true });
-      return;
+      return true;
     }
     const isFulfilled = <T>(
       input: PromiseSettledResult<T>
@@ -45,7 +45,7 @@ const command: Command = {
         let audio = (await download(tiktok.audio)).toString("base64");
         let media = new MessageMedia("audio/mp3", audio, "audio.mp3");
         await message.reply(media, null);
-        return;
+        return true;
       }
       let photos = (
         await Promise.allSettled(tiktok.photos.map((photo) => download(photo)))
@@ -59,6 +59,7 @@ const command: Command = {
       for (let media of medias) {
         await message.reply(media, null);
       }
+      return true;
     }
   },
 };

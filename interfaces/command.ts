@@ -5,13 +5,13 @@ import { CommandLocal } from "../i18n/classes/command";
 interface Command {
   name: string;
   aliases?: string[];
-  cooldown?:number;
+  cooldown?: number;
   execute: (
     client: Client,
     message: Message,
     commandTanslate: CommandLocal,
     ...args: any[]
-  ) => Promise<void>;
+  ) => Promise<boolean>;
 }
 
 export default Command;
