@@ -19,7 +19,6 @@ import { I18n } from "../i18n/classes/i18n";
 
 import { Config } from "../Util/config";
 
-
 class Client extends BaseClient {
   public commands: Collection<string, Command> = new Collection();
   public i18n: I18n = new I18n({ path: `${cwd()}/i18n/locales` });
@@ -28,6 +27,8 @@ class Client extends BaseClient {
     users: Collection<string, Contact>;
     chats: Collection<string, Chat>;
   };
+  public cooldowns: Collection<string, { time: number; sent: boolean }> =
+    new Collection();
   public path: string;
 
   constructor(options?: ClientOptions) {

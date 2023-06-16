@@ -1,4 +1,4 @@
-import { JsonLanguage, JsonCommand } from "../../interfaces/language";
+import { JsonLanguage, JsonCommand, argument } from "../../interfaces/language";
 import fs from "fs/promises";
 import { CommandLocal } from "./command";
 
@@ -50,6 +50,15 @@ class Language {
 
     return replacedCmd;
   }
+  private replaceArgs(str: string, args?: argument[]) {
+    if(!args.length) return str
+    return str.replace(/{{\S+}}/g, (match, number) => {
+      let key = match.replace(/{{|}}/g, "");
+      return args?.find((arg) => arg.key == key)
+        ? args?.find((arg) => arg.key == key)?.value
+        : match;
+    });
+  }
   public getVariable(key: string) {
     if (!this.json) return null;
 
@@ -64,11 +73,12 @@ class Language {
     if (!replacedCmd) return null;
     return new CommandLocal(replacedCmd, this.id);
   }
-  public getDefault(key: string) {
+
+  public getDefault(key: string, args?: argument[]) {
     if (!this.json) return null;
-    let reply = this.json.defaults.find((r) => r.key === key) || null;
-    if (!reply) return null;
-    return this.replace(reply.value);
+    let defaultReply = this.json.defaults.find((r) => r.key === key) || null;
+    if (!defaultReply) return `defaultReply ${this.id}.${key} not found`;
+    return this.replaceArgs(this.replace(defaultReply.value), args);
   }
 }
 

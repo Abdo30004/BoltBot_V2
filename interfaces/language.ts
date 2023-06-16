@@ -19,5 +19,8 @@ interface JsonLanguage {
   variables: Variable[];
   defaults: Reply[];
 }
-
-export { JsonCommand, Variable, Reply, JsonLanguage };
+interface argument {
+  key: string;
+  value: any;
+}
+export { JsonCommand, Variable, Reply, JsonLanguage, argument };

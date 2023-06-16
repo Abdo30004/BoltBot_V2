@@ -1,6 +1,19 @@
 {
   "code": "en",
-  "defaults": [],
+  "defaults": [
+    {
+      "key": "noLocaleFound",
+      "value": "Command Still under development"
+    },
+    {
+      "key": "error",
+      "value": "An error occurred"
+    },
+    {
+      "key": "cooldown",
+      "value": "Please wait {{cooldown}} seconds before using this command again"
+    }
+  ],
   "commands": [
     {
       "name": "ping",
@@ -98,6 +111,10 @@
     {
       "key": "place",
       "values": ["place", "location", "city", "country", "address"]
+    },
+    {
+      "key": "type",
+      "values": ["mp3/mp4", "format (mp3/mp4)"]
     }
   ]
 }
