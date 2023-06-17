@@ -58,7 +58,9 @@ const command: Command = {
           .filter((cmd) => cmd.category === category)
           .map((c) => `\`\`\`/${c.name}\`\`\``);
         if (!categoryCommands.length) return;
-        return `\n------------ *${category.title()}* ------------\n${categoryCommands.join(
+        let number = Math.ceil((33 - 2 - category.length) / 2);
+        let paded = "".padStart(number, "-");
+        return `\n${paded} *${category.title()}* ${paded}\n${categoryCommands.join(
           "\n"
         )}`;
       })
