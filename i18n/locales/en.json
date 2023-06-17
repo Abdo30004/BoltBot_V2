@@ -127,6 +127,17 @@
           "value": "Please send a photo"
         }
       ]
+    },
+    {
+      "name": "instagram",
+      "usage": "[{{link}}]",
+      "description": "{{download}} an instagram photo/video/story",
+      "replies": [
+        {
+          "key": "invalidUrl",
+          "value": "Invalid url, please send a valid instagram url"
+        }
+      ]
     }
   ],
   "variables": [

@@ -127,6 +127,17 @@
           "value": "الرجاء إرسال صورة"
         }
       ]
+    },
+    {
+      "name": "instagram",
+      "usage": "[{{link}}]",
+      "description": "لتحميل الصور والفيديوهات من الإنستغرام",
+      "replies": [
+        {
+          "key": "invalidUrl",
+          "value": "الرجاء إدخال رابط صحيح"
+        }
+      ]
     }
   ],
   "variables": [
