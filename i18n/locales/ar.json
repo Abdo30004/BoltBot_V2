@@ -116,15 +116,15 @@
       "replies": [
         {
           "key": "invalidFilter",
-          "value": "(invert | greyscale | sepia | blur | gaussian) الرجاء إدخال فلتر صحيح"
+          "value": "(invert | greyscale | sepia | blur) الرجاء إدخال فلتر صحيح"
         },
         {
           "key": "noMedia",
           "value": "الرجاء إرسال صورة مع الأمر"
         },
         {
-          "key":"notImage",
-          "value":"الرجاء إرسال صورة"
+          "key": "notImage",
+          "value": "الرجاء إرسال صورة"
         }
       ]
     }

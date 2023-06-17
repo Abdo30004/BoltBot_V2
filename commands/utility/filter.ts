@@ -7,7 +7,7 @@ const command: Command = {
   aliases: ["mask", "فلتر"],
   category: "utility",
   execute: async (client, message, translate, args) => {
-    let filters = ["invert", "greyscale", "sepia", "blur", "gaussian"];
+    let filters = ["invert", "greyscale", "sepia", "blur"];
     let filter = args[0]?.toLowerCase();
     if (!filter || !filters.includes(filter)) {
       await message.reply(translate.getReply("invalidFilter"));

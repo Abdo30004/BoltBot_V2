@@ -1,5 +1,5 @@
 import jimp from "jimp";
-type filters = "invert" | "greyscale" | "sepia" | "blur" | "gaussian";
+type filters = "invert" | "greyscale" | "sepia" | "blur";
 class Image {
   static async filter(image: Buffer, filter: filters, effectPercent?: number) {
     let imageJimp = (await jimp.read(image)).quality(100);
@@ -15,9 +15,6 @@ class Image {
         break;
       case "blur":
         imageJimp.blur(effectPercent);
-        break;
-      case "gaussian":
-        imageJimp.gaussian(effectPercent);
         break;
     }
     return imageJimp.getBufferAsync(jimp.MIME_PNG);
