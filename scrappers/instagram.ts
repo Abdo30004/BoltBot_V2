@@ -1,8 +1,9 @@
 import axios from "axios";
 import { load } from "cheerio";
+import { writeFile } from "fs/promises";
 
 export const getInstagram = async (url: string) => {
-  let { data, headers } = await axios
+  let response = await axios
     .get("https://instaphotodownloader.com/", {
       headers: {
         /*"User-Agent":
@@ -12,8 +13,29 @@ export const getInstagram = async (url: string) => {
       },
     })
     .catch((err) => err.response);
-
+  let { data, headers } = response;
   let $ = load(data);
+  if (response.status !== 200) {
+    let form = $("form");
+    let link = "https://instaphotodownloader.com/" + form.attr("action");
+    let body = new URLSearchParams();
+    form.find("input").each((i, el) => {
+      body.append($(el).attr("name"), $(el).attr("value"));
+    });
+    var { data: newdata, headers: newheaders } = await axios.post(link, body, {
+      headers: {
+        "User-Agent":
+          "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+        "Content-Type": "application/x-www-form-urlencoded",
+        referer: "https://instaphotodownloader.com/",
+        origin: "https://instaphotodownloader.com",
+      },
+    });
+    writeFile("test.html", newdata);
+  }
+  data = newdata;
+  headers = newheaders;
+
   let cookie = headers["set-cookie"][0].split(";")[0];
   let form = new URLSearchParams();
   form.append("url", url);
