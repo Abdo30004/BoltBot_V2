@@ -2,12 +2,17 @@ import axios from "axios";
 import { load } from "cheerio";
 
 export const getInstagram = async (url: string) => {
-  let { data, headers } = await axios.get("https://instaphotodownloader.com/", {
-    headers: {
-      "User-Agent":
-        "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
-    },
-  });
+  let { data, headers } = await axios
+    .get("https://instaphotodownloader.com/", {
+      headers: {
+        /*"User-Agent":
+        "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",*/
+        "User-Agent":
+          "Mozilla/5.0 (X11; Linux x86_64; rv:92.0) Gecko/20100101 Firefox/92.0",
+      },
+    })
+    .catch((err) => err.response);
+
   let $ = load(data);
   let cookie = headers["set-cookie"][0].split(";")[0];
   let form = new URLSearchParams();
