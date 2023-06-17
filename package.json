@@ -19,6 +19,7 @@
     "cheerio": "^1.0.0-rc.12",
     "download": "^8.0.0",
     "got": "^13.0.0",
+    "jimp": "^0.22.8",
     "moment": "^2.29.4",
     "moment-timezone": "^0.5.43",
     "qrcode-terminal": "^0.12.0",

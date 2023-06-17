@@ -108,6 +108,25 @@
           "value": "Invite accepted, thanks for adding me to your group"
         }
       ]
+    },
+    {
+      "name": "filter",
+      "usage": "[{{filter}}] ({{percent}})",
+      "description": "Apply a filter to a photo",
+      "replies": [
+        {
+          "key": "invalidFilter",
+          "value": "Invalid filter, please send a valid filter (invert | greyscale | sepia | blur | gaussian)"
+        },
+        {
+          "key": "noMedia",
+          "value": "Please send a photo in caption"
+        },
+        {
+          "key": "notImage",
+          "value": "Please send a photo"
+        }
+      ]
     }
   ],
   "variables": [

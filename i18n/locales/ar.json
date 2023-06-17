@@ -108,6 +108,25 @@
           "value": "تم إضافة البوت إلى المجموعة"
         }
       ]
+    },
+    {
+      "name": "filter",
+      "usage": "[{{filter}}] ({{percent}})",
+      "description": "لتطبيق فلتر على الصورة",
+      "replies": [
+        {
+          "key": "invalidFilter",
+          "value": "(invert | greyscale | sepia | blur | gaussian) الرجاء إدخال فلتر صحيح"
+        },
+        {
+          "key": "noMedia",
+          "value": "الرجاء إرسال صورة مع الأمر"
+        },
+        {
+          "key":"notImage",
+          "value":"الرجاء إرسال صورة"
+        }
+      ]
     }
   ],
   "variables": [

@@ -1,7 +1,7 @@
-//command import
+
 import { Command } from "../../interfaces/command";
 import { MessageMedia } from "whatsapp-web.js";
-//command export
+
 
 const command: Command = {
   name: "sticker",
@@ -20,7 +20,7 @@ const command: Command = {
 
       stickerName: args.join(" ") || "sticker",
     };
-    await message.reply(sticker, null, {
+    await message.reply(sticker, undefined, {
       sendMediaAsSticker: true,
       ...stickerMetadata,
     });
