@@ -5,7 +5,7 @@ class Image {
     let imageJimp = (await jimp.read(image)).quality(100);
     switch (filter) {
       case "invert":
-     imageJimp.invert();
+        imageJimp.invert();
         break;
       case "greyscale":
         imageJimp.greyscale();
