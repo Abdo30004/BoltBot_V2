@@ -10,7 +10,7 @@ const command: Command = {
   execute: async (client, message, commandTanslate) => {
     const chat = (await message.getChat()) as GroupChat;
     let text = chat.participants
-      .map((participant) => `${participant.id.user}`)
+      .map((participant) => `- @${participant.id.user}`)
       .join("\n");
     await message.reply(text);
 
