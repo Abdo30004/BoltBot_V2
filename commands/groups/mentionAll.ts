@@ -8,11 +8,19 @@ const command: Command = {
   groupOnly: true,
 
   execute: async (client, message, commandTanslate) => {
-    const chat = (await message.getChat()) as GroupChat;
-    let text = chat.participants
-      .map((participant) => `- @${participant.id.user}`)
-      .join("\n");
-    await message.reply(text);
+    let chat = (await message.getChat()) as GroupChat;
+    let text = "";
+    let mentions = [];
+
+    for (let participant of chat.participants) {
+      const contact = await client.getContactById(participant.id._serialized);
+
+      mentions.push(contact);
+      text += `${!text ? "" : "\n"}-@${participant.id.user}`;
+    }
+    await message.reply(text, chat.id._serialized, {
+      mentions: mentions,
+    });
 
     return true;
   },
