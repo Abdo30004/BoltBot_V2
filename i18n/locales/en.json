@@ -154,13 +154,29 @@
     {
       "name": "lock",
       "usage": "",
-      "description": "لقفل المجموعة",
+      "description": "Locks the chat",
       "replies": [
         {
           "key": "locked",
-          "value": "تم قفل المجموعة"
+          "value": "Chat locked"
         }
       ]
+    },
+    {
+      "name": "unlock",
+      "usage": "",
+      "description": "Unlocks the chat",
+      "replies": [
+        {
+          "key": "unlocked",
+          "value": "Chat locked"
+        }
+      ]
+    },
+    {
+      "name": "mention",
+      "usage": "",
+      "description": "Mention all members in the group"
     }
   ],
   "variables": [

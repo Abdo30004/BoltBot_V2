@@ -162,6 +162,22 @@
           "value": "تم قفل المجموعة"
         }
       ]
+    },
+    {
+      "name": "unlock",
+      "usage": "",
+      "description": "لفتح المجموعة",
+      "replies": [
+        {
+          "key": "locked",
+          "value": "تم فتح المجموعة"
+        }
+      ]
+    },
+    {
+      "name": "mention",
+      "usage": "",
+      "description": "لعمل منشن للكل"
     }
   ],
   "variables": [

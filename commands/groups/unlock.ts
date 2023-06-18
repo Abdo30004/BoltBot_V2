@@ -1,8 +1,8 @@
 import { Command } from "../../interfaces/command";
 import { GroupChat } from "whatsapp-web.js";
 const command: Command = {
-  name: "lock",
-  aliases: ["غلق", "قفل"],
+  name: "unlock",
+  aliases: ["فتح", "تكلم"],
   category: "groups",
   adminOnly: true,
   groupOnly: true,
@@ -10,8 +10,8 @@ const command: Command = {
 
   execute: async (client, message, commandTanslate) => {
     let chat = (await message.getChat()) as GroupChat;
-    chat.setMessagesAdminsOnly(true);
-    await message.reply(commandTanslate.getReply("locked"));
+    chat.setMessagesAdminsOnly(false);
+    await message.reply(commandTanslate.getReply("unlocked"));
     return true;
   },
 };
