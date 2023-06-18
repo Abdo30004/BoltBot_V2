@@ -51,7 +51,7 @@ const command: Command = {
       );
       return true;
     }
-    let categories = ["public", "downloaders", "utility"];
+    let categories =[...new Set(client.commands.map((c) => c.category))];
     let string = categories
       .map((category) => {
         let categoryCommands = client.commands
