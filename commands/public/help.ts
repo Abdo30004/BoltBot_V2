@@ -74,7 +74,7 @@ const command: Command = {
         },
         {
           key: "invite",
-          value: client.config.support,
+          value: client.config.invite,
         },
       ])
     );
