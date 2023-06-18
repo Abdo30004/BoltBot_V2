@@ -27,6 +27,7 @@ class Client extends BaseClient {
     users: Collection<string, Contact>;
     chats: Collection<string, Chat>;
   };
+  public uptime: number = null;
   public cooldowns: Collection<
     string,
     { time: number; sent: boolean; count: number }
