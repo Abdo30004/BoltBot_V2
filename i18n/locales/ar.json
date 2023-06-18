@@ -12,6 +12,19 @@
     {
       "key": "cooldown",
       "value": "الرجاء الإنتظار {{time}} ثانية قبل إعادة إستخدام الأمر"
+    },
+
+    {
+      "key": "groupOnlyCommand",
+      "value": "هذا الأمر يمكن إستخدامه في المجموعات فقط"
+    },
+    {
+      "key": "adminOnlyCommand",
+      "value": "هذا الأمر يمكن إستخدامه من قبل المشرفين فقط"
+    },
+    {
+      "key": "botAdminOnlyCommand",
+      "value": "لا يمكنني تشغيل هذا الأمر بسبب عدم إمتلاكي للصلاحيات المطلوبة"
     }
   ],
   "commands": [
@@ -136,6 +149,17 @@
         {
           "key": "invalidUrl",
           "value": "الرجاء إدخال رابط صحيح"
+        }
+      ]
+    },
+    {
+      "name": "lock",
+      "usage": "",
+      "description": "لقفل المجموعة",
+      "replies": [
+        {
+          "key": "locked",
+          "value": "تم قفل المجموعة"
         }
       ]
     }

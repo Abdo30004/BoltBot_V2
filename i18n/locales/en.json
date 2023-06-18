@@ -12,6 +12,18 @@
     {
       "key": "cooldown",
       "value": "Please wait {{time}} seconds before using this command again"
+    },
+    {
+      "key": "groupOnlyCommand",
+      "value": "This command can only be used in groups"
+    },
+    {
+      "key": "adminOnlyCommand",
+      "value": "This command can only be used by admins"
+    },
+    {
+      "key": "botAdminOnlyCommand",
+      "value": "The bot needs to be admin to run this command"
     }
   ],
   "commands": [
@@ -136,6 +148,17 @@
         {
           "key": "invalidUrl",
           "value": "Invalid url, please send a valid instagram url"
+        }
+      ]
+    },
+    {
+      "name": "lock",
+      "usage": "",
+      "description": "لقفل المجموعة",
+      "replies": [
+        {
+          "key": "locked",
+          "value": "تم قفل المجموعة"
         }
       ]
     }

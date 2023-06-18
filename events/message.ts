@@ -1,5 +1,5 @@
 import { Event } from "../interfaces/event";
-import { Message } from "whatsapp-web.js";
+import { Message, GroupChat } from "whatsapp-web.js";
 import { Logger } from "../Util/logger";
 import { Collection } from "@discordjs/collection";
 import countries from "../data/countries.json";
@@ -22,11 +22,16 @@ const event: Event = {
     if (!command) return;
 
     let chat =
-      await message.getChat(); /*client.cache.chats.get(message.from) ||
-      (await message.getChat());*/
-    let author = await message.getContact(); /*client.cache.users.get(
-        message.author || message.from
-      ) || (await message.getContact());*/
+      client.cache.chats.get(message.from) || (await message.getChat());
+    let author =
+      client.cache.users.get(message.author || message.from) ||
+      (await message.getContact());
+    if (client.cache.users.has(author.id._serialized)) {
+      client.cache.users.set(author.id._serialized, author);
+    }
+    if (client.cache.chats.has(chat.id._serialized)) {
+      client.cache.chats.set(chat.id._serialized, chat);
+    }
     if (command.devOnly && !client.config.devs.includes(author.id._serialized))
       return;
     let countryCode = await author.getCountryCode();
@@ -62,6 +67,40 @@ const event: Event = {
           cooldownInfo.time = Date.now();
           await message.react("⛔");
         }
+        return;
+      }
+    }
+    /*
+    let amAdmin = chat.find(
+      (c) => c.id.user === client.info.wid.user
+    ).isAdmin;
+    let isAdmin = chat.participants.find(
+      (c) => c.id.user === author.id.user
+    ).isAdmin;*/
+    if (command.groupOnly && !chat.isGroup) {
+      await message
+        .reply(client.i18n.getDefault(language, "groupOnlyCommand"))
+        .catch();
+      return;
+    }
+    if (chat.isGroup) {
+      let groupChat = chat as GroupChat;
+      let amAdmin = groupChat.participants.find(
+        (c) => c.id.user === client.info.wid.user
+      ).isAdmin;
+      let isAdmin = groupChat.participants.find(
+        (c) => c.id.user === author.id.user
+      ).isAdmin;
+      if (command.adminOnly && !isAdmin) {
+        await message
+          .reply(client.i18n.getDefault(language, "adminOnlyCommand"))
+          .catch();
+        return;
+      }
+      if (command.adminPermision && !amAdmin) {
+        await message
+          .reply(client.i18n.getDefault(language, "botAdminOnlyCommand"))
+          .catch();
         return;
       }
     }
