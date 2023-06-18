@@ -22,12 +22,11 @@ const event: Event = {
     if (!command) return;
 
     let chat =
-      /*await message.getChat(); */ client.cache.chats.get(message.from) ||
-      (await message.getChat());
-    let author =
-      /* await message.getContact();*/ client.cache.users.get(
+      await message.getChat(); /*client.cache.chats.get(message.from) ||
+      (await message.getChat());*/
+    let author = await message.getContact(); /*client.cache.users.get(
         message.author || message.from
-      ) || (await message.getContact());
+      ) || (await message.getContact());*/
     if (command.devOnly && !client.config.devs.includes(author.id._serialized))
       return;
     let countryCode = await author.getCountryCode();

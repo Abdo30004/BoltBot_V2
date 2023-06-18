@@ -139,6 +139,7 @@ class Client extends BaseClient {
       });
     });
   }
+  /*
   public async getChatById(chatId: string): Promise<Chat> {
     let chat = this.cache.chats.get(chatId);
     if (!chat) {
@@ -155,7 +156,7 @@ class Client extends BaseClient {
       this.cache.users.set(userId, contact);
     }
     return contact;
-  }
+  }*/
 }
 
 export default Client;
