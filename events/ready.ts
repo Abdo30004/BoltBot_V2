@@ -6,7 +6,7 @@ const event: Event = {
   once: false,
   run: async (client: Client) => {
     client.uptime = Date.now();
-    /*
+    
     let chats = await client.getChats();
     let users = await client.getContacts();
 
@@ -17,7 +17,7 @@ const event: Event = {
     users.forEach((user) => {
       client.cache.users.set(user.id._serialized, user);
     });
-*/
+
     console.log(`Logged in as ${client.info.pushname}`);
   },
 };

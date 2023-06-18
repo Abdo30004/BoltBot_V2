@@ -21,10 +21,13 @@ const event: Event = {
       );
     if (!command) return;
 
-    let chat = await message.getChat();
-      //client.cache.chats.get(message.from) || (await message.getChat());
-    let author = await message.getContact();
-     // client.cache.users.get(message.author || message.from) ||(await message.getContact());
+    let chat =
+      /*await message.getChat(); */ client.cache.chats.get(message.from) ||
+      (await message.getChat());
+    let author =
+      /* await message.getContact();*/ client.cache.users.get(
+        message.author || message.from
+      ) || (await message.getContact());
     if (command.devOnly && !client.config.devs.includes(author.id._serialized))
       return;
     let countryCode = await author.getCountryCode();
@@ -35,7 +38,10 @@ const event: Event = {
       country.languages.filter((ln) => client.i18n.locales.includes(ln))[0] ||
       "en";
 
-    if (client.cooldowns.has(author.id._serialized) && !client.config.devs.includes(author.id._serialized)) {
+    if (
+      client.cooldowns.has(author.id._serialized) &&
+      !client.config.devs.includes(author.id._serialized)
+    ) {
       let cooldownInfo = client.cooldowns.get(author.id._serialized);
       if (Date.now() - cooldownInfo.time < 10 * 1000) {
         if (!cooldownInfo.sent) {
