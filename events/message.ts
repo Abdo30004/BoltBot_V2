@@ -21,17 +21,14 @@ const event: Event = {
       );
     if (!command) return;
 
-    let chat =
-      client.cache.chats.get(message.from) || (await message.getChat());
+    let chat = await message.getChat();
     let author =
       client.cache.users.get(message.author || message.from) ||
       (await message.getContact());
     if (client.cache.users.has(author.id._serialized)) {
       client.cache.users.set(author.id._serialized, author);
     }
-    if (client.cache.chats.has(chat.id._serialized)) {
-      client.cache.chats.set(chat.id._serialized, chat);
-    }
+
     if (command.devOnly && !client.config.devs.includes(author.id._serialized))
       return;
     let countryCode = await author.getCountryCode();
@@ -70,13 +67,7 @@ const event: Event = {
         return;
       }
     }
-    /*
-    let amAdmin = chat.find(
-      (c) => c.id.user === client.info.wid.user
-    ).isAdmin;
-    let isAdmin = chat.participants.find(
-      (c) => c.id.user === author.id.user
-    ).isAdmin;*/
+
     if (command.groupOnly && !chat.isGroup) {
       await message
         .reply(client.i18n.getDefault(language, "groupOnlyCommand"))
@@ -91,9 +82,6 @@ const event: Event = {
       let isAdmin = groupChat.participants.find(
         (c) => c.id.user === author.id.user
       ).isAdmin;
-      console.log(
-        groupChat.participants.find((c) => c.id.user === author.id.user)
-      );
       if (command.adminOnly && !isAdmin) {
         await message
           .reply(client.i18n.getDefault(language, "adminOnlyCommand"))
