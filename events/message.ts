@@ -91,6 +91,9 @@ const event: Event = {
       let isAdmin = groupChat.participants.find(
         (c) => c.id.user === author.id.user
       ).isAdmin;
+      console.log(
+        groupChat.participants.find((c) => c.id.user === author.id.user)
+      );
       if (command.adminOnly && !isAdmin) {
         await message
           .reply(client.i18n.getDefault(language, "adminOnlyCommand"))
