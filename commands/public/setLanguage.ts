@@ -2,7 +2,7 @@ import { Command } from "../../interfaces/command";
 
 const command: Command = {
   name: "setlanguage",
-  aliases: ["setLang", "تغيير-اللغة", "تغيير-لغة"],
+  aliases: ["setlang", "تغيير-اللغة", "تغيير-لغة"],
   category: "public",
   execute: async (client, message, translate, args) => {
     let lang = args[0];
@@ -11,12 +11,13 @@ const command: Command = {
       return false;
     }
     let supportedLangs = [...client.i18n.languages.keys()];
-    if (supportedLangs.includes(lang)) {
+    if (!supportedLangs.includes(lang)) {
       await message.reply(
         translate.getReply("invalidLanguage", [
           { key: "langs", value: supportedLangs.join(", ") },
         ])
       );
+      return false;
     }
     let author = await message.getContact();
     let data = await client.db.schemas.User.findById(author.id._serialized);
