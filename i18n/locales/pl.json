@@ -1,0 +1,267 @@
+{
+  "code": "pl",
+  "defaults": [
+    {
+      "key": "noLocaleFound",
+      "value": "Dowództwo wciąż w fazie rozwoju."
+    },
+    {
+      "key": "error",
+      "value": "Wystąpił błąd"
+    },
+    {
+      "key": "cooldown",
+      "value": "Odczekaj {{time}} sekund przed ponownym użyciem tego polecenia "
+    },
+    {
+      "key": "groupOnlyCommand",
+      "value": "To polecenie może być używane tylko w grupach "
+    },
+    {
+      "key": "adminOnlyCommand",
+      "value": "To polecenie może być używane tylko przez administratorów "
+    },
+    {
+      "key": "botAdminOnlyCommand",
+      "value": "Bot musi być administratorem, aby uruchomić to polecenie "
+    },
+    {
+      "key": "didYouMean",
+      "value": "Czy chodziło Ci o: {{command}} ?"
+    }
+  ],
+  "commands": [
+    {
+      "name": "ping",
+      "usage": "",
+      "description": "Ping bota",
+      "replies": [
+        {
+          "key": "pong",
+          "value": "Pong!"
+        }
+      ]
+    },
+    {
+      "name": "help",
+      "usage": "[command]",
+      "description": "Shows all commands or info about a specific command",
+      "replies": [
+        {
+          "key": "noCommand",
+          "value": "Nie znaleziono polecenia "
+        },
+        {
+          "key": "noDescription",
+          "value": "Bez opisu "
+        },
+        {
+          "key": "noUsage",
+          "value": "Brak zastosowania "
+        },
+        {
+          "key": "commandInfo",
+          "value": "*Komenda ```{{name}}``` Informacje*\n\n{{description}}\n\n*Stosowanie:* ```{{usage}}````\n\n*Skróty:* ```{{aliases}}```"
+        },
+        {
+          "key": "commandsList",
+          "value": "*Lista poleceń*\n\n{{commands}}\n\n*Notatka:* Możesz użyć `/help [command]` aby uzyskać informacje o polecenie\n\nBądź pierwszą osobą, która dowie się o Bolt Bot aktualności : {{invite}}"
+        }
+      ]
+    },
+    {
+      "name": "tiktok",
+      "usage": "[{{link}}] ({{type}})",
+      "description": "{{download}} filmik z tiktoka",
+      "replies": [
+        {
+          "key": "invalidUrl",
+          "value": "Nieprawidłowy adres URL, wyślij prawidłowy adres URL tiktokowy"
+        }
+      ]
+    },
+    {
+      "name": "sticker",
+      "usage": "[{{name}}]",
+      "description": "Wysyła naklejkę",
+      "replies": [
+        {
+          "key": "noMedia",
+          "value": "Prosimy o przesłanie filmu/zdjęcia w podpisie"
+        }
+      ]
+    },
+    {
+      "name": "weather",
+      "usage": "({{place}}])",
+      "description": "Pokazuje informacje o pogodzie w mieście (domyślnie: stolica twojego kraju)",
+      "replies": [
+        {
+          "key": "noCity",
+          "value": "Proszę o podanie nazwy miasta"
+        },
+        {
+          "key": "noData",
+          "value": "Nie znaleziono miasta"
+        },
+        {
+          "key": "weatherInfo",
+          "value": "*Kraj:* {{country}}\n\n*Miasto:* {{city}}\n\n*Status:* {{status}}\n\n*Temperatura:* {{temperature}}\n\n*Wilgotność:* {{humidity}}\n\n*Ciśnienie:* {{pressure}}\n\n*Wiatr:* {{wind}}\n\n*wschód słońca* {{sunrise}}\n\n*Zachód słońca:* {{sunset}}\n\n*Data:* {{date}}\n\n*Strefa czasowa:* {{timezone}}\n\n*Współrzędne:* {{geo}}"
+        }
+      ]
+    },
+    {
+      "name": "invite",
+      "usage": "[{{link}}]",
+      "description": "Zaproś bota do swojej grupy",
+      "replies": [
+        {
+          "key": "noValidLink",
+          "value": "Wyślij prawidłowy link z zaproszeniem do grupy"
+        },
+        {
+          "key": "acceptedInvite",
+          "value": "Zaproszenie przyjęte, dziękuję za dodanie mnie do grupy"
+        }
+      ]
+    },
+    {
+      "name": "filter",
+      "usage": "[{{filter}}] ({{percent}})",
+      "description": "Zastosuj filtr do zdjęcia",
+      "replies": [
+        {
+          "key": "invalidFilter",
+          "value": "Nieprawidłowy filtr, wyślij prawidłowy filtr (odwrócony | skala szarości | sepia | rozmycie)"
+        },
+        {
+          "key": "noMedia",
+          "value": "Proszę o przesłanie zdjęcia w tytule"
+        },
+        {
+          "key": "notImage",
+          "value": "Proszę wysłać zdjęcie"
+        }
+      ]
+    },
+    {
+      "name": "instagram",
+      "usage": "[{{link}}]",
+      "description": "{{download}} zdjęcie/wideo/historię na Instagramie",
+      "replies": [
+        {
+          "key": "invalidUrl",
+          "value": "Nieprawidłowy adres URL, wyślij prawidłowy adres URL Instagrama"
+        }
+      ]
+    },
+    {
+      "name": "lock",
+      "usage": "",
+      "description": "Blokuje czat",
+      "replies": [
+        {
+          "key": "locked",
+          "value": "Czat zablokowany"
+        }
+      ]
+    },
+    {
+      "name": "unlock",
+      "usage": "",
+      "description": "Odblokowuje czat",
+      "replies": [
+        {
+          "key": "unlocked",
+          "value": "Czat odblokowany"
+        }
+      ]
+    },
+    {
+      "name": "mention",
+      "usage": "",
+      "description": "Wspomnij wszystkich członków grupy"
+    },
+    {
+      "name": "userinfo",
+      "usage": "({{mention}})",
+      "description": "Wyświetla informacje o użytkowniku",
+      "replies": [
+        {
+          "key": "userInfo",
+          "value": "*Informacja o {{user}}*\n\n*Wyświetlana nazwa:* {{userName}}\n\n*kraj:* {{countryName}} ({{nativeName}})\n\n*flaga:* {{flag}}\n\n*język:* {{languages}}\n\n*telefon:* {{phone}}\n\n*o:* {{about}}"
+        }
+      ]
+    },
+    {
+      "name": "setlanguage",
+      "usage": "[{{language}}]",
+      "description": "Zmień język bota",
+      "replies": [
+        {
+          "key": "invalidLanguage",
+          "value": "Nieprawidłowy język, wyślij prawidłowy język {{langs}}"
+        },
+        {
+          "key": "languageChanged",
+          "value": "Zmieniono język na {{lang}}"
+        }
+      ]
+    }
+  ],
+  "variables": [
+    {
+      "key": "download",
+      "values": [
+        "download",
+        "send"
+      ]
+    },
+    {
+      "key": "link",
+      "values": [
+        "link",
+        "url",
+        "video"
+      ]
+    },
+    {
+      "key": "name",
+      "values": [
+        "name",
+        "title"
+      ]
+    },
+    {
+      "key": "place",
+      "values": [
+        "place",
+        "location",
+        "city",
+        "country",
+        "address"
+      ]
+    },
+    {
+      "key": "type",
+      "values": [
+        "mp3/mp4",
+        "mp4/mp3"
+      ]
+    },
+    {
+      "key": "mention",
+      "values": [
+        "mention",
+        "user"
+      ]
+    },
+    {
+      "key": "language",
+      "values": [
+        "language",
+        "lang"
+      ]
+    }
+  ]
+}

@@ -38,6 +38,8 @@ const command: Command = {
       fr: "🇫🇷",
       es: "🇪🇸",
       de: "🇩🇪",
+      it: "🇮🇹",
+      pl: "🇵🇱",
     };
     translate = client.i18n.getCommand(lang, command.name);
     await message.reply(

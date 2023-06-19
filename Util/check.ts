@@ -114,6 +114,12 @@ function compareLocales(
     console.log(chalk.red(missingDefaults.join(", ")));
   }
 }
+import ar from "../i18n/locales/ar.json";
+import de from "../i18n/locales/de.json";
+import en from "../i18n/locales/en.json";
+import it from "../i18n/locales/it.json";
+import pl from "../i18n/locales/pl.json";
 
+compareLocales(en, [ar, de, it, pl]);
 export default compareLocales;
 export { compareLocales };
