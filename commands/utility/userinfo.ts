@@ -27,7 +27,7 @@ const command: Command = {
       },
       {
         key: "userName",
-        value: user.name || user.id.user,
+        value: user.pushname || user.id.user,
       },
       {
         key: "countryName",

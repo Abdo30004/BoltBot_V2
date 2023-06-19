@@ -212,7 +212,7 @@
     },
     {
       "key": "type",
-      "values": ["mp3/mp4", "format (mp3/mp4)"]
+      "values": ["mp3/mp4", "mp4/mp3"]
     }
   ]
 }
