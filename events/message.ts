@@ -21,14 +21,30 @@ const event: Event = {
     let didYouMean = closest(
       cmdName,
       client.commands
+        .filter((c) => !c.devOnly)
         .map((c) => c.name)
-        .concat(client.commands.map((c) => c.aliases).flat())
+        .concat(
+          client.commands
+            .filter((c) => !c.devOnly)
+            .map((c) => c.aliases)
+            .flat()
+        )
     );
 
     if (!command && didYouMean) {
+      let didCmd =
+        client.commands.get(didYouMean) ||
+        client.commands.find(
+          (cmd) => cmd.aliases && cmd.aliases?.includes(`${didYouMean}`)
+        );
+      let commandTanslate = client.i18n.getCommand("en", didCmd.name);
+
       await message.reply(
         client.i18n.getDefault("en", "didYouMean", [
-          { key: "command", value: client.config.prefix + didYouMean },
+          {
+            key: "command",
+            value: `\`\`\`${client.config.prefix}${didCmd.name} ${commandTanslate.usage}\`\`\` *(${didYouMean})*`,
+          },
         ])
       );
       return;
