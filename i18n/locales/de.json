@@ -1,0 +1,242 @@
+{
+  "code": "de",
+  "defaults": [
+    {
+      "key": "noLocaleFound",
+      "value": "Befehl ist unter Entwicklung"
+    },
+    {
+      "key": "error",
+      "value": "Ein Fehler ist aufgetreten"
+    },
+    {
+      "key": "cooldown",
+      "value": "Bitte warte noch {{time}} sekunden, bevor du diesen befehl erneut ausführst"
+    },
+    {
+      "key": "groupOnlyCommand",
+      "value": "Dieser Befehl kann nur in Gruppen verwendet werden"
+    },
+    {
+      "key": "adminOnlyCommand",
+      "value": "Dieser Befehl kann nur von Administratoren verwendet werden"
+    },
+    {
+      "key": "botAdminOnlyCommand",
+      "value": "Der Bot braucht Administratorrechte um diesen Befehl auszuführen"
+    },
+    {
+      "key": "didYouMean",
+      "value": "Meintest du {{command}} ?"
+    }
+  ],
+  "commands": [
+    {
+      "name": "ping",
+      "usage": "",
+      "description": "Bot's ping",
+      "replies": [
+        {
+          "key": "pong",
+          "value": "Pong!"
+        }
+      ]
+    },
+    {
+      "name": "help",
+      "usage": "[Befehl]",
+      "description": "Zeigt alle Befehle oder informationen über einen specifischen Befehl",
+      "replies": [
+        {
+          "key": "noCommand",
+          "value": "Befehl wurde nicht gefunden"
+        },
+        {
+          "key": "noDescription",
+          "value": "Keine Beschreibung"
+        },
+        {
+          "key": "noUsage",
+          "value": "Kein Nutzen"
+        },
+        {
+          "key": "commandInfo",
+          "value": "*Befehl ```{{name}}``` Info*\n\n{{description}}\n\n*Nutzen:* ```{{usage}}````\n\n*Alias:* ```{{aliases}}```"
+        },
+        {
+          "key": "commandsList",
+          "value": "*Befehls Liste*\n\n{{commands}}\n\n*Hinweiß:* Du kannst `/help [Befehl]` ausführen, um informationen über einen Befehl zu bekommen\n\nSei der erste, der die Neuigkeiten vom Bolt Bot erfährt: {{invite}}"
+        }
+      ]
+    },
+    {
+      "name": "tiktok",
+      "usage": "[{{link}}] ({{type}})",
+      "description": "{{download}} ein tiktok video",
+      "replies": [
+        {
+          "key": "invalidUrl",
+          "value": "Ungültige url, bitte send eine gültige tiktok url"
+        }
+      ]
+    },
+    {
+      "name": "sticker",
+      "usage": "[{{name}}]",
+      "description": "Sende einen sticker",
+      "replies": [
+        {
+          "key": "noMedia",
+          "value": "Bitte sende ein Video/Bild in deiner Nachricht"
+        }
+      ]
+    },
+    {
+      "name": "weather",
+      "usage": "({{place}}])",
+      "description": "Zeigt Wetter informationen über eine Stadt (Standart: Hauptstadt deines Landes)",
+      "replies": [
+        {
+          "key": "noCity",
+          "value": "Bitte sende einen Stätenamen"
+        },
+        {
+          "key": "noData",
+          "value": "Stadt wurde nicht gefunden"
+        },
+        {
+          "key": "weatherInfo",
+          "value": "*Land:* {{country}}\n\n*Stadt:* {{city}}\n\n*Status:* {{status}}\n\n*Temperratur:* {{temperature}}\n\n*Feuchtigkeit:* {{humidity}}\n\n*Druck:* {{pressure}}\n\n*Wind:* {{wind}}\n\n*Sonnenaufgang:* {{sunrise}}\n\n*Sonnenuntergang:* {{sunset}}\n\n*Date:* {{date}}\n\n*Zeitzone:* {{timezone}}\n\n*Kordinaten:* {{geo}}"
+        }
+      ]
+    },
+    {
+      "name": "invite",
+      "usage": "[{{link}}]",
+      "description": "lade den Bot in deine Gruppe ein",
+      "replies": [
+        {
+          "key": "noValidLink",
+          "value": "Bitte schick einen gültigen Einladungslink"
+        },
+        {
+          "key": "acceptedInvite",
+          "value": "Einladung aktzeptiert, danke für das hinzufügen der Gruppe"
+        }
+      ]
+    },
+    {
+      "name": "filter",
+      "usage": "[{{filter}}] ({{percent}})",
+      "description": "Füge einen Filter zu einem Bild hinzu",
+      "replies": [
+        {
+          "key": "invalidFilter",
+          "value": "Ungültiger Filter, bitte sende einen verfügbaren Filter (invert | greyscale | sepia | blur)"
+        },
+        {
+          "key": "noMedia",
+          "value": "Bitte schick ein Foto in deiner Nachricht"
+        },
+        {
+          "key": "notImage",
+          "value": "Bitte schick ein Foto in deiner Nachricht"
+        }
+      ]
+    },
+    {
+      "name": "instagram",
+      "usage": "[{{link}}]",
+      "description": "{{download}} ein instagram Bild/Video/Story",
+      "replies": [
+        {
+          "key": "invalidUrl",
+          "value": "Ungültige url, bitte send eine gültige instagram url"
+        }
+      ]
+    },
+    {
+      "name": "lock",
+      "usage": "",
+      "description": "Sperrt den Chat",
+      "replies": [
+        {
+          "key": "locked",
+          "value": "Chat gesperrt"
+        }
+      ]
+    },
+    {
+      "name": "unlock",
+      "usage": "",
+      "description": "Hebt die Sperre des Chats auf",
+      "replies": [
+        {
+          "key": "unlocked",
+          "value": "Chat Sperre aufgehoben"
+        }
+      ]
+    },
+    {
+      "name": "mention",
+      "usage": "",
+      "description": "Erwähne alle Mitlgider in einer Gruppe"
+    },
+    {
+      "name": "userinfo",
+      "usage": "({{mention}})",
+      "description": "Zeigt Benutzerinformationen an",
+      "replies": [
+        {
+          "key": "userInfo",
+          "value": "*Informationen über {{user}}*\n\n*Anzeigename:* {{userName}}\n\n*Land:* {{countryName}} ({{nativeName}})\n\n*Flagge:* {{flag}}\n\n*Sprachen:* {{languages}}\n\n*Handy:* {{phone}}\n\n*Über:* {{about}}"
+        }
+      ]
+    },
+    {
+      "name": "setlanguage",
+      "usage": "[{{language}}]",
+      "description": "Ändere die Sprache des Bots",
+      "replies": [
+        {
+          "key": "invalidLanguage",
+          "value": "Ungültige Sprache, bitte gib eine vorggegebene sprache an {{langs}}"
+        },
+        {
+          "key": "languageChanged",
+          "value": "Sprache wurde zu {{lang}} geändert"
+        }
+      ]
+    }
+  ],
+  "variables": [
+    {
+      "key": "download",
+      "values": ["herunterladen", "senden"]
+    },
+    {
+      "key": "link",
+      "values": ["link", "url", "video"]
+    },
+    {
+      "key": "name",
+      "values": ["name", "titel"]
+    },
+    {
+      "key": "place",
+      "values": ["platz", "standort", "stadt", "land", "adresse"]
+    },
+    {
+      "key": "type",
+      "values": ["mp3/mp4", "mp4/mp3"]
+    },
+    {
+      "key": "mention",
+      "values": ["Erwähnung", "benutzer"]
+    },
+    {
+      "key": "language",
+      "values": ["Sprache", "Sprache"]
+    }
+  ]
+}

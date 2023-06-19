@@ -10,6 +10,7 @@ const command: Command = {
 
   execute: async (client, message, commandTanslate) => {
     let chat = (await message.getChat()) as GroupChat;
+
     chat.setMessagesAdminsOnly(true);
     await message.reply(commandTanslate.getReply("locked"));
     return true;

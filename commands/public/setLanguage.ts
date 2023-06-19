@@ -35,6 +35,9 @@ const command: Command = {
     let flags = {
       ar: "🇸🇦",
       en: "🇺🇸",
+      fr: "🇫🇷",
+      es: "🇪🇸",
+      de: "🇩🇪",
     };
     translate = client.i18n.getCommand(lang, command.name);
     await message.reply(

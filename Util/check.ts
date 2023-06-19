@@ -114,5 +114,6 @@ function compareLocales(
     console.log(chalk.red(missingDefaults.join(", ")));
   }
 }
+
 export default compareLocales;
 export { compareLocales };
