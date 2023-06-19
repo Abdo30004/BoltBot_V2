@@ -13,7 +13,6 @@
       "key": "cooldown",
       "value": "الرجاء الإنتظار {{time}} ثانية قبل إعادة إستخدام الأمر"
     },
-
     {
       "key": "groupOnlyCommand",
       "value": "هذا الأمر يمكن إستخدامه في المجموعات فقط"
@@ -169,7 +168,7 @@
       "description": "لفتح المجموعة",
       "replies": [
         {
-          "key": "locked",
+          "key": "unlocked",
           "value": "تم فتح المجموعة"
         }
       ]
@@ -178,6 +177,17 @@
       "name": "mention",
       "usage": "",
       "description": "لعمل منشن للكل"
+    },
+    {
+      "name": "userInfo",
+      "usage": "({{mention}})",
+      "description": "لمعرفة معلومات عن الشخص",
+      "replies": [
+        {
+          "key": "info",
+          "value": "*معلومات عن {{user}}*\n\n*الإسم الظاهر:*{{userName}}\n\n*الدولة:*{{countryName}} ({{nativeName}})\n\n*العلم:* {{flag}}\n\n*اللغات:*{{languages}}\n\n*الرقم:*{{phone}}\n\n*عن:*{{about}}"
+        }
+      ]
     }
   ],
   "variables": [

@@ -16,8 +16,10 @@ import { Event } from "../interfaces/event";
 import { Collection } from "@discordjs/collection";
 import Logger from "../Util/logger";
 import { I18n } from "../i18n/classes/i18n";
-
+import { connection } from "mongoose";
 import { Config } from "../Util/config";
+import Schemas from "../database/mongoose/schemas/export";
+import { connect } from "../database/mongoose/index";
 
 class Client extends BaseClient {
   public commands: Collection<string, Command> = new Collection();
@@ -32,6 +34,10 @@ class Client extends BaseClient {
   public cache: {
     users: Collection<string, Contact>;
     chats: Collection<string, Chat>;
+  };
+  public db: {
+    connection: typeof connection;
+    schemas: typeof Schemas;
   };
   constructor(options?: ClientOptions) {
     const defaultOptions: ClientOptions = {
@@ -105,7 +111,14 @@ class Client extends BaseClient {
       return false;
     }
   }
-
+  protected async startDatabase(url: string) {
+    try {
+      this.db = await connect(url);
+    } catch {
+      this.db = null;
+      console.log("Error connecting to database");
+    }
+  }
   public async start(options: {
     eventsDir: string;
     commandsDir: string;
@@ -117,7 +130,7 @@ class Client extends BaseClient {
       debug: false,
     };
     options = Object.assign(defaultOptions, options);
-
+    await this.startDatabase(this.config.mongoUrl);
     await this.registerEvents(options.eventsDir, options.debug);
     await this.registerCommands(options.commandsDir, options.debug);
     await this.initialize();

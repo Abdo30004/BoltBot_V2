@@ -2,7 +2,7 @@ import { Command } from "../../interfaces/command";
 import { MessageMedia } from "whatsapp-web.js";
 import axios from "axios";
 import moment from "moment-timezone";
-import countries from "../../data/countries.json";
+import countries from "../../database/json/countries.json";
 function to_km_per_h(speed: number) {
   const turned = speed * 3.6;
   return Math.round((turned + Number.EPSILON) * 100) / 100;
@@ -33,7 +33,7 @@ const command: Command = {
       city = countries.find((c) => c.phone.includes(parseInt(phone))).capital;
     }
 
-    var { data } = await axios
+    let { data } = await axios
       .get(
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=1dc1e6c1abe02c76f6741679a8879119&units=metric&lang=${
           translate.locale || "en"
@@ -46,7 +46,11 @@ const command: Command = {
           },
         }
       )
-      .catch((err) => null);
+      .catch((err) => {
+        return {
+          data: null,
+        };
+      });
     if (!data) {
       await message.reply(translate.getReply("noData"));
       return false;

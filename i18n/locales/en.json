@@ -177,6 +177,17 @@
       "name": "mention",
       "usage": "",
       "description": "Mention all members in the group"
+    },
+    {
+      "name": "userinfo",
+      "usage": "({{mention}})",
+      "description": "Shows info about a user",
+      "replies": [
+        {
+          "key": "userInfo",
+          "value": "*Informations about {{user}}*\n\n*Display name:*{{userName}}\n\n*country:*{{countryName}} ({{nativeName}})\n\n*flag:* {{flag}}\n\n*languages:*{{languages}}\n\n*phone:*{{phone}}\n\n*about:*{{about}}"
+        }
+      ]
     }
   ],
   "variables": [

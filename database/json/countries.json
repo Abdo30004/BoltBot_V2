@@ -7,7 +7,8 @@
     "continent": "EU",
     "capital": "Andorra la Vella",
     "currency": ["EUR"],
-    "languages": ["ca"]
+    "languages": ["ca"],
+    "emoji": "🇦🇩"
   },
   {
     "code": "AE",
@@ -17,7 +18,8 @@
     "continent": "AS",
     "capital": "Abu Dhabi",
     "currency": ["AED"],
-    "languages": ["ar"]
+    "languages": ["ar"],
+    "emoji": "🇦🇪"
   },
   {
     "code": "AF",
@@ -27,7 +29,8 @@
     "continent": "AS",
     "capital": "Kabul",
     "currency": ["AFN"],
-    "languages": ["ps", "uz", "tk"]
+    "languages": ["ps", "uz", "tk"],
+    "emoji": "🇦🇫"
   },
   {
     "code": "AG",
@@ -37,7 +40,8 @@
     "continent": "NA",
     "capital": "Saint John's",
     "currency": ["XCD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇦🇬"
   },
   {
     "code": "AI",
@@ -47,7 +51,8 @@
     "continent": "NA",
     "capital": "The Valley",
     "currency": ["XCD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇦🇮"
   },
   {
     "code": "AL",
@@ -57,7 +62,8 @@
     "continent": "EU",
     "capital": "Tirana",
     "currency": ["ALL"],
-    "languages": ["sq"]
+    "languages": ["sq"],
+    "emoji": "🇦🇱"
   },
   {
     "code": "AM",
@@ -67,7 +73,8 @@
     "continent": "AS",
     "capital": "Yerevan",
     "currency": ["AMD"],
-    "languages": ["hy", "ru"]
+    "languages": ["hy", "ru"],
+    "emoji": "🇦🇲"
   },
   {
     "code": "AO",
@@ -77,7 +84,8 @@
     "continent": "AF",
     "capital": "Luanda",
     "currency": ["AOA"],
-    "languages": ["pt"]
+    "languages": ["pt"],
+    "emoji": "🇦🇴"
   },
   {
     "code": "AQ",
@@ -87,7 +95,8 @@
     "continent": "AN",
     "capital": "",
     "currency": [],
-    "languages": []
+    "languages": [],
+    "emoji": "🇦🇶"
   },
   {
     "code": "AR",
@@ -97,7 +106,8 @@
     "continent": "SA",
     "capital": "Buenos Aires",
     "currency": ["ARS"],
-    "languages": ["es", "gn"]
+    "languages": ["es", "gn"],
+    "emoji": "🇦🇷"
   },
   {
     "code": "AS",
@@ -107,7 +117,8 @@
     "continent": "OC",
     "capital": "Pago Pago",
     "currency": ["USD"],
-    "languages": ["en", "sm"]
+    "languages": ["en", "sm"],
+    "emoji": "🇦🇸"
   },
   {
     "code": "AT",
@@ -117,7 +128,8 @@
     "continent": "EU",
     "capital": "Vienna",
     "currency": ["EUR"],
-    "languages": ["de"]
+    "languages": ["de"],
+    "emoji": "🇦🇹"
   },
   {
     "code": "AU",
@@ -127,7 +139,8 @@
     "continent": "OC",
     "capital": "Canberra",
     "currency": ["AUD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇦🇺"
   },
   {
     "code": "AW",
@@ -137,7 +150,8 @@
     "continent": "NA",
     "capital": "Oranjestad",
     "currency": ["AWG"],
-    "languages": ["nl", "pa"]
+    "languages": ["nl", "pa"],
+    "emoji": "🇦🇼"
   },
   {
     "code": "AX",
@@ -147,7 +161,8 @@
     "continent": "EU",
     "capital": "Mariehamn",
     "currency": ["EUR"],
-    "languages": ["sv"]
+    "languages": ["sv"],
+    "emoji": "🇦🇽"
   },
   {
     "code": "AZ",
@@ -158,7 +173,8 @@
     "continents": ["AS", "EU"],
     "capital": "Baku",
     "currency": ["AZN"],
-    "languages": ["az"]
+    "languages": ["az"],
+    "emoji": "🇦🇿"
   },
   {
     "code": "BA",
@@ -168,7 +184,8 @@
     "continent": "EU",
     "capital": "Sarajevo",
     "currency": ["BAM"],
-    "languages": ["bs", "hr", "sr"]
+    "languages": ["bs", "hr", "sr"],
+    "emoji": "🇧🇦"
   },
   {
     "code": "BB",
@@ -178,7 +195,8 @@
     "continent": "NA",
     "capital": "Bridgetown",
     "currency": ["BBD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇧🇧"
   },
   {
     "code": "BD",
@@ -188,7 +206,8 @@
     "continent": "AS",
     "capital": "Dhaka",
     "currency": ["BDT"],
-    "languages": ["bn"]
+    "languages": ["bn"],
+    "emoji": "🇧🇩"
   },
   {
     "code": "BE",
@@ -198,7 +217,8 @@
     "continent": "EU",
     "capital": "Brussels",
     "currency": ["EUR"],
-    "languages": ["nl", "fr", "de"]
+    "languages": ["nl", "fr", "de"],
+    "emoji": "🇧🇪"
   },
   {
     "code": "BF",
@@ -208,7 +228,8 @@
     "continent": "AF",
     "capital": "Ouagadougou",
     "currency": ["XOF"],
-    "languages": ["fr", "ff"]
+    "languages": ["fr", "ff"],
+    "emoji": "🇧🇫"
   },
   {
     "code": "BG",
@@ -218,7 +239,8 @@
     "continent": "EU",
     "capital": "Sofia",
     "currency": ["BGN"],
-    "languages": ["bg"]
+    "languages": ["bg"],
+    "emoji": "🇧🇬"
   },
   {
     "code": "BH",
@@ -228,7 +250,8 @@
     "continent": "AS",
     "capital": "Manama",
     "currency": ["BHD"],
-    "languages": ["ar"]
+    "languages": ["ar"],
+    "emoji": "🇧🇭"
   },
   {
     "code": "BI",
@@ -238,7 +261,8 @@
     "continent": "AF",
     "capital": "Bujumbura",
     "currency": ["BIF"],
-    "languages": ["fr", "rn"]
+    "languages": ["fr", "rn"],
+    "emoji": "🇧🇮"
   },
   {
     "code": "BJ",
@@ -248,7 +272,8 @@
     "continent": "AF",
     "capital": "Porto-Novo",
     "currency": ["XOF"],
-    "languages": ["fr"]
+    "languages": ["fr"],
+    "emoji": "🇧🇯"
   },
   {
     "code": "BL",
@@ -258,7 +283,8 @@
     "continent": "NA",
     "capital": "Gustavia",
     "currency": ["EUR"],
-    "languages": ["fr"]
+    "languages": ["fr"],
+    "emoji": "🇧🇱"
   },
   {
     "code": "BM",
@@ -268,7 +294,8 @@
     "continent": "NA",
     "capital": "Hamilton",
     "currency": ["BMD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇧🇲"
   },
   {
     "code": "BN",
@@ -278,7 +305,8 @@
     "continent": "AS",
     "capital": "Bandar Seri Begawan",
     "currency": ["BND"],
-    "languages": ["ms"]
+    "languages": ["ms"],
+    "emoji": "🇧🇳"
   },
   {
     "code": "BO",
@@ -288,7 +316,8 @@
     "continent": "SA",
     "capital": "Sucre",
     "currency": ["BOB", "BOV"],
-    "languages": ["es", "ay", "qu"]
+    "languages": ["es", "ay", "qu"],
+    "emoji": "🇧🇴"
   },
   {
     "code": "BQ",
@@ -298,7 +327,8 @@
     "continent": "NA",
     "capital": "Kralendijk",
     "currency": ["USD"],
-    "languages": ["nl"]
+    "languages": ["nl"],
+    "emoji": "🇧🇶"
   },
   {
     "code": "BR",
@@ -308,7 +338,8 @@
     "continent": "SA",
     "capital": "Brasília",
     "currency": ["BRL"],
-    "languages": ["pt"]
+    "languages": ["pt"],
+    "emoji": "🇧🇷"
   },
   {
     "code": "BS",
@@ -318,7 +349,8 @@
     "continent": "NA",
     "capital": "Nassau",
     "currency": ["BSD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇧🇸"
   },
   {
     "code": "BT",
@@ -328,7 +360,8 @@
     "continent": "AS",
     "capital": "Thimphu",
     "currency": ["BTN", "INR"],
-    "languages": ["dz"]
+    "languages": ["dz"],
+    "emoji": "🇧🇹"
   },
   {
     "code": "BV",
@@ -338,7 +371,8 @@
     "continent": "AN",
     "capital": "",
     "currency": ["NOK"],
-    "languages": ["no", "nb", "nn"]
+    "languages": ["no", "nb", "nn"],
+    "emoji": "🇧🇻"
   },
   {
     "code": "BW",
@@ -348,7 +382,8 @@
     "continent": "AF",
     "capital": "Gaborone",
     "currency": ["BWP"],
-    "languages": ["en", "tn"]
+    "languages": ["en", "tn"],
+    "emoji": "🇧🇼"
   },
   {
     "code": "BY",
@@ -358,7 +393,8 @@
     "continent": "EU",
     "capital": "Minsk",
     "currency": ["BYN"],
-    "languages": ["be", "ru"]
+    "languages": ["be", "ru"],
+    "emoji": "🇧🇾"
   },
   {
     "code": "BZ",
@@ -368,7 +404,8 @@
     "continent": "NA",
     "capital": "Belmopan",
     "currency": ["BZD"],
-    "languages": ["en", "es"]
+    "languages": ["en", "es"],
+    "emoji": "🇧🇿"
   },
   {
     "code": "CA",
@@ -378,7 +415,8 @@
     "continent": "NA",
     "capital": "Ottawa",
     "currency": ["CAD"],
-    "languages": ["en", "fr"]
+    "languages": ["en", "fr"],
+    "emoji": "🇨🇦"
   },
   {
     "code": "CC",
@@ -388,7 +426,8 @@
     "continent": "AS",
     "capital": "West Island",
     "currency": ["AUD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇨🇨"
   },
   {
     "code": "CD",
@@ -398,7 +437,8 @@
     "continent": "AF",
     "capital": "Kinshasa",
     "currency": ["CDF"],
-    "languages": ["fr", "ln", "kg", "sw", "lu"]
+    "languages": ["fr", "ln", "kg", "sw", "lu"],
+    "emoji": "🇨🇬"
   },
   {
     "code": "CF",
@@ -408,7 +448,8 @@
     "continent": "AF",
     "capital": "Bangui",
     "currency": ["XAF"],
-    "languages": ["fr", "sg"]
+    "languages": ["fr", "sg"],
+    "emoji": "🇨🇫"
   },
   {
     "code": "CG",
@@ -418,7 +459,8 @@
     "continent": "AF",
     "capital": "Brazzaville",
     "currency": ["XAF"],
-    "languages": ["fr", "ln"]
+    "languages": ["fr", "ln"],
+    "emoji": "🇨🇬"
   },
   {
     "code": "CH",
@@ -428,7 +470,8 @@
     "continent": "EU",
     "capital": "Bern",
     "currency": ["CHE", "CHF", "CHW"],
-    "languages": ["de", "fr", "it"]
+    "languages": ["de", "fr", "it"],
+    "emoji": "🇨🇭"
   },
   {
     "code": "CI",
@@ -438,7 +481,8 @@
     "continent": "AF",
     "capital": "Yamoussoukro",
     "currency": ["XOF"],
-    "languages": ["fr"]
+    "languages": ["fr"],
+    "emoji": "🇨🇮"
   },
   {
     "code": "CK",
@@ -448,7 +492,8 @@
     "continent": "OC",
     "capital": "Avarua",
     "currency": ["NZD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇨🇰"
   },
   {
     "code": "CL",
@@ -458,7 +503,8 @@
     "continent": "SA",
     "capital": "Santiago",
     "currency": ["CLF", "CLP"],
-    "languages": ["es"]
+    "languages": ["es"],
+    "emoji": "🇨🇱"
   },
   {
     "code": "CM",
@@ -468,7 +514,8 @@
     "continent": "AF",
     "capital": "Yaoundé",
     "currency": ["XAF"],
-    "languages": ["en", "fr"]
+    "languages": ["en", "fr"],
+    "emoji": "🇨🇲"
   },
   {
     "code": "CN",
@@ -478,7 +525,8 @@
     "continent": "AS",
     "capital": "Beijing",
     "currency": ["CNY"],
-    "languages": ["zh"]
+    "languages": ["zh"],
+    "emoji": "🇨🇳"
   },
   {
     "code": "CO",
@@ -488,7 +536,8 @@
     "continent": "SA",
     "capital": "Bogotá",
     "currency": ["COP"],
-    "languages": ["es"]
+    "languages": ["es"],
+    "emoji": "🇨🇴"
   },
   {
     "code": "CR",
@@ -498,7 +547,8 @@
     "continent": "NA",
     "capital": "San José",
     "currency": ["CRC"],
-    "languages": ["es"]
+    "languages": ["es"],
+    "emoji": "🇨🇷"
   },
   {
     "code": "CU",
@@ -508,7 +558,8 @@
     "continent": "NA",
     "capital": "Havana",
     "currency": ["CUC", "CUP"],
-    "languages": ["es"]
+    "languages": ["es"],
+    "emoji": "🇨🇺"
   },
   {
     "code": "CV",
@@ -518,7 +569,8 @@
     "continent": "AF",
     "capital": "Praia",
     "currency": ["CVE"],
-    "languages": ["pt"]
+    "languages": ["pt"],
+    "emoji": "🇨🇻"
   },
   {
     "code": "CW",
@@ -528,7 +580,8 @@
     "continent": "NA",
     "capital": "Willemstad",
     "currency": ["ANG"],
-    "languages": ["nl", "pa", "en"]
+    "languages": ["nl", "pa", "en"],
+    "emoji": "🇨🇼"
   },
   {
     "code": "CX",
@@ -538,7 +591,8 @@
     "continent": "AS",
     "capital": "Flying Fish Cove",
     "currency": ["AUD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇨🇽"
   },
   {
     "code": "CY",
@@ -548,7 +602,8 @@
     "continent": "EU",
     "capital": "Nicosia",
     "currency": ["EUR"],
-    "languages": ["el", "tr", "hy"]
+    "languages": ["el", "tr", "hy"],
+    "emoji": "🇨🇾"
   },
   {
     "code": "CZ",
@@ -558,7 +613,8 @@
     "continent": "EU",
     "capital": "Prague",
     "currency": ["CZK"],
-    "languages": ["cs"]
+    "languages": ["cs"],
+    "emoji": "🇨🇿"
   },
   {
     "code": "DE",
@@ -568,7 +624,8 @@
     "continent": "EU",
     "capital": "Berlin",
     "currency": ["EUR"],
-    "languages": ["de"]
+    "languages": ["de"],
+    "emoji": "🇩🇪"
   },
   {
     "code": "DJ",
@@ -578,7 +635,8 @@
     "continent": "AF",
     "capital": "Djibouti",
     "currency": ["DJF"],
-    "languages": ["fr", "ar"]
+    "languages": ["fr", "ar"],
+    "emoji": "🇩🇯"
   },
   {
     "code": "DK",
@@ -589,7 +647,8 @@
     "continents": ["EU", "NA"],
     "capital": "Copenhagen",
     "currency": ["DKK"],
-    "languages": ["da"]
+    "languages": ["da"],
+    "emoji": "🇩🇰"
   },
   {
     "code": "DM",
@@ -599,7 +658,8 @@
     "continent": "NA",
     "capital": "Roseau",
     "currency": ["XCD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇩🇲"
   },
   {
     "code": "DO",
@@ -609,7 +669,8 @@
     "continent": "NA",
     "capital": "Santo Domingo",
     "currency": ["DOP"],
-    "languages": ["es"]
+    "languages": ["es"],
+    "emoji": "🇩🇴"
   },
   {
     "code": "DZ",
@@ -619,7 +680,8 @@
     "continent": "AF",
     "capital": "Algiers",
     "currency": ["DZD"],
-    "languages": ["ar"]
+    "languages": ["ar"],
+    "emoji": "🇩🇿"
   },
   {
     "code": "EC",
@@ -629,7 +691,8 @@
     "continent": "SA",
     "capital": "Quito",
     "currency": ["USD"],
-    "languages": ["es"]
+    "languages": ["es"],
+    "emoji": "🇪🇨"
   },
   {
     "code": "EE",
@@ -639,7 +702,8 @@
     "continent": "EU",
     "capital": "Tallinn",
     "currency": ["EUR"],
-    "languages": ["et"]
+    "languages": ["et"],
+    "emoji": "🇪🇪"
   },
   {
     "code": "EG",
@@ -650,7 +714,8 @@
     "continents": ["AF", "AS"],
     "capital": "Cairo",
     "currency": ["EGP"],
-    "languages": ["ar"]
+    "languages": ["ar"],
+    "emoji": "🇪🇬"
   },
   {
     "code": "EH",
@@ -660,7 +725,8 @@
     "continent": "AF",
     "capital": "El Aaiún",
     "currency": ["MAD", "DZD", "MRU"],
-    "languages": ["es"]
+    "languages": ["es"],
+    "emoji": "🇪🇭"
   },
   {
     "code": "ER",
@@ -670,7 +736,8 @@
     "continent": "AF",
     "capital": "Asmara",
     "currency": ["ERN"],
-    "languages": ["ti", "ar", "en"]
+    "languages": ["ti", "ar", "en"],
+    "emoji": "🇪🇷"
   },
   {
     "code": "ES",
@@ -680,7 +747,8 @@
     "continent": "EU",
     "capital": "Madrid",
     "currency": ["EUR"],
-    "languages": ["es", "eu", "ca", "gl", "oc"]
+    "languages": ["es", "eu", "ca", "gl", "oc"],
+    "emoji": "🇪🇸"
   },
   {
     "code": "ET",
@@ -690,7 +758,8 @@
     "continent": "AF",
     "capital": "Addis Ababa",
     "currency": ["ETB"],
-    "languages": ["am"]
+    "languages": ["am"],
+    "emoji": "🇪🇹"
   },
   {
     "code": "FI",
@@ -700,7 +769,8 @@
     "continent": "EU",
     "capital": "Helsinki",
     "currency": ["EUR"],
-    "languages": ["fi", "sv"]
+    "languages": ["fi", "sv"],
+    "emoji": "🇫🇮"
   },
   {
     "code": "FJ",
@@ -710,7 +780,8 @@
     "continent": "OC",
     "capital": "Suva",
     "currency": ["FJD"],
-    "languages": ["en", "fj", "hi", "ur"]
+    "languages": ["en", "fj", "hi", "ur"],
+    "emoji": "🇫🇯"
   },
   {
     "code": "FK",
@@ -720,7 +791,8 @@
     "continent": "SA",
     "capital": "Stanley",
     "currency": ["FKP"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇫🇰"
   },
   {
     "code": "FM",
@@ -730,7 +802,8 @@
     "continent": "OC",
     "capital": "Palikir",
     "currency": ["USD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇫🇲"
   },
   {
     "code": "FO",
@@ -740,7 +813,8 @@
     "continent": "EU",
     "capital": "Tórshavn",
     "currency": ["DKK"],
-    "languages": ["fo"]
+    "languages": ["fo"],
+    "emoji": "🇫🇴"
   },
   {
     "code": "FR",
@@ -750,7 +824,8 @@
     "continent": "EU",
     "capital": "Paris",
     "currency": ["EUR"],
-    "languages": ["fr"]
+    "languages": ["fr"],
+    "emoji": "🇫🇷"
   },
   {
     "code": "GA",
@@ -760,7 +835,8 @@
     "continent": "AF",
     "capital": "Libreville",
     "currency": ["XAF"],
-    "languages": ["fr"]
+    "languages": ["fr"],
+    "emoji": "🇬🇦"
   },
   {
     "code": "GB",
@@ -770,7 +846,8 @@
     "continent": "EU",
     "capital": "London",
     "currency": ["GBP"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇬🇧"
   },
   {
     "code": "GD",
@@ -780,7 +857,8 @@
     "continent": "NA",
     "capital": "St. George's",
     "currency": ["XCD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇬🇩"
   },
   {
     "code": "GE",
@@ -790,7 +868,8 @@
     "continent": "AS",
     "capital": "Tbilisi",
     "currency": ["GEL"],
-    "languages": ["ka"]
+    "languages": ["ka"],
+    "emoji": "🇬🇪"
   },
   {
     "code": "GF",
@@ -800,7 +879,8 @@
     "continent": "SA",
     "capital": "Cayenne",
     "currency": ["EUR"],
-    "languages": ["fr"]
+    "languages": ["fr"],
+    "emoji": "🇬🇫"
   },
   {
     "code": "GG",
@@ -810,7 +890,8 @@
     "continent": "EU",
     "capital": "St. Peter Port",
     "currency": ["GBP"],
-    "languages": ["en", "fr"]
+    "languages": ["en", "fr"],
+    "emoji": "🇬🇬"
   },
   {
     "code": "GH",
@@ -820,7 +901,8 @@
     "continent": "AF",
     "capital": "Accra",
     "currency": ["GHS"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇬🇭"
   },
   {
     "code": "GI",
@@ -830,7 +912,8 @@
     "continent": "EU",
     "capital": "Gibraltar",
     "currency": ["GIP"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇬🇮"
   },
   {
     "code": "GL",
@@ -840,7 +923,8 @@
     "continent": "NA",
     "capital": "Nuuk",
     "currency": ["DKK"],
-    "languages": ["kl"]
+    "languages": ["kl"],
+    "emoji": "🇬🇱"
   },
   {
     "code": "GM",
@@ -850,7 +934,8 @@
     "continent": "AF",
     "capital": "Banjul",
     "currency": ["GMD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇬🇲"
   },
   {
     "code": "GN",
@@ -860,7 +945,8 @@
     "continent": "AF",
     "capital": "Conakry",
     "currency": ["GNF"],
-    "languages": ["fr", "ff"]
+    "languages": ["fr", "ff"],
+    "emoji": "🇬🇳"
   },
   {
     "code": "GP",
@@ -870,7 +956,8 @@
     "continent": "NA",
     "capital": "Basse-Terre",
     "currency": ["EUR"],
-    "languages": ["fr"]
+    "languages": ["fr"],
+    "emoji": "🇬🇵"
   },
   {
     "code": "GQ",
@@ -880,7 +967,8 @@
     "continent": "AF",
     "capital": "Malabo",
     "currency": ["XAF"],
-    "languages": ["es", "fr"]
+    "languages": ["es", "fr"],
+    "emoji": "🇬🇶"
   },
   {
     "code": "GR",
@@ -890,7 +978,8 @@
     "continent": "EU",
     "capital": "Athens",
     "currency": ["EUR"],
-    "languages": ["el"]
+    "languages": ["el"],
+    "emoji": "🇬🇷"
   },
   {
     "code": "GS",
@@ -900,7 +989,8 @@
     "continent": "AN",
     "capital": "King Edward Point",
     "currency": ["GBP"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇬🇸"
   },
   {
     "code": "GT",
@@ -910,7 +1000,8 @@
     "continent": "NA",
     "capital": "Guatemala City",
     "currency": ["GTQ"],
-    "languages": ["es"]
+    "languages": ["es"],
+    "emoji": "🇬🇹"
   },
   {
     "code": "GU",
@@ -920,7 +1011,8 @@
     "continent": "OC",
     "capital": "Hagåtña",
     "currency": ["USD"],
-    "languages": ["en", "ch", "es"]
+    "languages": ["en", "ch", "es"],
+    "emoji": "🇬🇺"
   },
   {
     "code": "GW",
@@ -930,7 +1022,8 @@
     "continent": "AF",
     "capital": "Bissau",
     "currency": ["XOF"],
-    "languages": ["pt"]
+    "languages": ["pt"],
+    "emoji": "🇬🇼"
   },
   {
     "code": "GY",
@@ -940,7 +1033,8 @@
     "continent": "SA",
     "capital": "Georgetown",
     "currency": ["GYD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇬🇾"
   },
   {
     "code": "HK",
@@ -950,7 +1044,8 @@
     "continent": "AS",
     "capital": "City of Victoria",
     "currency": ["HKD"],
-    "languages": ["zh", "en"]
+    "languages": ["zh", "en"],
+    "emoji": "🇭🇰"
   },
   {
     "code": "HM",
@@ -960,7 +1055,8 @@
     "continent": "AN",
     "capital": "",
     "currency": ["AUD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇭🇲"
   },
   {
     "code": "HN",
@@ -970,7 +1066,8 @@
     "continent": "NA",
     "capital": "Tegucigalpa",
     "currency": ["HNL"],
-    "languages": ["es"]
+    "languages": ["es"],
+    "emoji": "🇭🇳"
   },
   {
     "code": "HR",
@@ -980,7 +1077,8 @@
     "continent": "EU",
     "capital": "Zagreb",
     "currency": ["HRK"],
-    "languages": ["hr"]
+    "languages": ["hr"],
+    "emoji": "🇭🇷"
   },
   {
     "code": "HT",
@@ -990,7 +1088,8 @@
     "continent": "NA",
     "capital": "Port-au-Prince",
     "currency": ["HTG", "USD"],
-    "languages": ["fr", "ht"]
+    "languages": ["fr", "ht"],
+    "emoji": "🇭🇹"
   },
   {
     "code": "HU",
@@ -1000,7 +1099,8 @@
     "continent": "EU",
     "capital": "Budapest",
     "currency": ["HUF"],
-    "languages": ["hu"]
+    "languages": ["hu"],
+    "emoji": "🇭🇺"
   },
   {
     "code": "ID",
@@ -1010,7 +1110,8 @@
     "continent": "AS",
     "capital": "Jakarta",
     "currency": ["IDR"],
-    "languages": ["id"]
+    "languages": ["id"],
+    "emoji": "🇮🇩"
   },
   {
     "code": "IE",
@@ -1020,7 +1121,8 @@
     "continent": "EU",
     "capital": "Dublin",
     "currency": ["EUR"],
-    "languages": ["ga", "en"]
+    "languages": ["ga", "en"],
+    "emoji": "🇮🇪"
   },
   {
     "code": "IL",
@@ -1030,7 +1132,8 @@
     "continent": "AS",
     "capital": "Jerusalem",
     "currency": ["ILS"],
-    "languages": ["he", "ar"]
+    "languages": ["he", "ar"],
+    "emoji": "🇮🇱"
   },
   {
     "code": "IM",
@@ -1040,7 +1143,8 @@
     "continent": "EU",
     "capital": "Douglas",
     "currency": ["GBP"],
-    "languages": ["en", "gv"]
+    "languages": ["en", "gv"],
+    "emoji": "🇮🇲"
   },
   {
     "code": "IN",
@@ -1050,7 +1154,8 @@
     "continent": "AS",
     "capital": "New Delhi",
     "currency": ["INR"],
-    "languages": ["hi", "en"]
+    "languages": ["hi", "en"],
+    "emoji": "🇮🇳"
   },
   {
     "code": "IO",
@@ -1060,7 +1165,8 @@
     "continent": "AS",
     "capital": "Diego Garcia",
     "currency": ["USD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇮🇴"
   },
   {
     "code": "IQ",
@@ -1070,7 +1176,8 @@
     "continent": "AS",
     "capital": "Baghdad",
     "currency": ["IQD"],
-    "languages": ["ar", "ku"]
+    "languages": ["ar", "ku"],
+    "emoji": "🇮🇶"
   },
   {
     "code": "IR",
@@ -1080,7 +1187,8 @@
     "continent": "AS",
     "capital": "Tehran",
     "currency": ["IRR"],
-    "languages": ["fa"]
+    "languages": ["fa"],
+    "emoji": "🇮🇷"
   },
   {
     "code": "IS",
@@ -1090,7 +1198,8 @@
     "continent": "EU",
     "capital": "Reykjavik",
     "currency": ["ISK"],
-    "languages": ["is"]
+    "languages": ["is"],
+    "emoji": "🇮🇸"
   },
   {
     "code": "IT",
@@ -1100,7 +1209,8 @@
     "continent": "EU",
     "capital": "Rome",
     "currency": ["EUR"],
-    "languages": ["it"]
+    "languages": ["it"],
+    "emoji": "🇮🇹"
   },
   {
     "code": "JE",
@@ -1110,7 +1220,8 @@
     "continent": "EU",
     "capital": "Saint Helier",
     "currency": ["GBP"],
-    "languages": ["en", "fr"]
+    "languages": ["en", "fr"],
+    "emoji": "🇯🇪"
   },
   {
     "code": "JM",
@@ -1120,7 +1231,8 @@
     "continent": "NA",
     "capital": "Kingston",
     "currency": ["JMD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇯🇲"
   },
   {
     "code": "JO",
@@ -1130,7 +1242,8 @@
     "continent": "AS",
     "capital": "Amman",
     "currency": ["JOD"],
-    "languages": ["ar"]
+    "languages": ["ar"],
+    "emoji": "🇯🇴"
   },
   {
     "code": "JP",
@@ -1140,7 +1253,8 @@
     "continent": "AS",
     "capital": "Tokyo",
     "currency": ["JPY"],
-    "languages": ["ja"]
+    "languages": ["ja"],
+    "emoji": "🇯🇵"
   },
   {
     "code": "KE",
@@ -1150,7 +1264,8 @@
     "continent": "AF",
     "capital": "Nairobi",
     "currency": ["KES"],
-    "languages": ["en", "sw"]
+    "languages": ["en", "sw"],
+    "emoji": "🇰🇪"
   },
   {
     "code": "KG",
@@ -1160,7 +1275,8 @@
     "continent": "AS",
     "capital": "Bishkek",
     "currency": ["KGS"],
-    "languages": ["ky", "ru"]
+    "languages": ["ky", "ru"],
+    "emoji": "🇰🇬"
   },
   {
     "code": "KH",
@@ -1170,7 +1286,8 @@
     "continent": "AS",
     "capital": "Phnom Penh",
     "currency": ["KHR"],
-    "languages": ["km"]
+    "languages": ["km"],
+    "emoji": "🇰🇭"
   },
   {
     "code": "KI",
@@ -1180,7 +1297,8 @@
     "continent": "OC",
     "capital": "South Tarawa",
     "currency": ["AUD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇰🇮"
   },
   {
     "code": "KM",
@@ -1190,7 +1308,8 @@
     "continent": "AF",
     "capital": "Moroni",
     "currency": ["KMF"],
-    "languages": ["ar", "fr"]
+    "languages": ["ar", "fr"],
+    "emoji": "🇰🇲"
   },
   {
     "code": "KN",
@@ -1200,7 +1319,8 @@
     "continent": "NA",
     "capital": "Basseterre",
     "currency": ["XCD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇰🇳"
   },
   {
     "code": "KP",
@@ -1210,7 +1330,8 @@
     "continent": "AS",
     "capital": "Pyongyang",
     "currency": ["KPW"],
-    "languages": ["ko"]
+    "languages": ["ko"],
+    "emoji": "🇰🇵"
   },
   {
     "code": "KR",
@@ -1220,7 +1341,8 @@
     "continent": "AS",
     "capital": "Seoul",
     "currency": ["KRW"],
-    "languages": ["ko"]
+    "languages": ["ko"],
+    "emoji": "🇰🇷"
   },
   {
     "code": "KW",
@@ -1230,7 +1352,8 @@
     "continent": "AS",
     "capital": "Kuwait City",
     "currency": ["KWD"],
-    "languages": ["ar"]
+    "languages": ["ar"],
+    "emoji": "🇰🇼"
   },
   {
     "code": "KY",
@@ -1240,7 +1363,8 @@
     "continent": "NA",
     "capital": "George Town",
     "currency": ["KYD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇰🇾"
   },
   {
     "code": "KZ",
@@ -1251,7 +1375,8 @@
     "continents": ["AS", "EU"],
     "capital": "Astana",
     "currency": ["KZT"],
-    "languages": ["kk", "ru"]
+    "languages": ["kk", "ru"],
+    "emoji": "🇰🇿"
   },
   {
     "code": "LA",
@@ -1261,7 +1386,8 @@
     "continent": "AS",
     "capital": "Vientiane",
     "currency": ["LAK"],
-    "languages": ["lo"]
+    "languages": ["lo"],
+    "emoji": "🇱🇦"
   },
   {
     "code": "LB",
@@ -1271,7 +1397,8 @@
     "continent": "AS",
     "capital": "Beirut",
     "currency": ["LBP"],
-    "languages": ["ar", "fr"]
+    "languages": ["ar", "fr"],
+    "emoji": "🇱🇧"
   },
   {
     "code": "LC",
@@ -1281,7 +1408,8 @@
     "continent": "NA",
     "capital": "Castries",
     "currency": ["XCD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇱🇨"
   },
   {
     "code": "LI",
@@ -1291,7 +1419,8 @@
     "continent": "EU",
     "capital": "Vaduz",
     "currency": ["CHF"],
-    "languages": ["de"]
+    "languages": ["de"],
+    "emoji": "🇱🇮"
   },
   {
     "code": "LK",
@@ -1301,7 +1430,8 @@
     "continent": "AS",
     "capital": "Colombo",
     "currency": ["LKR"],
-    "languages": ["si", "ta"]
+    "languages": ["si", "ta"],
+    "emoji": "🇱🇰"
   },
   {
     "code": "LR",
@@ -1311,7 +1441,8 @@
     "continent": "AF",
     "capital": "Monrovia",
     "currency": ["LRD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇱🇷"
   },
   {
     "code": "LS",
@@ -1321,7 +1452,8 @@
     "continent": "AF",
     "capital": "Maseru",
     "currency": ["LSL", "ZAR"],
-    "languages": ["en", "st"]
+    "languages": ["en", "st"],
+    "emoji": "🇱🇸"
   },
   {
     "code": "LT",
@@ -1331,7 +1463,8 @@
     "continent": "EU",
     "capital": "Vilnius",
     "currency": ["EUR"],
-    "languages": ["lt"]
+    "languages": ["lt"],
+    "emoji": "🇱🇹"
   },
   {
     "code": "LU",
@@ -1341,7 +1474,8 @@
     "continent": "EU",
     "capital": "Luxembourg",
     "currency": ["EUR"],
-    "languages": ["fr", "de", "lb"]
+    "languages": ["fr", "de", "lb"],
+    "emoji": "🇱🇺"
   },
   {
     "code": "LV",
@@ -1351,7 +1485,8 @@
     "continent": "EU",
     "capital": "Riga",
     "currency": ["EUR"],
-    "languages": ["lv"]
+    "languages": ["lv"],
+    "emoji": "🇱🇻"
   },
   {
     "code": "LY",
@@ -1361,7 +1496,8 @@
     "continent": "AF",
     "capital": "Tripoli",
     "currency": ["LYD"],
-    "languages": ["ar"]
+    "languages": ["ar"],
+    "emoji": "🇱🇾"
   },
   {
     "code": "MA",
@@ -1371,7 +1507,8 @@
     "continent": "AF",
     "capital": "Rabat",
     "currency": ["MAD"],
-    "languages": ["ar"]
+    "languages": ["ar"],
+    "emoji": "🇲🇦"
   },
   {
     "code": "MC",
@@ -1381,7 +1518,8 @@
     "continent": "EU",
     "capital": "Monaco",
     "currency": ["EUR"],
-    "languages": ["fr"]
+    "languages": ["fr"],
+    "emoji": "🇲🇨"
   },
   {
     "code": "MD",
@@ -1391,7 +1529,8 @@
     "continent": "EU",
     "capital": "Chișinău",
     "currency": ["MDL"],
-    "languages": ["ro"]
+    "languages": ["ro"],
+    "emoji": "🇲🇩"
   },
   {
     "code": "ME",
@@ -1401,7 +1540,8 @@
     "continent": "EU",
     "capital": "Podgorica",
     "currency": ["EUR"],
-    "languages": ["sr", "bs", "sq", "hr"]
+    "languages": ["sr", "bs", "sq", "hr"],
+    "emoji": "🇲🇪"
   },
   {
     "code": "MF",
@@ -1411,7 +1551,8 @@
     "continent": "NA",
     "capital": "Marigot",
     "currency": ["EUR"],
-    "languages": ["en", "fr", "nl"]
+    "languages": ["en", "fr", "nl"],
+    "emoji": "🇲🇫"
   },
   {
     "code": "MG",
@@ -1421,7 +1562,8 @@
     "continent": "AF",
     "capital": "Antananarivo",
     "currency": ["MGA"],
-    "languages": ["fr", "mg"]
+    "languages": ["fr", "mg"],
+    "emoji": "🇲🇬"
   },
   {
     "code": "MH",
@@ -1431,7 +1573,8 @@
     "continent": "OC",
     "capital": "Majuro",
     "currency": ["USD"],
-    "languages": ["en", "mh"]
+    "languages": ["en", "mh"],
+    "emoji": "🇲🇭"
   },
   {
     "code": "MK",
@@ -1441,7 +1584,8 @@
     "continent": "EU",
     "capital": "Skopje",
     "currency": ["MKD"],
-    "languages": ["mk"]
+    "languages": ["mk"],
+    "emoji": "🇲🇰"
   },
   {
     "code": "ML",
@@ -1451,7 +1595,8 @@
     "continent": "AF",
     "capital": "Bamako",
     "currency": ["XOF"],
-    "languages": ["fr"]
+    "languages": ["fr"],
+    "emoji": "🇲🇱"
   },
   {
     "code": "MM",
@@ -1461,7 +1606,8 @@
     "continent": "AS",
     "capital": "Naypyidaw",
     "currency": ["MMK"],
-    "languages": ["my"]
+    "languages": ["my"],
+    "emoji": "🇲🇲"
   },
   {
     "code": "MN",
@@ -1471,7 +1617,8 @@
     "continent": "AS",
     "capital": "Ulan Bator",
     "currency": ["MNT"],
-    "languages": ["mn"]
+    "languages": ["mn"],
+    "emoji": "🇲🇳"
   },
   {
     "code": "MO",
@@ -1481,7 +1628,8 @@
     "continent": "AS",
     "capital": "",
     "currency": ["MOP"],
-    "languages": ["zh", "pt"]
+    "languages": ["zh", "pt"],
+    "emoji": "🇲🇴"
   },
   {
     "code": "MP",
@@ -1491,7 +1639,8 @@
     "continent": "OC",
     "capital": "Saipan",
     "currency": ["USD"],
-    "languages": ["en", "ch"]
+    "languages": ["en", "ch"],
+    "emoji": "🇲🇵"
   },
   {
     "code": "MQ",
@@ -1501,7 +1650,8 @@
     "continent": "NA",
     "capital": "Fort-de-France",
     "currency": ["EUR"],
-    "languages": ["fr"]
+    "languages": ["fr"],
+    "emoji": "🇲🇶"
   },
   {
     "code": "MR",
@@ -1511,7 +1661,8 @@
     "continent": "AF",
     "capital": "Nouakchott",
     "currency": ["MRU"],
-    "languages": ["ar"]
+    "languages": ["ar"],
+    "emoji": "🇲🇷"
   },
   {
     "code": "MS",
@@ -1521,7 +1672,8 @@
     "continent": "NA",
     "capital": "Plymouth",
     "currency": ["XCD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇲🇸"
   },
   {
     "code": "MT",
@@ -1531,7 +1683,8 @@
     "continent": "EU",
     "capital": "Valletta",
     "currency": ["EUR"],
-    "languages": ["mt", "en"]
+    "languages": ["mt", "en"],
+    "emoji": "🇲🇹"
   },
   {
     "code": "MU",
@@ -1541,7 +1694,8 @@
     "continent": "AF",
     "capital": "Port Louis",
     "currency": ["MUR"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇲🇺"
   },
   {
     "code": "MV",
@@ -1551,7 +1705,8 @@
     "continent": "AS",
     "capital": "Malé",
     "currency": ["MVR"],
-    "languages": ["dv"]
+    "languages": ["dv"],
+    "emoji": "🇲🇻"
   },
   {
     "code": "MW",
@@ -1561,7 +1716,8 @@
     "continent": "AF",
     "capital": "Lilongwe",
     "currency": ["MWK"],
-    "languages": ["en", "ny"]
+    "languages": ["en", "ny"],
+    "emoji": "🇲🇼"
   },
   {
     "code": "MX",
@@ -1571,7 +1727,8 @@
     "continent": "NA",
     "capital": "Mexico City",
     "currency": ["MXN"],
-    "languages": ["es"]
+    "languages": ["es"],
+    "emoji": "🇲🇽"
   },
   {
     "code": "MY",
@@ -1581,7 +1738,8 @@
     "continent": "AS",
     "capital": "Kuala Lumpur",
     "currency": ["MYR"],
-    "languages": ["ms"]
+    "languages": ["ms"],
+    "emoji": "🇲🇾"
   },
   {
     "code": "MZ",
@@ -1591,7 +1749,8 @@
     "continent": "AF",
     "capital": "Maputo",
     "currency": ["MZN"],
-    "languages": ["pt"]
+    "languages": ["pt"],
+    "emoji": "🇲🇿"
   },
   {
     "code": "NA",
@@ -1601,7 +1760,8 @@
     "continent": "AF",
     "capital": "Windhoek",
     "currency": ["NAD", "ZAR"],
-    "languages": ["en", "af"]
+    "languages": ["en", "af"],
+    "emoji": "🇳🇦"
   },
   {
     "code": "NC",
@@ -1611,7 +1771,8 @@
     "continent": "OC",
     "capital": "Nouméa",
     "currency": ["XPF"],
-    "languages": ["fr"]
+    "languages": ["fr"],
+    "emoji": "🇳🇨"
   },
   {
     "code": "NE",
@@ -1621,7 +1782,8 @@
     "continent": "AF",
     "capital": "Niamey",
     "currency": ["XOF"],
-    "languages": ["fr"]
+    "languages": ["fr"],
+    "emoji": "🇳🇪"
   },
   {
     "code": "NF",
@@ -1631,7 +1793,8 @@
     "continent": "OC",
     "capital": "Kingston",
     "currency": ["AUD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇳🇫"
   },
   {
     "code": "NG",
@@ -1641,7 +1804,8 @@
     "continent": "AF",
     "capital": "Abuja",
     "currency": ["NGN"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇳🇬"
   },
   {
     "code": "NI",
@@ -1651,7 +1815,8 @@
     "continent": "NA",
     "capital": "Managua",
     "currency": ["NIO"],
-    "languages": ["es"]
+    "languages": ["es"],
+    "emoji": "🇳🇮"
   },
   {
     "code": "NL",
@@ -1661,7 +1826,8 @@
     "continent": "EU",
     "capital": "Amsterdam",
     "currency": ["EUR"],
-    "languages": ["nl"]
+    "languages": ["nl"],
+    "emoji": "🇳🇱"
   },
   {
     "code": "NO",
@@ -1671,7 +1837,8 @@
     "continent": "EU",
     "capital": "Oslo",
     "currency": ["NOK"],
-    "languages": ["no", "nb", "nn"]
+    "languages": ["no", "nb", "nn"],
+    "emoji": "🇳🇴"
   },
   {
     "code": "NP",
@@ -1681,7 +1848,8 @@
     "continent": "AS",
     "capital": "Kathmandu",
     "currency": ["NPR"],
-    "languages": ["ne"]
+    "languages": ["ne"],
+    "emoji": "🇳🇵"
   },
   {
     "code": "NR",
@@ -1691,7 +1859,8 @@
     "continent": "OC",
     "capital": "Yaren",
     "currency": ["AUD"],
-    "languages": ["en", "na"]
+    "languages": ["en", "na"],
+    "emoji": "🇳🇷"
   },
   {
     "code": "NU",
@@ -1701,7 +1870,8 @@
     "continent": "OC",
     "capital": "Alofi",
     "currency": ["NZD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇳🇺"
   },
   {
     "code": "NZ",
@@ -1711,7 +1881,8 @@
     "continent": "OC",
     "capital": "Wellington",
     "currency": ["NZD"],
-    "languages": ["en", "mi"]
+    "languages": ["en", "mi"],
+    "emoji": "🇳🇿"
   },
   {
     "code": "OM",
@@ -1721,7 +1892,8 @@
     "continent": "AS",
     "capital": "Muscat",
     "currency": ["OMR"],
-    "languages": ["ar"]
+    "languages": ["ar"],
+    "emoji": "🇴🇲"
   },
   {
     "code": "PA",
@@ -1731,7 +1903,8 @@
     "continent": "NA",
     "capital": "Panama City",
     "currency": ["PAB", "USD"],
-    "languages": ["es"]
+    "languages": ["es"],
+    "emoji": "🇵🇦"
   },
   {
     "code": "PE",
@@ -1741,7 +1914,8 @@
     "continent": "SA",
     "capital": "Lima",
     "currency": ["PEN"],
-    "languages": ["es"]
+    "languages": ["es"],
+    "emoji": "🇵🇪"
   },
   {
     "code": "PF",
@@ -1751,7 +1925,8 @@
     "continent": "OC",
     "capital": "Papeetē",
     "currency": ["XPF"],
-    "languages": ["fr"]
+    "languages": ["fr"],
+    "emoji": "🇵🇫"
   },
   {
     "code": "PG",
@@ -1761,7 +1936,8 @@
     "continent": "OC",
     "capital": "Port Moresby",
     "currency": ["PGK"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇵🇬"
   },
   {
     "code": "PH",
@@ -1771,7 +1947,8 @@
     "continent": "AS",
     "capital": "Manila",
     "currency": ["PHP"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇵🇭"
   },
   {
     "code": "PK",
@@ -1781,7 +1958,8 @@
     "continent": "AS",
     "capital": "Islamabad",
     "currency": ["PKR"],
-    "languages": ["en", "ur"]
+    "languages": ["en", "ur"],
+    "emoji": "🇵🇰"
   },
   {
     "code": "PL",
@@ -1791,7 +1969,8 @@
     "continent": "EU",
     "capital": "Warsaw",
     "currency": ["PLN"],
-    "languages": ["pl"]
+    "languages": ["pl"],
+    "emoji": "🇵🇱"
   },
   {
     "code": "PM",
@@ -1801,7 +1980,8 @@
     "continent": "NA",
     "capital": "Saint-Pierre",
     "currency": ["EUR"],
-    "languages": ["fr"]
+    "languages": ["fr"],
+    "emoji": "🇵🇲"
   },
   {
     "code": "PN",
@@ -1811,7 +1991,8 @@
     "continent": "OC",
     "capital": "Adamstown",
     "currency": ["NZD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇵🇳"
   },
   {
     "code": "PR",
@@ -1821,7 +2002,8 @@
     "continent": "NA",
     "capital": "San Juan",
     "currency": ["USD"],
-    "languages": ["es", "en"]
+    "languages": ["es", "en"],
+    "emoji": "🇵🇷"
   },
   {
     "code": "PS",
@@ -1831,7 +2013,8 @@
     "continent": "AS",
     "capital": "Ramallah",
     "currency": ["ILS"],
-    "languages": ["ar"]
+    "languages": ["ar"],
+    "emoji": "🇵🇸"
   },
   {
     "code": "PT",
@@ -1841,7 +2024,8 @@
     "continent": "EU",
     "capital": "Lisbon",
     "currency": ["EUR"],
-    "languages": ["pt"]
+    "languages": ["pt"],
+    "emoji": "🇵🇹"
   },
   {
     "code": "PW",
@@ -1851,7 +2035,8 @@
     "continent": "OC",
     "capital": "Ngerulmud",
     "currency": ["USD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇵🇼"
   },
   {
     "code": "PY",
@@ -1861,7 +2046,8 @@
     "continent": "SA",
     "capital": "Asunción",
     "currency": ["PYG"],
-    "languages": ["es", "gn"]
+    "languages": ["es", "gn"],
+    "emoji": "🇵🇾"
   },
   {
     "code": "QA",
@@ -1871,7 +2057,8 @@
     "continent": "AS",
     "capital": "Doha",
     "currency": ["QAR"],
-    "languages": ["ar"]
+    "languages": ["ar"],
+    "emoji": "🇶🇦"
   },
   {
     "code": "RE",
@@ -1881,7 +2068,8 @@
     "continent": "AF",
     "capital": "Saint-Denis",
     "currency": ["EUR"],
-    "languages": ["fr"]
+    "languages": ["fr"],
+    "emoji": "🇷🇪"
   },
   {
     "code": "RO",
@@ -1891,7 +2079,8 @@
     "continent": "EU",
     "capital": "Bucharest",
     "currency": ["RON"],
-    "languages": ["ro"]
+    "languages": ["ro"],
+    "emoji": "🇷🇴"
   },
   {
     "code": "RS",
@@ -1901,7 +2090,8 @@
     "continent": "EU",
     "capital": "Belgrade",
     "currency": ["RSD"],
-    "languages": ["sr"]
+    "languages": ["sr"],
+    "emoji": "🇷🇸"
   },
   {
     "code": "RU",
@@ -1912,7 +2102,8 @@
     "continents": ["AS", "EU"],
     "capital": "Moscow",
     "currency": ["RUB"],
-    "languages": ["ru"]
+    "languages": ["ru"],
+    "emoji": "🇷🇺"
   },
   {
     "code": "RW",
@@ -1922,7 +2113,8 @@
     "continent": "AF",
     "capital": "Kigali",
     "currency": ["RWF"],
-    "languages": ["rw", "en", "fr"]
+    "languages": ["rw", "en", "fr"],
+    "emoji": "🇷🇼"
   },
   {
     "code": "SA",
@@ -1932,7 +2124,8 @@
     "continent": "AS",
     "capital": "Riyadh",
     "currency": ["SAR"],
-    "languages": ["ar"]
+    "languages": ["ar"],
+    "emoji": "🇸🇦"
   },
   {
     "code": "SB",
@@ -1942,7 +2135,8 @@
     "continent": "OC",
     "capital": "Honiara",
     "currency": ["SBD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇸🇧"
   },
   {
     "code": "SC",
@@ -1952,7 +2146,8 @@
     "continent": "AF",
     "capital": "Victoria",
     "currency": ["SCR"],
-    "languages": ["fr", "en"]
+    "languages": ["fr", "en"],
+    "emoji": "🇸🇨"
   },
   {
     "code": "SD",
@@ -1962,7 +2157,8 @@
     "continent": "AF",
     "capital": "Khartoum",
     "currency": ["SDG"],
-    "languages": ["ar", "en"]
+    "languages": ["ar", "en"],
+    "emoji": "🇸🇩"
   },
   {
     "code": "SE",
@@ -1972,7 +2168,8 @@
     "continent": "EU",
     "capital": "Stockholm",
     "currency": ["SEK"],
-    "languages": ["sv"]
+    "languages": ["sv"],
+    "emoji": "🇸🇪"
   },
   {
     "code": "SG",
@@ -1982,7 +2179,8 @@
     "continent": "AS",
     "capital": "Singapore",
     "currency": ["SGD"],
-    "languages": ["en", "ms", "ta", "zh"]
+    "languages": ["en", "ms", "ta", "zh"],
+    "emoji": "🇸🇬"
   },
   {
     "code": "SH",
@@ -1992,7 +2190,8 @@
     "continent": "AF",
     "capital": "Jamestown",
     "currency": ["SHP"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇸🇭"
   },
   {
     "code": "SI",
@@ -2002,7 +2201,8 @@
     "continent": "EU",
     "capital": "Ljubljana",
     "currency": ["EUR"],
-    "languages": ["sl"]
+    "languages": ["sl"],
+    "emoji": "🇸🇮"
   },
   {
     "code": "SJ",
@@ -2012,7 +2212,8 @@
     "continent": "EU",
     "capital": "Longyearbyen",
     "currency": ["NOK"],
-    "languages": ["no"]
+    "languages": ["no"],
+    "emoji": "🇸🇯"
   },
   {
     "code": "SK",
@@ -2022,7 +2223,8 @@
     "continent": "EU",
     "capital": "Bratislava",
     "currency": ["EUR"],
-    "languages": ["sk"]
+    "languages": ["sk"],
+    "emoji": "🇸🇰"
   },
   {
     "code": "SL",
@@ -2032,7 +2234,8 @@
     "continent": "AF",
     "capital": "Freetown",
     "currency": ["SLL"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇸🇱"
   },
   {
     "code": "SM",
@@ -2042,7 +2245,8 @@
     "continent": "EU",
     "capital": "City of San Marino",
     "currency": ["EUR"],
-    "languages": ["it"]
+    "languages": ["it"],
+    "emoji": "🇸🇲"
   },
   {
     "code": "SN",
@@ -2052,7 +2256,8 @@
     "continent": "AF",
     "capital": "Dakar",
     "currency": ["XOF"],
-    "languages": ["fr"]
+    "languages": ["fr"],
+    "emoji": "🇸🇳"
   },
   {
     "code": "SO",
@@ -2062,7 +2267,8 @@
     "continent": "AF",
     "capital": "Mogadishu",
     "currency": ["SOS"],
-    "languages": ["so", "ar"]
+    "languages": ["so", "ar"],
+    "emoji": "🇸🇴"
   },
   {
     "code": "SR",
@@ -2072,7 +2278,8 @@
     "continent": "SA",
     "capital": "Paramaribo",
     "currency": ["SRD"],
-    "languages": ["nl"]
+    "languages": ["nl"],
+    "emoji": "🇸🇷"
   },
   {
     "code": "SS",
@@ -2082,7 +2289,8 @@
     "continent": "AF",
     "capital": "Juba",
     "currency": ["SSP"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇸🇸"
   },
   {
     "code": "ST",
@@ -2092,7 +2300,8 @@
     "continent": "AF",
     "capital": "São Tomé",
     "currency": ["STN"],
-    "languages": ["pt"]
+    "languages": ["pt"],
+    "emoji": "🇸🇹"
   },
   {
     "code": "SV",
@@ -2102,7 +2311,8 @@
     "continent": "NA",
     "capital": "San Salvador",
     "currency": ["SVC", "USD"],
-    "languages": ["es"]
+    "languages": ["es"],
+    "emoji": "🇸🇻"
   },
   {
     "code": "SX",
@@ -2112,7 +2322,8 @@
     "continent": "NA",
     "capital": "Philipsburg",
     "currency": ["ANG"],
-    "languages": ["nl", "en"]
+    "languages": ["nl", "en"],
+    "emoji": "🇸🇽"
   },
   {
     "code": "SY",
@@ -2122,7 +2333,8 @@
     "continent": "AS",
     "capital": "Damascus",
     "currency": ["SYP"],
-    "languages": ["ar"]
+    "languages": ["ar"],
+    "emoji": "🇸🇾"
   },
   {
     "code": "SZ",
@@ -2132,7 +2344,8 @@
     "continent": "AF",
     "capital": "Lobamba",
     "currency": ["SZL"],
-    "languages": ["en", "ss"]
+    "languages": ["en", "ss"],
+    "emoji": "🇸🇿"
   },
   {
     "code": "TC",
@@ -2142,7 +2355,8 @@
     "continent": "NA",
     "capital": "Cockburn Town",
     "currency": ["USD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇹🇨"
   },
   {
     "code": "TD",
@@ -2152,7 +2366,8 @@
     "continent": "AF",
     "capital": "N'Djamena",
     "currency": ["XAF"],
-    "languages": ["fr", "ar"]
+    "languages": ["fr", "ar"],
+    "emoji": "🇹🇩"
   },
   {
     "code": "TF",
@@ -2162,7 +2377,8 @@
     "continent": "AN",
     "capital": "Port-aux-Français",
     "currency": ["EUR"],
-    "languages": ["fr"]
+    "languages": ["fr"],
+    "emoji": "🇹🇫"
   },
   {
     "code": "TG",
@@ -2172,7 +2388,8 @@
     "continent": "AF",
     "capital": "Lomé",
     "currency": ["XOF"],
-    "languages": ["fr"]
+    "languages": ["fr"],
+    "emoji": "🇹🇬"
   },
   {
     "code": "TH",
@@ -2182,7 +2399,8 @@
     "continent": "AS",
     "capital": "Bangkok",
     "currency": ["THB"],
-    "languages": ["th"]
+    "languages": ["th"],
+    "emoji": "🇹🇭"
   },
   {
     "code": "TJ",
@@ -2192,7 +2410,8 @@
     "continent": "AS",
     "capital": "Dushanbe",
     "currency": ["TJS"],
-    "languages": ["tg", "ru"]
+    "languages": ["tg", "ru"],
+    "emoji": "🇹🇯"
   },
   {
     "code": "TK",
@@ -2202,7 +2421,8 @@
     "continent": "OC",
     "capital": "Fakaofo",
     "currency": ["NZD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇹🇰"
   },
   {
     "code": "TL",
@@ -2212,7 +2432,8 @@
     "continent": "OC",
     "capital": "Dili",
     "currency": ["USD"],
-    "languages": ["pt"]
+    "languages": ["pt"],
+    "emoji": ""
   },
   {
     "code": "TM",
@@ -2222,7 +2443,8 @@
     "continent": "AS",
     "capital": "Ashgabat",
     "currency": ["TMT"],
-    "languages": ["tk", "ru"]
+    "languages": ["tk", "ru"],
+    "emoji": "🇹🇲"
   },
   {
     "code": "TN",
@@ -2232,7 +2454,8 @@
     "continent": "AF",
     "capital": "Tunis",
     "currency": ["TND"],
-    "languages": ["ar"]
+    "languages": ["ar"],
+    "emoji": "🇹🇳"
   },
   {
     "code": "TO",
@@ -2242,7 +2465,8 @@
     "continent": "OC",
     "capital": "Nuku'alofa",
     "currency": ["TOP"],
-    "languages": ["en", "to"]
+    "languages": ["en", "to"],
+    "emoji": "🇹🇴"
   },
   {
     "code": "TR",
@@ -2253,7 +2477,8 @@
     "continents": ["AS", "EU"],
     "capital": "Ankara",
     "currency": ["TRY"],
-    "languages": ["tr"]
+    "languages": ["tr"],
+    "emoji": "🇹🇷"
   },
   {
     "code": "TT",
@@ -2263,7 +2488,8 @@
     "continent": "NA",
     "capital": "Port of Spain",
     "currency": ["TTD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇹🇹"
   },
   {
     "code": "TV",
@@ -2273,7 +2499,8 @@
     "continent": "OC",
     "capital": "Funafuti",
     "currency": ["AUD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇹🇻"
   },
   {
     "code": "TW",
@@ -2283,7 +2510,8 @@
     "continent": "AS",
     "capital": "Taipei",
     "currency": ["TWD"],
-    "languages": ["zh"]
+    "languages": ["zh"],
+    "emoji": "🇹🇼"
   },
   {
     "code": "TZ",
@@ -2293,7 +2521,8 @@
     "continent": "AF",
     "capital": "Dodoma",
     "currency": ["TZS"],
-    "languages": ["sw", "en"]
+    "languages": ["sw", "en"],
+    "emoji": "🇹🇿"
   },
   {
     "code": "UA",
@@ -2303,7 +2532,8 @@
     "continent": "EU",
     "capital": "Kyiv",
     "currency": ["UAH"],
-    "languages": ["uk"]
+    "languages": ["uk"],
+    "emoji": "🇺🇦"
   },
   {
     "code": "UG",
@@ -2313,7 +2543,8 @@
     "continent": "AF",
     "capital": "Kampala",
     "currency": ["UGX"],
-    "languages": ["en", "sw"]
+    "languages": ["en", "sw"],
+    "emoji": "🇺🇬"
   },
   {
     "code": "UM",
@@ -2323,7 +2554,8 @@
     "continent": "OC",
     "capital": "",
     "currency": ["USD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇺🇲"
   },
   {
     "code": "US",
@@ -2333,7 +2565,8 @@
     "continent": "NA",
     "capital": "Washington D.C.",
     "currency": ["USD", "USN", "USS"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇺🇸"
   },
   {
     "code": "UY",
@@ -2343,7 +2576,8 @@
     "continent": "SA",
     "capital": "Montevideo",
     "currency": ["UYI", "UYU"],
-    "languages": ["es"]
+    "languages": ["es"],
+    "emoji": "🇺🇾"
   },
   {
     "code": "UZ",
@@ -2353,7 +2587,8 @@
     "continent": "AS",
     "capital": "Tashkent",
     "currency": ["UZS"],
-    "languages": ["uz", "ru"]
+    "languages": ["uz", "ru"],
+    "emoji": "🇺🇿"
   },
   {
     "code": "VA",
@@ -2363,7 +2598,8 @@
     "continent": "EU",
     "capital": "Vatican City",
     "currency": ["EUR"],
-    "languages": ["it", "la"]
+    "languages": ["it", "la"],
+    "emoji": "🇻🇦"
   },
   {
     "code": "VC",
@@ -2373,7 +2609,8 @@
     "continent": "NA",
     "capital": "Kingstown",
     "currency": ["XCD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇻🇨"
   },
   {
     "code": "VE",
@@ -2383,7 +2620,8 @@
     "continent": "SA",
     "capital": "Caracas",
     "currency": ["VES"],
-    "languages": ["es"]
+    "languages": ["es"],
+    "emoji": "🇻🇪"
   },
   {
     "code": "VG",
@@ -2393,7 +2631,8 @@
     "continent": "NA",
     "capital": "Road Town",
     "currency": ["USD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇻🇬"
   },
   {
     "code": "VI",
@@ -2403,7 +2642,8 @@
     "continent": "NA",
     "capital": "Charlotte Amalie",
     "currency": ["USD"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇻🇮"
   },
   {
     "code": "VN",
@@ -2413,7 +2653,8 @@
     "continent": "AS",
     "capital": "Hanoi",
     "currency": ["VND"],
-    "languages": ["vi"]
+    "languages": ["vi"],
+    "emoji": "🇻🇳"
   },
   {
     "code": "VU",
@@ -2423,7 +2664,8 @@
     "continent": "OC",
     "capital": "Port Vila",
     "currency": ["VUV"],
-    "languages": ["bi", "en", "fr"]
+    "languages": ["bi", "en", "fr"],
+    "emoji": "🇻🇺"
   },
   {
     "code": "WF",
@@ -2433,7 +2675,8 @@
     "continent": "OC",
     "capital": "Mata-Utu",
     "currency": ["XPF"],
-    "languages": ["fr"]
+    "languages": ["fr"],
+    "emoji": "🇼🇫"
   },
   {
     "code": "WS",
@@ -2443,7 +2686,8 @@
     "continent": "OC",
     "capital": "Apia",
     "currency": ["WST"],
-    "languages": ["sm", "en"]
+    "languages": ["sm", "en"],
+    "emoji": "🇼🇸"
   },
   {
     "code": "XK",
@@ -2453,7 +2697,8 @@
     "continent": "EU",
     "capital": "Pristina",
     "currency": ["EUR"],
-    "languages": ["sq", "sr"]
+    "languages": ["sq", "sr"],
+    "emoji": "🇽🇰"
   },
   {
     "code": "YE",
@@ -2463,7 +2708,8 @@
     "continent": "AS",
     "capital": "Sana'a",
     "currency": ["YER"],
-    "languages": ["ar"]
+    "languages": ["ar"],
+    "emoji": "🇾🇪"
   },
   {
     "code": "YT",
@@ -2473,7 +2719,8 @@
     "continent": "AF",
     "capital": "Mamoudzou",
     "currency": ["EUR"],
-    "languages": ["fr"]
+    "languages": ["fr"],
+    "emoji": "🇾🇹"
   },
   {
     "code": "ZA",
@@ -2483,7 +2730,8 @@
     "continent": "AF",
     "capital": "Pretoria",
     "currency": ["ZAR"],
-    "languages": ["af", "en", "nr", "st", "ss", "tn", "ts", "ve", "xh", "zu"]
+    "languages": ["af", "en", "nr", "st", "ss", "tn", "ts", "ve", "xh", "zu"],
+    "emoji": "🇿🇦"
   },
   {
     "code": "ZM",
@@ -2493,7 +2741,8 @@
     "continent": "AF",
     "capital": "Lusaka",
     "currency": ["ZMW"],
-    "languages": ["en"]
+    "languages": ["en"],
+    "emoji": "🇿🇲"
   },
   {
     "code": "ZW",
@@ -2503,6 +2752,7 @@
     "continent": "AF",
     "capital": "Harare",
     "currency": ["USD", "ZAR", "BWP", "GBP", "AUD", "CNY", "INR", "JPY"],
-    "languages": ["en", "sn", "nd"]
+    "languages": ["en", "sn", "nd"],
+    "emoji": "🇿🇼"
   }
 ]

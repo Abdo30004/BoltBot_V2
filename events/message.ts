@@ -1,8 +1,7 @@
 import { Event } from "../interfaces/event";
 import { Message, GroupChat } from "whatsapp-web.js";
 import { Logger } from "../Util/logger";
-import { Collection } from "@discordjs/collection";
-import countries from "../data/countries.json";
+import countries from "../database/json/countries.json";
 
 const event: Event = {
   name: "message",

@@ -2,7 +2,7 @@ import { Command } from "../../interfaces/command";
 import { GroupChat } from "whatsapp-web.js";
 const command: Command = {
   name: "mention",
-  aliases: ["mentions", "mentionAll", "منشن", "منشنات", "منشن-الكل"],
+  aliases: ["mentions", "mentionAll", "منشن", "منشنات", "منشن-الكل","m"],
   category: "groups",
   adminOnly: true,
   groupOnly: true,
