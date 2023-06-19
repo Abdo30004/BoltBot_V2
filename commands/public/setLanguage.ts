@@ -32,11 +32,16 @@ const command: Command = {
       data.settings.language = lang;
     }
     await data.save();
+    let flags = {
+      ar: "🇸🇦",
+      en: "🇺🇸",
+    };
+    translate = client.i18n.getCommand(lang, command.name);
     await message.reply(
       translate.getReply("languageChanged", [
         {
           key: "lang",
-          value: lang,
+          value: `${lang} ${flags[lang as keyof typeof flags]}`,
         },
       ])
     );
