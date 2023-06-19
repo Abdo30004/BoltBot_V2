@@ -24,6 +24,9 @@
     {
       "key": "botAdminOnlyCommand",
       "value": "The bot needs to be admin to run this command"
+    },{
+      "key":"didYouMean",
+      "value":"Did you mean *{{command}}* ?"
     }
   ],
   "commands": [

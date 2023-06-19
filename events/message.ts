@@ -2,7 +2,7 @@ import { Event } from "../interfaces/event";
 import { Message, GroupChat } from "whatsapp-web.js";
 import { Logger } from "../Util/logger";
 import countries from "../database/json/countries.json";
-
+import { closest } from "fastest-levenshtein";
 const event: Event = {
   name: "message",
   async run(client, message: Message) {
@@ -18,6 +18,22 @@ const event: Event = {
       client.commands.find(
         (cmd) => cmd.aliases && cmd.aliases?.includes(`${cmdName}`)
       );
+    let didYouMean = closest(
+      cmdName,
+      client.commands
+        .map((c) => c.name)
+        .concat(client.commands.map((c) => c.aliases).flat())
+    );
+
+    if (!command && didYouMean) {
+      await message.reply(
+        client.i18n.getDefault("en", "didYouMean", [
+          { key: "command", value: client.config.prefix + didYouMean },
+        ])
+      );
+      return;
+    }
+
     if (!command) return;
 
     let chat = await message.getChat();
