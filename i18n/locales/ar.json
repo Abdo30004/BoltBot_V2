@@ -188,6 +188,21 @@
           "value": "*معلومات عن {{user}}*\n\n*الإسم الظاهر:* {{userName}}\n\n*الدولة:* {{countryName}} ({{nativeName}})\n\n*العلم:* {{flag}}\n\n*اللغات:* {{languages}}\n\n*الرقم:* {{phone}}\n\n*عن:* {{about}}"
         }
       ]
+    },
+    {
+      "name": "setlanguage",
+      "usage": "[{{language}}]",
+      "description": "لتغيير لغة البوت",
+      "replies": [
+        {
+          "key": "invalidLanguage",
+          "value": "من فضلك أدخل لغة صحيحة , اللغات المتوفرة هي {{langs}}"
+        },
+        {
+          "key": "languageChanged",
+          "value": "تم تغيير لغة البوت إلى {{lang}}"
+        }
+      ]
     }
   ],
   "variables": [
@@ -210,6 +225,14 @@
     {
       "key": "name",
       "values": ["اسم", "الاسم"]
+    },
+    {
+      "key": "mention",
+      "values": ["منشن العضو", "منشن"]
+    },
+    {
+      "key": "language",
+      "values": ["اللغة", "لغة"]
     }
   ]
 }

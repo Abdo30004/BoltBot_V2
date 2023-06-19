@@ -71,6 +71,8 @@ const event: Event = {
     let country = countries.find((c) => c.phone.includes(Number(countryCode)));
 
     let language =
+      (await client.db.schemas.User.findById(author.id._serialized))?.settings
+        ?.language ||
       country.languages.filter((ln) => client.i18n.locales.includes(ln))[0] ||
       "en";
 

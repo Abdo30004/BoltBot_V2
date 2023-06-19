@@ -10,7 +10,7 @@ const userSchema = new Schema<user>(
   {
     _id: String,
     settings: {
-      settings: String,
+      language: String,
     },
   },
   {

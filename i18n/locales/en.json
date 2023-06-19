@@ -24,9 +24,10 @@
     {
       "key": "botAdminOnlyCommand",
       "value": "The bot needs to be admin to run this command"
-    },{
-      "key":"didYouMean",
-      "value":"Did you mean {{command}} ?"
+    },
+    {
+      "key": "didYouMean",
+      "value": "Did you mean {{command}} ?"
     }
   ],
   "commands": [
@@ -191,6 +192,21 @@
           "value": "*Informations about {{user}}*\n\n*Display name:* {{userName}}\n\n*country:* {{countryName}} ({{nativeName}})\n\n*flag:* {{flag}}\n\n*languages:* {{languages}}\n\n*phone:* {{phone}}\n\n*about:* {{about}}"
         }
       ]
+    },
+    {
+      "name": "setlanguage",
+      "usage": "[{{language}}]",
+      "description": "Change the bot language",
+      "replies": [
+        {
+          "key": "invalidLanguage",
+          "value": "Invalid language, please send a valid language {{langs}}"
+        },
+        {
+          "key": "languageChanged",
+          "value": "Language changed to {{lang}}"
+        }
+      ]
     }
   ],
   "variables": [
@@ -213,6 +229,14 @@
     {
       "key": "type",
       "values": ["mp3/mp4", "mp4/mp3"]
+    },
+    {
+      "key": "mention",
+      "values": ["mention", "user"]
+    },
+    {
+      "key": "language",
+      "values": ["language", "lang"]
     }
   ]
 }
