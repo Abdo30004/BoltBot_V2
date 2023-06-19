@@ -185,7 +185,7 @@
       "replies": [
         {
           "key": "userInfo",
-          "value": "*معلومات عن {{user}}*\n\n*الإسم الظاهر:*{{userName}}\n\n*الدولة:*{{countryName}} ({{nativeName}})\n\n*العلم:* {{flag}}\n\n*اللغات:*{{languages}}\n\n*الرقم:*{{phone}}\n\n*عن:*{{about}}"
+          "value": "*معلومات عن {{user}}*\n\n*الإسم الظاهر:* {{userName}}\n\n*الدولة:* {{countryName}} ({{nativeName}})\n\n*العلم:* {{flag}}\n\n*اللغات:* {{languages}}\n\n*الرقم:* {{phone}}\n\n*عن:* {{about}}"
         }
       ]
     }
