@@ -43,7 +43,11 @@ const event: Event = {
         client.i18n.getDefault("en", "didYouMean", [
           {
             key: "command",
-            value: `\`\`\`${commandTanslate.usage}\`\`\` *(${didYouMean})*`,
+            value: `\`\`\`${commandTanslate.usage}\`\`\`${
+              didYouMean === didCmd.name
+                ? ""
+                : `*(${client.config.prefix + didYouMean})*`
+            }`,
           },
         ])
       );
