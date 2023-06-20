@@ -207,6 +207,38 @@
           "value": "Language changed to {{lang}}"
         }
       ]
+    },
+    {
+      "name": "extract",
+      "usage": "({{language}})",
+      "description": " ",
+      "replies": [
+        {
+          "key": "noMedia",
+          "value": "Please send a photo in caption"
+        },
+        {
+          "key": "notImage",
+          "value": "Please send a photo"
+        },
+        {
+          "key": "extracted",
+          "value": "Text extracted from the image:\n\n{{text}}"
+        },
+        {
+          "key": "errorProcessing",
+          "value": "Error processing the image"
+        },
+        {
+          "key": "noText",
+          "value": "No text found in the image"
+        },
+        
+        {
+          "key": "noData",
+          "value": "No data found"
+        }
+      ]
     }
   ],
   "variables": [

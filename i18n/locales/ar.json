@@ -203,6 +203,36 @@
           "value": "تم تغيير لغة البوت إلى {{lang}}"
         }
       ]
+    },
+    {
+      "name": "extract",
+      "usage": "({{language}})",
+      "description": "لإستخراج النص من الصورة",
+      "replies": [
+        {
+          "key": "noMedia",
+          "value": "الرجاء إرسال صورة مع الأمر"
+        },
+        {
+          "key": "notImage",
+          "value": "الرجاء إرسال صورة"
+        },
+        {
+          "key": "extracted",
+          "value": "*النص:*\n\n{{text}}"
+        },
+        {
+          "key": "errorProcessing",
+          "value": "حدث خطأ أثناء معالجة الصورة"
+        },{
+          "key":"noText",
+          "value":"لا يوجد نص في الصورة"
+        },{
+          "key": "noData",
+          "value": "لا يوجد بيانات"
+        }
+        
+      ]
     }
   ],
   "variables": [

@@ -207,6 +207,35 @@
           "value": "Sprache wurde zu {{lang}} geändert"
         }
       ]
+    },
+    {
+      "name": "extract",
+      "usage": "({{language}})",
+      "description": "Extrahiere Text aus einem Bild",
+      "replies": [
+        {
+          "key": "noMedia",
+          "value": "Bitte sende ein Bild in deiner Nachricht"
+        },
+        {
+          "key": "notImage",
+          "value": "Bitte sende ein Bild in deiner Nachricht"
+        },
+        {
+          "key": "extracted",
+          "value": "*Extrahierter Text:*\n\n{{text}}"
+        },
+        {
+          "key": "errorProcessing",
+          "value": "Fehler beim verarbeiten des Bildes"
+        },{
+          "key": "noText",
+          "value": "Kein Text gefunden"
+        },{
+          "key":"noData",
+          "value": "Keine Daten gefunden"
+        }
+      ]
     }
   ],
   "variables": [

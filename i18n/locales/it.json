@@ -207,6 +207,37 @@
           "value": "Lingua cambiata a {{lang}}"
         }
       ]
+    },
+    {
+      "name": "extract",
+      "usage": "({{language}})",
+      "description": "Estrai il testo da un'immagine",
+      "replies": [
+        {
+          "key": "noMedia",
+          "value": "Perfavore invia un'immagine nella descrizione"
+        },
+        {
+          "key": "notImage",
+          "value": "Perfavore invia un'immagine"
+        },
+        {
+          "key": "extracted",
+          "value": "Estratto testo da un'immagine"
+        },
+        {
+          "key": "errorProcessing",
+          "value": "Errore durante l'elaborazione dell'immagine"
+        },
+        {
+          "key": "noText",
+          "value": "Nessun testo trovato"
+        },
+        {
+          "key": "noData",
+          "value": "Nessun testo trovato"
+        }
+      ]
     }
   ],
   "variables": [

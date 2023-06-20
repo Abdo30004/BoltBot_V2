@@ -3,7 +3,7 @@
   "defaults": [
     {
       "key": "noLocaleFound",
-      "value": "Dowództwo wciąż w fazie rozwoju."
+      "value": "Polecenie wciąż w trakcie opracowywania."
     },
     {
       "key": "error",
@@ -11,19 +11,19 @@
     },
     {
       "key": "cooldown",
-      "value": "Odczekaj {{time}} sekund przed ponownym użyciem tego polecenia "
+      "value": "Odczekaj {{time}} sekund przed ponownym użyciem tego polecenia."
     },
     {
       "key": "groupOnlyCommand",
-      "value": "To polecenie może być używane tylko w grupach "
+      "value": "To polecenie może być używane tylko w grupach."
     },
     {
       "key": "adminOnlyCommand",
-      "value": "To polecenie może być używane tylko przez administratorów "
+      "value": "To polecenie może być używane tylko przez administratorów grupy."
     },
     {
       "key": "botAdminOnlyCommand",
-      "value": "Bot musi być administratorem, aby uruchomić to polecenie "
+      "value": "Bot musi być administratorem, aby uruchomić to polecenie"
     },
     {
       "key": "didYouMean",
@@ -45,19 +45,19 @@
     {
       "name": "help",
       "usage": "[command]",
-      "description": "Shows all commands or info about a specific command",
+      "description": "Pokazuje wszystkie komendy albo dane o komendzie",
       "replies": [
         {
           "key": "noCommand",
-          "value": "Nie znaleziono polecenia "
+          "value": "Nie znaleziono polecenia"
         },
         {
           "key": "noDescription",
-          "value": "Bez opisu "
+          "value": "Brak opisu"
         },
         {
           "key": "noUsage",
-          "value": "Brak zastosowania "
+          "value": "Brak zastosowania"
         },
         {
           "key": "commandInfo",
@@ -65,18 +65,18 @@
         },
         {
           "key": "commandsList",
-          "value": "*Lista poleceń*\n\n{{commands}}\n\n*Notatka:* Możesz użyć `/help [command]` aby uzyskać informacje o polecenie\n\nBądź pierwszą osobą, która dowie się o Bolt Bot aktualności : {{invite}}"
+          "value": "*Lista poleceń*\n\n{{commands}}\n\n*Porada:* Możesz użyć `/help [command]` aby uzyskać informacje o poleceniu\n\nBądź pierwszą osobą, która dowie się o aktualnościach Bolt Bot: {{invite}}"
         }
       ]
     },
     {
       "name": "tiktok",
       "usage": "[{{link}}] ({{type}})",
-      "description": "{{download}} filmik z tiktoka",
+      "description": "{{download}} film z tiktoka",
       "replies": [
         {
           "key": "invalidUrl",
-          "value": "Nieprawidłowy adres URL, wyślij prawidłowy adres URL tiktokowy"
+          "value": "Nieprawidłowy adres URL, wyślij prawidłowy adres URL z TikToka."
         }
       ]
     },
@@ -87,7 +87,7 @@
       "replies": [
         {
           "key": "noMedia",
-          "value": "Prosimy o przesłanie filmu/zdjęcia w podpisie"
+          "value": "Aby użyć komendy należy załączyć zdjęcie/film do wiadomości."
         }
       ]
     },
@@ -98,11 +98,11 @@
       "replies": [
         {
           "key": "noCity",
-          "value": "Proszę o podanie nazwy miasta"
+          "value": "Podaj nazwę miasta"
         },
         {
           "key": "noData",
-          "value": "Nie znaleziono miasta"
+          "value": "Nie znaleziono takiego miasta"
         },
         {
           "key": "weatherInfo",
@@ -121,22 +121,22 @@
         },
         {
           "key": "acceptedInvite",
-          "value": "Zaproszenie przyjęte, dziękuję za dodanie mnie do grupy"
+          "value": "Zaproszenie przyjęte, pomyślnie dodano mnie do grupy."
         }
       ]
     },
     {
       "name": "filter",
       "usage": "[{{filter}}] ({{percent}})",
-      "description": "Zastosuj filtr do zdjęcia",
+      "description": "Dodaj filtr do zdjęcia",
       "replies": [
         {
           "key": "invalidFilter",
-          "value": "Nieprawidłowy filtr, wyślij prawidłowy filtr (odwrócony | skala szarości | sepia | rozmycie)"
+          "value": "Nieprawidłowy filtr, wyślij prawidłowy filtr (invert | grayscale | sepia | blur)"
         },
         {
           "key": "noMedia",
-          "value": "Proszę o przesłanie zdjęcia w tytule"
+          "value": "Proszę załączyć zdjęcie"
         },
         {
           "key": "notImage",
@@ -147,7 +147,7 @@
     {
       "name": "instagram",
       "usage": "[{{link}}]",
-      "description": "{{download}} zdjęcie/wideo/historię na Instagramie",
+      "description": "{{download}} zdjęcie/wideo/story z Instagrama",
       "replies": [
         {
           "key": "invalidUrl",
@@ -207,61 +207,67 @@
           "value": "Zmieniono język na {{lang}}"
         }
       ]
+    },
+    {
+      "name": "extract",
+      "usage": "({{language}})",
+      "description": "Wyciąga tekst z wiadomości",
+      "replies": [
+        {
+          "key": "noMedia",
+          "value": "Proszę załączyć zdjęcie"
+        },
+        {
+          "key": "notImage",
+          "value": "Proszę wysłać zdjęcie"
+        },
+        {
+          "key": "extracted",
+          "value": "Wyciągnięto tekst z obrazu"
+        },
+        {
+          "key": "errorProcessing",
+          "value": "Wystąpił błąd podczas przetwarzania obrazu"
+        },
+        {
+          "key": "noText",
+          "value": "Nie znaleziono tekstu"
+        },
+        {
+          "key": "noData",
+          "value": "Nie znaleziono tekstu"
+        }
+      ]
     }
   ],
   "variables": [
     {
       "key": "download",
-      "values": [
-        "download",
-        "send"
-      ]
+      "values": ["download", "send"]
     },
     {
       "key": "link",
-      "values": [
-        "link",
-        "url",
-        "video"
-      ]
+      "values": ["link", "url", "video"]
     },
     {
       "key": "name",
-      "values": [
-        "name",
-        "title"
-      ]
+      "values": ["name", "title"]
     },
     {
       "key": "place",
-      "values": [
-        "place",
-        "location",
-        "city",
-        "country",
-        "address"
-      ]
+      "values": ["place", "location", "city", "country", "address"]
     },
     {
       "key": "type",
-      "values": [
-        "mp3/mp4",
-        "mp4/mp3"
-      ]
+      "values": ["mp3/mp4", "mp4/mp3"]
     },
     {
       "key": "mention",
-      "values": [
-        "mention",
-        "user"
-      ]
+      "values": ["mention", "user"]
     },
     {
       "key": "language",
-      "values": [
-        "language",
-        "lang"
-      ]
+      "values": ["language", "lang"]
     }
   ]
 }
