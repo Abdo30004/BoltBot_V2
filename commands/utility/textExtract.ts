@@ -23,7 +23,7 @@ const command: Command = {
     }
 
     form.append("isOverlayRequired", "true");
-    form.append("base64Image", media.data);
+    form.append("base64Image", `data:${media.mimetype};base64,${media.data}`);
 
     let { data } = await axios
       .post("https://api.ocr.space/parse/image", form, {
