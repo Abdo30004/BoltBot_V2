@@ -223,7 +223,7 @@
         },
         {
           "key": "extracted",
-          "value": "Wyciągnięto tekst z obrazu"
+          "value": "*Wyciągnięto tekst z obrazu:*\n\n{{text}}"
         },
         {
           "key": "errorProcessing",
