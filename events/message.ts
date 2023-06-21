@@ -56,13 +56,11 @@ const event: Event = {
 
     if (!command) return;
 
-    let chat = await message.getChat();
+    let chat =
+      client.cache.chats.get(message.from) || (await message.getChat());
     let author =
       client.cache.users.get(message.author || message.from) ||
       (await message.getContact());
-    if (client.cache.users.has(author.id._serialized)) {
-      client.cache.users.set(author.id._serialized, author);
-    }
 
     if (command.devOnly && !client.config.devs.includes(author.id._serialized))
       return;
@@ -103,6 +101,12 @@ const event: Event = {
         }
         return;
       }
+    }
+    if (!client.cache.users.has(author.id._serialized)) {
+      client.cache.users.set(author.id._serialized, author);
+    }
+    if (!client.cache.chats.has(chat.id._serialized)) {
+      client.cache.chats.set(chat.id._serialized, chat);
     }
 
     if (command.groupOnly && !chat.isGroup) {
