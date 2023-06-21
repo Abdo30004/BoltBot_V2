@@ -3,18 +3,18 @@ import { Command } from "../../interfaces/command";
 const command: Command = {
   name: "blocklist",
   aliases: ["blockList", "قائمة-الحظر"],
-    devOnly: true,
-    category: "devs",
+  devOnly: true,
+  category: "devs",
   execute: async (client, message, _translate, args) => {
     let blockList = await client.getBlockedContacts();
     if (!blockList.length) {
       await message.reply("No one is blocked");
       return false;
     }
-
+    client.cache.blocks = blockList.map((b) => b.id._serialized);
     await message.reply(
       `All Blocked ${blockList.length} users\n\n${blockList
-        .map((blocked, i) => `${i+1}-${blocked.id.user}`)
+        .map((blocked, i) => `${i + 1}-${blocked.id.user}`)
         .join("\n")}}
         `
     );

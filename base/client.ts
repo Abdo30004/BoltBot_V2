@@ -34,7 +34,9 @@ class Client extends BaseClient {
   public cache: {
     users: Collection<string, Contact>;
     chats: Collection<string, Chat>;
+    blocks: string[];
   };
+
   public db: {
     connection: typeof connection;
     schemas: typeof Schemas;
@@ -52,6 +54,7 @@ class Client extends BaseClient {
     this.cache = {
       users: new Collection(),
       chats: new Collection(),
+      blocks: [],
     };
     this.path = cwd();
   }

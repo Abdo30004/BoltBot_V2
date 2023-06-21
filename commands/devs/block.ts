@@ -3,7 +3,7 @@ import { Command } from "../../interfaces/command";
 const command: Command = {
   name: "block",
   aliases: ["block", "حظر"],
-    devOnly: true,
+  devOnly: true,
   category: "devs",
   execute: async (client, message, _translate, args) => {
     let blockedList = (await message.getMentions()).filter(
@@ -16,12 +16,15 @@ const command: Command = {
     for (let blocked of blockedList) {
       await blocked.block();
     }
-
+    client.cache.blocks = client.cache.blocks.concat(
+      blockedList.map((b) => b.id._serialized)
+    );
     await message.reply(
       `Blocked ${blockedList.length} users\n\n${blockedList
-        .map((blocked, i) => `${i+1}-${blocked.id.user}`)
+        .map((blocked, i) => `${i + 1}-${blocked.id.user}`)
         .join("\n")}}`
     );
+
     return true;
   },
 };

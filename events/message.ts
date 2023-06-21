@@ -61,7 +61,7 @@ const event: Event = {
     let author =
       client.cache.users.get(message.author || message.from) ||
       (await message.getContact());
-
+    if (client.cache.blocks.includes(author.id._serialized)) return;
     if (command.devOnly && !client.config.devs.includes(author.id._serialized))
       return;
     let countryCode = await author.getCountryCode();

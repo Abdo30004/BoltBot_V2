@@ -3,8 +3,8 @@ import { Command } from "../../interfaces/command";
 const command: Command = {
   name: "unblock",
   aliases: ["unblock", "إلغاء-حظر"],
-    devOnly: true,
-    category: "devs",
+  devOnly: true,
+  category: "devs",
   execute: async (client, message, _translate, args) => {
     let unblockedList = await message.getMentions();
     if (!unblockedList.length) {
@@ -14,7 +14,9 @@ const command: Command = {
     for (let unblocked of unblockedList) {
       await unblocked.unblock();
     }
-
+    client.cache.blocks = client.cache.blocks.filter(
+      (b) => !unblockedList.map((u) => u.id._serialized).includes(b)
+    );
     await message.reply(
       `unblocked ${unblockedList.length} users\n\n${unblockedList
         .map((unblocked, i) => `${i + 1}-${unblocked.id.user}`)
