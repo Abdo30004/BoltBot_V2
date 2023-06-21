@@ -64,7 +64,7 @@ class Client extends BaseClient {
       for (let file of files) {
         let stat = await fs.lstat(`${path}\\${file}`);
         if (stat.isDirectory()) {
-          await this.registerEvents(`${dir}\\${file}`);
+          await this.registerEvents(`${dir}\\${file}`, debug);
         }
         if (file.endsWith(".ts")) {
           let { default: event } = (await import(`${path}\\${file}`)) as {
@@ -95,7 +95,7 @@ class Client extends BaseClient {
       for (let file of files) {
         let stat = await fs.lstat(`${path}\\${file}`);
         if (stat.isDirectory()) {
-          await this.registerCommands(`${dir}\\${file}`);
+          await this.registerCommands(`${dir}\\${file}`, debug);
         } else if (file.endsWith(".ts")) {
           let { default: cmd } = (await import(`${path}\\${file}`)) as {
             default: Command;
@@ -108,7 +108,7 @@ class Client extends BaseClient {
       return true;
     } catch (error) {
       console.log(error);
-      
+
       return false;
     }
   }
