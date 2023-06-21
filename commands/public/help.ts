@@ -51,7 +51,10 @@ const command: Command = {
       );
       return true;
     }
-    let categories =[...new Set(client.commands.map((c) => c.category))];
+    let categories = [...new Set(client.commands.map((c) => c.category))];
+    let author = await message.getContact();
+    let isDev = client.config.devs.includes(author.id._serialized);
+    if (!isDev) categories = categories.filter((c) => c !== "devs");
     let string = categories
       .map((category) => {
         let categoryCommands = client.commands
