@@ -253,6 +253,17 @@
           "value": "Fehler beim verarbeiten der Anfrage"
         }
       ]
+    },
+    {
+      "name": "twitter",
+      "usage": "[{{link}}]",
+      "description": "{{download}} ein twitter Video/Picture",
+      "replies": [
+        {
+          "key": "invalidUrl",
+          "value": "Ungültige url, bitte sende eine gültige twitter url"
+        }
+      ]
     }
   ],
   "variables": [

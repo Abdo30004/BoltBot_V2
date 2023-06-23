@@ -249,6 +249,16 @@
           "value": "حدث خطأ أثناء تحميل الفيديو"
         }
       ]
+    },{
+      "name":"twitter",
+      "usage":"[{{link}}]",
+      "description":"لتحميل الفيديوهات/الصور من تويتر",
+      "replies":[
+        {
+          "key":"invalidUrl",
+          "value":"الرجاء إدخال رابط صحيح"
+        }
+      ]
     }
   ],
   "variables": [

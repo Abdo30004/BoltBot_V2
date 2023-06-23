@@ -239,7 +239,7 @@
         }
       ]
     },
-    
+
     {
       "name": "youtube",
       "usage": "[{{link}}] ({{type}})",
@@ -252,6 +252,17 @@
         {
           "key": "error",
           "value": "Errore durante il download del video"
+        }
+      ]
+    },
+    {
+      "name": "twitter",
+      "usage": "[{{link}}]",
+      "description": "{{download}} un video/foto da twitter",
+      "replies": [
+        {
+          "key": "invalidUrl",
+          "value": "Url errato, manda un indirizzo url valido"
         }
       ]
     }

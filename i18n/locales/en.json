@@ -240,7 +240,7 @@
         }
       ]
     },
-    
+
     {
       "name": "youtube",
       "usage": "[{{link}}] ({{type}})",
@@ -248,11 +248,22 @@
       "replies": [
         {
           "key": "invalidUrl",
-          "value": "Invalid url, please send a valid youtube url" 
+          "value": "Invalid url, please send a valid youtube url"
         },
         {
           "key": "error",
           "value": "Error downloading the video"
+        }
+      ]
+    },
+    {
+      "name": "twitter",
+      "usage": "[{{link}}]",
+      "description": "{{download}} a twitter video/photo",
+      "replies": [
+        {
+          "key": "invalidUrl",
+          "value": "Invalid url, please send a valid twitter url"
         }
       ]
     }

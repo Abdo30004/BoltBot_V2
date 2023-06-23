@@ -253,6 +253,17 @@
           "value": "Wystąpił błąd podczas przetwarzania"
         }
       ]
+    },
+    {
+      "name": "twitter",
+      "usage": "[{{link}}]",
+      "description": "{{download}} photo/video z Twittera",
+      "replies": [
+        {
+          "key": "invalidUrl",
+          "value": "Nieprawidłowy adres URL, wyślij prawidłowy adres URL Twittera"
+        }
+      ]
     }
   ],
   "variables": [
