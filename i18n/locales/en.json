@@ -233,10 +233,26 @@
           "key": "noText",
           "value": "No text found in the image"
         },
-        
+
         {
           "key": "noData",
           "value": "No data found"
+        }
+      ]
+    },
+    
+    {
+      "name": "youtube",
+      "usage": "[{{link}}] ({{type}})",
+      "description": "{{download}} a youtube video/audio",
+      "replies": [
+        {
+          "key": "invalidUrl",
+          "value": "Invalid url, please send a valid youtube url" 
+        },
+        {
+          "key": "error",
+          "value": "Error downloading the video"
         }
       ]
     }

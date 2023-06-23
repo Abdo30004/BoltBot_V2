@@ -224,14 +224,30 @@
         {
           "key": "errorProcessing",
           "value": "حدث خطأ أثناء معالجة الصورة"
-        },{
-          "key":"noText",
-          "value":"لا يوجد نص في الصورة"
-        },{
+        },
+        {
+          "key": "noText",
+          "value": "لا يوجد نص في الصورة"
+        },
+        {
           "key": "noData",
           "value": "لا يوجد بيانات"
         }
-        
+      ]
+    },
+    {
+      "name": "youtube",
+      "usage": "[{{link}}] ({{type}})",
+      "description": "ل{{download}} الفيديوهات من اليوتيوب",
+      "replies": [
+        {
+          "key": "invalidUrl",
+          "value": "الرجاء إدخال رابط صحيح"
+        },
+        {
+          "key": "error",
+          "value": "حدث خطأ أثناء تحميل الفيديو"
+        }
       ]
     }
   ],

@@ -26,7 +26,8 @@
     "mongoose": "^7.3.0",
     "qrcode-terminal": "^0.12.0",
     "string-similarity": "^4.0.4",
-    "whatsapp-web.js": "^1.21.0"
+    "whatsapp-web.js": "^1.21.0",
+    "ytdl-core": "^4.11.4"
   },
   "devDependencies": {
     "@types/download": "^8.0.2",

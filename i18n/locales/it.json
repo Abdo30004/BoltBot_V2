@@ -238,6 +238,22 @@
           "value": "Nessun testo trovato"
         }
       ]
+    },
+    
+    {
+      "name": "youtube",
+      "usage": "[{{link}}] ({{type}})",
+      "description": "{{download}} un video da youtube",
+      "replies": [
+        {
+          "key": "invalidUrl",
+          "value": "Url errato, manda un indirizzo url valido"
+        },
+        {
+          "key": "error",
+          "value": "Errore durante il download del video"
+        }
+      ]
     }
   ],
   "variables": [

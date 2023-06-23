@@ -238,6 +238,21 @@
           "value": "Nie znaleziono tekstu"
         }
       ]
+    },
+    {
+      "name": "youtube",
+      "usage": "[{{link}}] ({{type}})",
+      "description": "{{download}} audio/video z YouTube",
+      "replies": [
+        {
+          "key": "invalidUrl",
+          "value": "Nieprawidłowy adres URL, wyślij prawidłowy adres URL YouTube"
+        },
+        {
+          "key": "error",
+          "value": "Wystąpił błąd podczas przetwarzania"
+        }
+      ]
     }
   ],
   "variables": [

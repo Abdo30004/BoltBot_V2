@@ -228,12 +228,29 @@
         {
           "key": "errorProcessing",
           "value": "Fehler beim verarbeiten des Bildes"
-        },{
+        },
+        {
           "key": "noText",
           "value": "Kein Text gefunden"
-        },{
-          "key":"noData",
+        },
+        {
+          "key": "noData",
           "value": "Keine Daten gefunden"
+        }
+      ]
+    },
+    {
+      "name": "youtube",
+      "usage": "[{{link}}] ({{type}})",
+      "description": "{{download}} ein youtube Video/Audio",
+      "replies": [
+        {
+          "key": "invalidUrl",
+          "value": "Ungültige url, bitte sende eine gültige youtube url"
+        },
+        {
+          "key": "error",
+          "value": "Fehler beim verarbeiten der Anfrage"
         }
       ]
     }
