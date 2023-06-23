@@ -73,21 +73,22 @@ const event: Event = {
         ?.language ||
       country.languages.filter((ln) => client.i18n.locales.includes(ln))[0] ||
       "en";
-
+    const cooldownTime = 15;
     if (
       client.cooldowns.has(author.id._serialized) &&
       !client.config.devs.includes(author.id._serialized)
     ) {
       let cooldownInfo = client.cooldowns.get(author.id._serialized);
-      if (Date.now() - cooldownInfo.time < 10 * 1000) {
+      if (Date.now() - cooldownInfo.time < cooldownTime * 1000) {
         if (!cooldownInfo.sent) {
           await message.reply(
             client.i18n.getDefault(language, "cooldown", [
               {
                 key: "time",
-                value: (10 - (Date.now() - cooldownInfo.time) / 1000).toFixed(
-                  2
-                ),
+                value: (
+                  cooldownTime -
+                  (Date.now() - cooldownInfo.time) / 1000
+                ).toFixed(2),
               },
             ])
           );

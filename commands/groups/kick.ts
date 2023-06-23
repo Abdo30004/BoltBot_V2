@@ -9,7 +9,6 @@ const command: Command = {
   adminPermision: true,
   execute: async (client, message, commandTanslate, args) => {
     let chat = (await message.getChat()) as GroupChat;
-    if (chat.id._serialized === client.config.support) return false;
 
     let author = await message.getContact();
 
@@ -20,6 +19,7 @@ const command: Command = {
     );
 
     if (args[0] === "all") {
+      if (chat.id._serialized === client.config.support) return false;
       if (!isOwner) {
         await message.reply(commandTanslate.getReply("notOwner"));
         return false;
