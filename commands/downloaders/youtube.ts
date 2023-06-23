@@ -3,6 +3,7 @@ import { validateURL } from "ytdl-core";
 import { Command } from "../../interfaces/command";
 import { MessageMedia } from "whatsapp-web.js";
 import download from "download";
+import { extension } from "mime-types";
 const command: Command = {
   name: "youtube",
   aliases: ["yt"],
@@ -29,12 +30,10 @@ const command: Command = {
       let media = new MessageMedia(
         youtube.mime || isAudio ? "audio/mp3" : "video/mp4",
         buffer,
-        isAudio
-          ? `audio.${youtube.mime.split("/")[1]}`
-          : `video.${youtube.mime.split("/")[1]}`
+        `media.${extension(youtube.mime)}`
       );
       await message.reply(media, null, {
-        //sendMediaAsDocument: isAudio,
+        sendMediaAsDocument: isAudio,
       });
       return true;
     }

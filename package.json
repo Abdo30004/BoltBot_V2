@@ -21,6 +21,7 @@
     "fastest-levenshtein": "^1.0.16",
     "got": "^13.0.0",
     "jimp": "^0.22.8",
+    "mime-types": "^2.1.35",
     "moment": "^2.29.4",
     "moment-timezone": "^0.5.43",
     "mongoose": "^7.3.0",
@@ -31,6 +32,7 @@
   },
   "devDependencies": {
     "@types/download": "^8.0.2",
+    "@types/mime-types": "^2.1.1",
     "@types/qrcode-terminal": "^0.12.0"
   }
 }
