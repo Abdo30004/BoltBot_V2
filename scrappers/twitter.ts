@@ -29,18 +29,20 @@ const getGuestToken = async () => {
 export const getTwitter = async (
   url: string
 ): Promise<{ type: string; link: string; mime: string }[]> => {
-  const id = url.match(/\/([\d]+)/);
+  const id = [...url.match(/status\/\d+/g)]?.[0]?.replace("status/", "");
   if (!id) return null;
-  let { data } = await axios.get(_twitterapi(id[1]), {
-    headers: {
-      Authorization:
-        "Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA",
-      "x-guest-token": await getGuestToken(),
-      "user-agent":
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36",
-    },
-  });
-  if (!data.extended_entities) return null;
+  let { data } = await axios
+    .get(_twitterapi(id), {
+      headers: {
+        Authorization:
+          "Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA",
+        "x-guest-token": await getGuestToken(),
+        "user-agent":
+          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36",
+      },
+    })
+    .catch((err) => null);
+  if (!data?.extended_entities) return null;
 
   let medias = data.extended_entities.media.map((media: any) => {
     let type = media.type;
@@ -63,5 +65,3 @@ export const getTwitter = async (
 
   return medias;
 };
-
-
