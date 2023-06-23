@@ -249,14 +249,42 @@
           "value": "حدث خطأ أثناء تحميل الفيديو"
         }
       ]
-    },{
-      "name":"twitter",
-      "usage":"[{{link}}]",
-      "description":"لتحميل الفيديوهات/الصور من تويتر",
-      "replies":[
+    },
+    {
+      "name": "twitter",
+      "usage": "[{{link}}]",
+      "description": "لتحميل الفيديوهات/الصور من تويتر",
+      "replies": [
         {
-          "key":"invalidUrl",
-          "value":"الرجاء إدخال رابط صحيح"
+          "key": "invalidUrl",
+          "value": "الرجاء إدخال رابط صحيح"
+        }
+      ]
+    },
+    {
+      "name": "kick",
+      "usage": "({{mention}})",
+      "description": "لطرد العضو/الإعضاء من المجموعة",
+      "replies": [
+        {
+          "key": "kickedUsers",
+          "value": "تم طرد {{count}} أعضاء:\n\n{{users}}"
+        },
+        {
+          "key": "notOwner",
+          "value": "فقط مالك المجموعة يمكنه طرد كل الأعضاء"
+        },
+        {
+          "key": "confirmKickAll",
+          "value": "هل أنت متأكد من طرد كل الأعضاء؟ أكتب Yes للتأكيد"
+        },
+        {
+          "key": "kickAllCancelled",
+          "value": "تم إلغاء طرد كل الأعضاء"
+        },
+        {
+          "key": "kickAll",
+          "value": "تم طرد كل الأعضاء"
         }
       ]
     }

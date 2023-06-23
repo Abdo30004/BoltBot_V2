@@ -264,6 +264,33 @@
           "value": "Nieprawidłowy adres URL, wyślij prawidłowy adres URL Twittera"
         }
       ]
+    },
+    {
+      "name": "kick",
+      "usage": "({{mention}})",
+      "description": "Wyrzuca użytkownika z grupy",
+      "replies": [
+        {
+          "key": "kickedUsers",
+          "value": "wyrzucono {{count}} członków:\n\n{{users}}"
+        },
+        {
+          "key": "notOwner",
+          "value": "Tylko właściciel grupy może używać tej komendy"
+        },
+        {
+          "key": "confirmKickAll",
+          "value": "Czy na pewno chcesz wyrzucić wszystkich członków grupy? Napisz Yes, aby potwierdzić"
+        },
+        {
+          "key": "kickAllCancelled",
+          "value": "Wyrzucanie wszystkich członków grupy zostało anulowane"
+        },
+        {
+          "key": "kickAll",
+          "value": "Wyrzucono wszystkich członków grupy"
+        }
+      ]
     }
   ],
   "variables": [

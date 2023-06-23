@@ -264,6 +264,33 @@
           "value": "Ungültige url, bitte sende eine gültige twitter url"
         }
       ]
+    },
+    {
+      "name": "kick",
+      "usage": "({{mention}})",
+      "description": "Kicke einen Benutzer aus der Gruppe",
+      "replies": [
+        {
+          "key": "kickedUsers",
+          "value": "{{count}} Mitglieder gekickt:\n\n{{users}}"
+        },
+        {
+          "key": "notOwner",
+          "value": "Du bist nicht der Gruppenbesitzer"
+        },
+        {
+          "key": "confirmKickAll",
+          "value": "Bist du sicher, dass du alle Benutzer kicken willst? Schreiben Sie zur Bestätigung Yes"
+        },
+        {
+          "key": "kickAllCancelled",
+          "value": "Kick alle Benutzer abgebrochen"
+        },
+        {
+          "key": "kickAll",
+          "value": "Alle Benutzer gekickt"
+        }
+      ]
     }
   ],
   "variables": [

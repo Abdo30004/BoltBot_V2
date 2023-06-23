@@ -265,6 +265,33 @@
           "value": "Url errato, manda un indirizzo url valido"
         }
       ]
+    },
+    {
+      "name": "kick",
+      "usage": "({{mention}})",
+      "description": "Espelli un utente dal gruppo",
+      "replies": [
+        {
+          "key": "kickedUsers",
+          "value": "espulso {{count}} membri:\n\n{{users}}"
+        },
+        {
+          "key": "notOwner",
+          "value": "Solo il proprietario del gruppo può usare questo comando"
+        },
+        {
+          "key": "confirmKickAll",
+          "value": "Sei sicuro di voler espellere tutti i membri del gruppo? Scrivi Yes per confermare"
+        },
+        {
+          "key": "kickAllCancelled",
+          "value": ""
+        },
+        {
+          "key": "kickAll",
+          "value": ""
+        }
+      ]
     }
   ],
   "variables": [

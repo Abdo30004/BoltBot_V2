@@ -266,6 +266,33 @@
           "value": "Invalid url, please send a valid twitter url"
         }
       ]
+    },
+    {
+      "name": "kick",
+      "usage": "({{mention}})",
+      "description": "Kick a user(s) from the group",
+      "replies": [
+        {
+          "key": "kickedUsers",
+          "value": "kicked {{count}} members:\n\n{{users}}"
+        },
+        {
+          "key": "notOwner",
+          "value": "You are not the owner of the group"
+        },
+        {
+          "key": "confirmKickAll",
+          "value": "Are you sure you want to kick all members from the group? Write Yes to confirm"
+        },
+        {
+          "key": "kickAllCancelled",
+          "value": "Kick all members cancelled"
+        },
+        {
+          "key": "kickAll",
+          "value": "kicked all members from the group"
+        }
+      ]
     }
   ],
   "variables": [

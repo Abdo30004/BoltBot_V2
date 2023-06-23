@@ -141,14 +141,14 @@ class Client extends BaseClient {
   }
 
   public awaitMessage(options: {
-    filter: (message: Message) => any;
+    filter: (message: Message) => boolean;
     time: number;
   }): Promise<Message> {
-    return new Promise((resolve, reject) => {
+    return new Promise<Message>((resolve, reject) => {
       setTimeout(() => {
         reject(null);
       }, options.time);
-      this.on("message", (message) => {
+      this.on("message", (message: Message) => {
         if (options.filter(message)) {
           resolve(message);
         }
