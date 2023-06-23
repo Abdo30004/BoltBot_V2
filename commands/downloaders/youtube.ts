@@ -29,9 +29,13 @@ const command: Command = {
       let media = new MessageMedia(
         youtube.mime || isAudio ? "audio/mp3" : "video/mp4",
         buffer,
-        isAudio ? "audio.mp3" : "video.mp4"
+        isAudio
+          ? `audio.${youtube.mime.split("/")[1]}`
+          : `video.${youtube.mime.split("/")[1]}`
       );
-      await message.reply(media, null);
+      await message.reply(media, null, {
+        //sendMediaAsDocument: isAudio,
+      });
       return true;
     }
     await message.reply(youtube.link, null);

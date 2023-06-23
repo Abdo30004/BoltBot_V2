@@ -1,12 +1,15 @@
 import axios from "axios";
-import { getInfo,validateURL } from "ytdl-core";
+import { getInfo, validateURL } from "ytdl-core";
 
 export const getYoutube = async (url: string, audio?: boolean) => {
   const info = await getInfo(url);
   const isShorts = +info.videoDetails.lengthSeconds < 62;
+  console.log(info.formats.filter((f) => !f.hasVideo && f.hasAudio))
   let bestQuality = info.formats
     .filter((f) =>
-      audio ? !f.hasVideo && f.hasAudio : f.hasVideo && f.hasAudio
+      audio
+        ? !f.hasVideo && f.hasAudio 
+        : f.hasVideo && f.hasAudio
     )
     .reverse()[0];
   if (!bestQuality) return null;
@@ -28,7 +31,3 @@ export const getYoutube = async (url: string, audio?: boolean) => {
   }
 };
 
-
-getYoutube(
-  "https://www.youtube.com/watch?v=NTDSk-QRNHI&list=PL0F47I2_gOn0bqpcsPhMd3SiOZ9kfBL1w&pp=iAQB"
-).then((res) => console.log(res));
