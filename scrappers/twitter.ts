@@ -1,5 +1,5 @@
 import axios from "axios";
-import {} from "mime-types";
+
 const _twitterapi = (id: string) =>
   `https://api.twitter.com/1.1/statuses/show/${id}.json?tweet_mode=extended`;
 /*
