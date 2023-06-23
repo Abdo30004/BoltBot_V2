@@ -9,8 +9,8 @@ const command: Command = {
   adminPermision: true,
   execute: async (client, message, commandTanslate, args) => {
     let chat = (await message.getChat()) as GroupChat;
-      if (chat.id._serialized === client.config.support) return false;
-      
+    if (chat.id._serialized === client.config.support) return false;
+
     let author = await message.getContact();
 
     let isOwner = chat.owner._serialized === author.id._serialized;
@@ -33,7 +33,7 @@ const command: Command = {
         })
         .catch(() => null);
       if (confirm?.body?.toLowerCase() !== "yes") {
-        await message.reply(commandTanslate.getReply("kickAllCancel"));
+        await message.reply(commandTanslate.getReply("kickAllCanceled"));
         return false;
       }
 
