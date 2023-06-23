@@ -4,7 +4,6 @@ import { getInfo, validateURL } from "ytdl-core";
 export const getYoutube = async (url: string, audio?: boolean) => {
   const info = await getInfo(url);
   const isShorts = +info.videoDetails.lengthSeconds < 62;
-  console.log(info.formats.filter((f) => !f.hasVideo && f.hasAudio))
   let bestQuality = info.formats
     .filter((f) =>
       audio
