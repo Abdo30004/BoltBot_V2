@@ -25,6 +25,9 @@ const event: Event = {
       updateCache(client);
     }, 1000 * 60 * 60 * 2);
     console.log(`Logged in as ${client.info.pushname}`);
+    client
+      .sendMessage(client.config.test, "*Bolt Bot* ⚡ Started 🟢")
+      .catch(() => null);
   },
 };
 
