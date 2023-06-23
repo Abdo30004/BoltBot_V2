@@ -19,7 +19,7 @@ const command: Command = {
       return false;
     }
     let isAudio = type === "mp3";
-    let youtube = await getYoutube(url);
+    let youtube = await getYoutube(url, isAudio);
     if (!youtube) {
       await message.reply(translate.getReply("error"));
       return false;
