@@ -48,7 +48,6 @@ export const getTwitter = async (
       let variants = media.video_info.variants
         .sort((a: any, b: any) => b.bitrate - a.bitrate)
         .filter((a: any) => a.content_type.includes("video"));
-      console.log(variants);
       return {
         type,
         link: variants[0].url,
