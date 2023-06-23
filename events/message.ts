@@ -73,7 +73,7 @@ const event: Event = {
         ?.language ||
       country.languages.filter((ln) => client.i18n.locales.includes(ln))[0] ||
       "en";
-    const cooldownTime = 15;
+    const cooldownTime = 30;
     if (
       client.cooldowns.has(author.id._serialized) &&
       !client.config.devs.includes(author.id._serialized)

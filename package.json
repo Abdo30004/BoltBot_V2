@@ -7,7 +7,8 @@
     "start": "ts-node index.ts",
     "build": "tsc",
     "dev": "nodemon index.ts",
-    "start-dist": "node dist/index.js"
+    "start-dist": "node dist/index.js",
+    "alert": "pm2 start index.ts --exp-backoff-restart-delay=100"
   },
   "author": "Abderrahmane",
   "license": "ISC",
