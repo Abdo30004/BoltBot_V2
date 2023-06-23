@@ -5,7 +5,7 @@ const command: Command = {
   aliases: ["setlang", "تغيير-اللغة", "تغيير-لغة"],
   category: "public",
   execute: async (client, message, translate, args) => {
-    let lang = args[0];
+    let lang = args[0]?.toLowerCase();
     let flags = {
       ar: "🇸🇦",
       en: "🇺🇸",
@@ -16,7 +16,7 @@ const command: Command = {
       pl: "🇵🇱",
     };
     let supportedLangs = [...client.i18n.languages.keys()];
-    if (!lang! || supportedLangs.includes(lang)) {
+    if (!lang || !supportedLangs.includes(lang)) {
       await message.reply(
         translate.getReply("invalidLanguage", [
           {
