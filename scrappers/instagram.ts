@@ -89,6 +89,3 @@ export const getInstagram = async (url: string) => {
     .toArray();
   return links;
 };
-getInstagram(
-  "https://www.instagram.com/stories/yhi_abderhmane/3131884811252214970/"
-).then(console.log)
