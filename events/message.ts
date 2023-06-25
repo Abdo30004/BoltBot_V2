@@ -3,6 +3,9 @@ import { GroupChat, Message } from "whatsapp-web.js";
 import { Logger } from "../Util/logger";
 import countries from "../database/json/countries.json";
 import { closest } from "fastest-levenshtein";
+function sleep(ms: number) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
 const event: Event = {
   name: "message",
   async run(client, message: Message) {
@@ -68,6 +71,8 @@ const event: Event = {
         !client.config.devs.includes(author.id._serialized)
       )
         return;
+      await chat.sendStateTyping().catch((err) => null);
+      await sleep(1000);
       let countryCode = await author.getCountryCode();
       if (
         chat.isGroup &&
@@ -135,7 +140,6 @@ const event: Event = {
             client.i18n.getDefault(language, "noLocaleFound")
           );
         await chat.sendSeen();
-        await chat.sendStateTyping();
 
         let status = await command.execute(
           client,
