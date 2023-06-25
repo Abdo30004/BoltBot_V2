@@ -8,7 +8,7 @@
     "build": "tsc",
     "dev": "nodemon index.ts",
     "start-dist": "node dist/index.js",
-    "alert": "pm2 start index.ts --exp-backoff-restart-delay=100"
+    "alert": "pm2 start pm2/config.json --exp-backoff-restart-delay=100 && pm2 logs"
   },
   "author": "Abderrahmane",
   "license": "ISC",

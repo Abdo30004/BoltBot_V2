@@ -1,0 +1,60 @@
+Event: chat_archived has been registered
+Event: chat_removed has been registered
+Event: group_admin_changed has been registered
+Event: group_join has been registered
+Event: group_leave has been registered
+Event: group_update has been registered
+Event: call has been registered
+Event: message has been registered
+Event: qr has been registered
+Event: ready has been registered
+Command: block has been registered
+Command: blocklist has been registered
+Command: stats has been registered
+Command: unblock has been registered
+Command: instagram has been registered
+Command: tiktok has been registered
+Command: twitter has been registered
+Command: youtube has been registered
+Command: kick has been registered
+Command: lock has been registered
+Command: mention has been registered
+Command: unlock has been registered
+Command: help has been registered
+Command: invite has been registered
+Command: ping has been registered
+Command: setlanguage has been registered
+Command: filter has been registered
+Command: sticker has been registered
+Command: extract has been registered
+Command: userinfo has been registered
+Command: weather has been registered
+▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+█ ▄▄▄▄▄ █▀ ▄ ▄▄█▄█▀█ ▀ █▄▄█▀▄█  █ ██▄▀ ▀▄▄▀ ▀██ ▄▄▄▄▄ █
+█ █   █ █▀▄▄▄  █▄▀▀▀██▄▄▀ ▄█▀▀▀ ▀█▄▀▀▀▀███▀▀▄▀█ █   █ █
+█ █▄▄▄█ █▀▄▀██  ███▄ ██▄▄ ▄▄▄ ▀▄█▀██   ██▄  ███ █▄▄▄█ █
+█▄▄▄▄▄▄▄█▄▀ ▀▄█ █▄█▄▀ █ █ █▄█ █ █▄▀▄▀▄█▄█▄▀ █ █▄▄▄▄▄▄▄█
+█▄▄▄  █▄▄  ▄█▀▄▄▄▀▄  ▄▀█▀▄  ▄▄▀ ▄▀██  ▀███   ▄▄█ ▀ █▄▀█
+█▀▄ ███▄▀▀▄▀▄▀▄█▄ ▀  ▄▀▀▄▀ █▀▀▀▀ ▀█▄ █▄█▄  ▀█▀ █▀█▄▄▀██
+█▀▀▄▀▄▄▄█▄ ▄▀▀▄█▀▄▀▄▀▄▀▀▄▄ ▀▀▀  ██ ▄▀▄▀█▀█▀▀▀▄▄▄█  ▄█▀█
+█ █▀▀█▄▄  ▀█▀█▀█ ▄▀▀ ██ █▀▀█▀▀▄█ █▀ █▀ ▄▀█▄ █▄▄▄▀█▀██▀█
+█▀ ▀▄█▄▄▀▄▄  ▄▀█▀█▄▄▄▄▄▀ ▄█▄ ▄   ▀▄█▄  █▀▀ ▀ ▄ █▄▄ ▄▄▄█
+█▀█ ▀▀▀▄ ▄▄▀▀▀  ▀██ ▄█▄▄ ▀ ▄█▀█▀███▄██▀▄▄▀██▄▀▄▄ ▄ ████
+█ ▀▀▄▄▀▄▄█▄▄█▄ ▀▄█▄ ▄▄██▄ █▄ ▄   ▀▄▄▄ █▄██▀ ▄▄█▄█ ▄▄▀▀█
+█▀█▄██▀▄ ▀ █▄ ▄ ▀▀█▀▄██▀▄▀ ██▀▀█ █▀▀ ▄  ▄█ ▀▄▀▄  █▀█▀▀█
+██▄▀█ ▄▄▄ ▄█▀▀▄▄▄▀ ▄▀█▀▀▄ ▄▄▄ ▄▀▄█ ▄▄ ▀▄█▀█   ▄▄▄ █▄▀▄█
+█ ▀█▄ █▄█ ██▀█▀▄▄ ▄▀▄▄██  █▄█ ▄▀▀▄▀ ▀█▄ ▄▀▄█▄ █▄█  ▄▀██
+█  █▀ ▄▄ ▄▄ █▄ █▀▄ ▄ █▀█▀▄▄▄▄▄▀▀▄█▄█ ▄ █▄██ ▄ ▄      ▀█
+██▀ █▄ ▄  ▀▄▄█▀███▀▄ ▀██▀▀ █ ▄███▄██▀▄▀█▄▀▄█▄ ▀▀ ▀▀█▀▀█
+█▀ ██  ▄▄█▀▀▄█▀█▀█▀▄▄▄▀█ ▀▀▀▀▄▀  ▀▄▄█▄▀▄██▄ ▀ █▀█▀▄█▀██
+██▄▄ █▀▄▀▀▄ █▀ ▀▀███ ▄██▀█  ██  ▄▄█▄▀▄▄█ ▀█▀█▀█▀ ▄▄▄▀▀█
+█ ▀▄ ▄ ▄█  █▄▀ ███  ▀█▀█▀▄ ▀ ▄  ▄███▄  █▀▀█▀▀▀▄    ▄▄██
+█▀█▀▀▀█▄▀▀█▄▄█▄  ▀ ▀▄▀▄▀▀▀▀▄▄▄█▀▄ ▄█▀ ████ █▄▀▀█ ▄█▄▀██
+██  ▄▀▄▄▄▄▀▀▀▀▄▄▄▀█▄▀▄▀▀ █▄███  ▄███▄▄ ███ ▀▀ ██▄▀ ▄█▀█
+█▄ ▀▄▄▄▄▀ ▀▄  ▀▄▄  ▄██▀ █  ▀▄██▄█▀▄▄ ▄█ ▀▀█▀█▀██▄▀ █▄▀█
+████▄██▄█ █ ▀▄█▄█▄   ▄█▀▄ ▄▄▄ ▀▀▀█▄██▄▀███▀▀█ ▄▄▄  █  █
+█ ▄▄▄▄▄ █▄▄▄ █ █▄▄▄▀█▄█▄▀ █▄█  ▄   █  ▀▀▄▄ █▀ █▄█  ▄█▀█
+█ █   █ █ ▀█▀▄▀▄ █▀▄ ▄▀█▀  ▄▄ █ ▄▀██▄▄ █▀▀▀▀▀ ▄▄▄▄▄▄███
+█ █▄▄▄█ █ ▄█▀▄ ▄▀██▄▄  ▄█▄█▀█▀▄▀▀▀▀  ▄ ██▀▄ ▄███▄ ▀▄▀▄█
+█▄▄▄▄▄▄▄█▄█▄█▄███▄█▄████▄▄██▄██▄█████▄▄▄███████▄█▄▄▄███
+
