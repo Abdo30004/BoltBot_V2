@@ -102,7 +102,7 @@ export const getTTS = async (text: string) => {
       break;
     case false:
       base64 = await tts.getAudioBase64(text, {
-        lang: lang || undefined,
+        lang: supported.includes(lang) ? lang : undefined,
         slow: false,
         timeout: 10000,
       });
