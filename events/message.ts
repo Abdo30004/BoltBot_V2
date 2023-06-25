@@ -1,5 +1,5 @@
 import { Event } from "../interfaces/event";
-import { Message, GroupChat } from "whatsapp-web.js";
+import { Message } from "whatsapp-web.js";
 import { Logger } from "../Util/logger";
 import countries from "../database/json/countries.json";
 import { closest } from "fastest-levenshtein";
@@ -110,33 +110,6 @@ const event: Event = {
       client.cache.chats.set(chat.id._serialized, chat);
     }
 
-    if (command.groupOnly && !chat.isGroup) {
-      await message
-        .reply(client.i18n.getDefault(language, "groupOnlyCommand"))
-        .catch();
-      return;
-    }
-    if (chat.isGroup) {
-      let groupChat = chat as GroupChat;
-      let amAdmin = groupChat.participants.find(
-        (c) => c.id.user === client.info.wid.user
-      ).isAdmin;
-      let isAdmin = groupChat.participants.find(
-        (c) => c.id.user === author.id.user
-      ).isAdmin;
-      if (command.adminOnly && !isAdmin) {
-        await message
-          .reply(client.i18n.getDefault(language, "adminOnlyCommand"))
-          .catch();
-        return;
-      }
-      if (command.adminPermision && !amAdmin) {
-        await message
-          .reply(client.i18n.getDefault(language, "botAdminOnlyCommand"))
-          .catch();
-        return;
-      }
-    }
     Logger.logCommandRun(message, author, chat);
     let commandTanslate = client.i18n.getCommand(language, command.name);
 

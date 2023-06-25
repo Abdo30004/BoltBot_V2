@@ -6,7 +6,7 @@ async function updateCache(client: Client) {
   let blocks = await client.getBlockedContacts();
 
   chats.forEach((chat) => {
-    client.cache.chats.set(chat.id._serialized, chat);
+    if (!chat.isGroup) client.cache.chats.set(chat.id._serialized, chat);
   });
 
   users.forEach((user) => {
@@ -20,10 +20,11 @@ const event: Event = {
   once: false,
   run: async (client: Client) => {
     client.uptime = Date.now();
+    /*
     updateCache(client);
     setInterval(() => {
       updateCache(client);
-    }, 1000 * 60 * 60 * 2);
+    }, 1000 * 60 * 60 * 2);*/
     console.log(`Logged in as ${client.info.pushname}`);
     client
       .sendMessage(client.config.test, "*Bolt Bot* ⚡ Started 🟢")

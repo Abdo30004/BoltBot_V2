@@ -39,5 +39,5 @@ export const getInstagram = async (url: string) => {
   return links;
 };
 getInstagram(
-  "https://www.instagram.com/p/CtuN-AZowuz/?utm_source=ig_web_copy_link&igshid=MWQ1ZGUxMzBkMA=="
+  "https://www.instagram.com/stories/yhi_abderhmane/3131884811252214970/"
 ).then(console.log);
