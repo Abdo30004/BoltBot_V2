@@ -72,7 +72,7 @@ const event: Event = {
       )
         return;
       await chat.sendStateTyping().catch((err) => null);
-      await sleep(1000);
+      await sleep(3*1000);
       let countryCode = await author.getCountryCode();
       if (
         chat.isGroup &&
