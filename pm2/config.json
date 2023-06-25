@@ -10,7 +10,7 @@
         "max_memory_restart": "1G",
         "error_file": "pm2/errors.txt",
         "out_file": "pm2/logs.txt",
-        "ignore_watch":["pm2",".wwebjs_cache",".wwebjs_auth"],
+        "ignore_watch":["pm2",".wwebjs_cache",".wwebjs_auth",".git"],
         "args": [ "--color" ,"--exp-backoff-restart-delay=100"]
 
       }
