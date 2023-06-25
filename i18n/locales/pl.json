@@ -110,21 +110,7 @@
         }
       ]
     },
-    {
-      "name": "invite",
-      "usage": "[{{link}}]",
-      "description": "Zaproś bota do swojej grupy",
-      "replies": [
-        {
-          "key": "noValidLink",
-          "value": "Wyślij prawidłowy link z zaproszeniem do grupy"
-        },
-        {
-          "key": "acceptedInvite",
-          "value": "Zaproszenie przyjęte, pomyślnie dodano mnie do grupy."
-        }
-      ]
-    },
+
     {
       "name": "filter",
       "usage": "[{{filter}}] ({{percent}})",
@@ -154,33 +140,6 @@
           "value": "Nieprawidłowy adres URL, wyślij prawidłowy adres URL Instagrama"
         }
       ]
-    },
-    {
-      "name": "lock",
-      "usage": "",
-      "description": "Blokuje czat",
-      "replies": [
-        {
-          "key": "locked",
-          "value": "Czat zablokowany"
-        }
-      ]
-    },
-    {
-      "name": "unlock",
-      "usage": "",
-      "description": "Odblokowuje czat",
-      "replies": [
-        {
-          "key": "unlocked",
-          "value": "Czat odblokowany"
-        }
-      ]
-    },
-    {
-      "name": "mention",
-      "usage": "",
-      "description": "Wspomnij wszystkich członków grupy"
     },
     {
       "name": "userinfo",
@@ -266,31 +225,9 @@
       ]
     },
     {
-      "name": "kick",
-      "usage": "({{mention}})",
-      "description": "Wyrzuca użytkownika z grupy",
-      "replies": [
-        {
-          "key": "kickedUsers",
-          "value": "wyrzucono {{count}} członków:\n\n{{users}}"
-        },
-        {
-          "key": "notOwner",
-          "value": "Tylko właściciel grupy może używać tej komendy"
-        },
-        {
-          "key": "confirmKickAll",
-          "value": "Czy na pewno chcesz wyrzucić wszystkich członków grupy? Napisz Yes, aby potwierdzić"
-        },
-        {
-          "key": "kickAllCancelled",
-          "value": "Wyrzucanie wszystkich członków grupy zostało anulowane"
-        },
-        {
-          "key": "kickAll",
-          "value": "Wyrzucono wszystkich członków grupy"
-        }
-      ]
+      "name": "tts",
+      "usage": "text",
+      "description": "Konwertuje tekst na mowę"
     }
   ],
   "variables": [

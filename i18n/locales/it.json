@@ -111,21 +111,6 @@
       ]
     },
     {
-      "name": "invite",
-      "usage": "[{{link}}]",
-      "description": "invita il bot nel tuo gruppo",
-      "replies": [
-        {
-          "key": "noValidLink",
-          "value": "Perfavore, manda un link valido di un gruppo"
-        },
-        {
-          "key": "acceptedInvite",
-          "value": "Invito accettato, grazie per avermi aggiunto al gruppo!"
-        }
-      ]
-    },
-    {
       "name": "filter",
       "usage": "[{{filter}}] ({{percent}})",
       "description": "Applica un filtro ad una foto",
@@ -154,33 +139,6 @@
           "value": "Url errato, manda un indirizzo url valido"
         }
       ]
-    },
-    {
-      "name": "lock",
-      "usage": "",
-      "description": "Blocca la chat",
-      "replies": [
-        {
-          "key": "locked",
-          "value": "Chat Bloccata"
-        }
-      ]
-    },
-    {
-      "name": "unlock",
-      "usage": "",
-      "description": "Sblocca la chat",
-      "replies": [
-        {
-          "key": "unlocked",
-          "value": "Chat sbloccata"
-        }
-      ]
-    },
-    {
-      "name": "mention",
-      "usage": "",
-      "description": "Menziona tutti i membri nel tuo gruppo"
     },
     {
       "name": "userinfo",
@@ -267,31 +225,9 @@
       ]
     },
     {
-      "name": "kick",
-      "usage": "({{mention}})",
-      "description": "Espelli un utente dal gruppo",
-      "replies": [
-        {
-          "key": "kickedUsers",
-          "value": "espulso {{count}} membri:\n\n{{users}}"
-        },
-        {
-          "key": "notOwner",
-          "value": "Solo il proprietario del gruppo può usare questo comando"
-        },
-        {
-          "key": "confirmKickAll",
-          "value": "Sei sicuro di voler espellere tutti i membri del gruppo? Scrivi Yes per confermare"
-        },
-        {
-          "key": "kickAllCancelled",
-          "value": ""
-        },
-        {
-          "key": "kickAll",
-          "value": ""
-        }
-      ]
+      "name": "tts",
+      "usage": "text",
+      "description": "Converti un testo in un messaggio vocale"
     }
   ],
   "variables": [
