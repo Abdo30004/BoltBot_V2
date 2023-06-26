@@ -3,6 +3,7 @@ import { detect } from "tinyld";
 import axios from "axios";
 import { load } from "cheerio";
 import fs from "fs";
+
 export const getTTS = async (text: string) => {
   let lang = detect(text);
   let supported = [
@@ -57,7 +58,6 @@ export const getTTS = async (text: string) => {
     "mn",
     "ne",
     "no",
-    "fa",
     "pl",
     "pt",
     "pa",
@@ -110,3 +110,4 @@ export const getTTS = async (text: string) => {
 
   return base64;
 };
+
