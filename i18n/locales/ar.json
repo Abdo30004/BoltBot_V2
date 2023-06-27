@@ -106,7 +106,21 @@
         }
       ]
     },
-
+    {
+      "name": "invite",
+      "usage": "[{{link}}]",
+      "description": "لدعوة البوت إلى مجموعتك",
+      "replies": [
+        {
+          "key": "noValidLink",
+          "value": "الرجاء إدخال رابط دعوة صحيح"
+        },
+        {
+          "key": "acceptedInvite",
+          "value": "تم إضافة البوت إلى المجموعة"
+        }
+      ]
+    },
     {
       "name": "filter",
       "usage": "[{{filter}}] ({{percent}})",
@@ -137,8 +151,33 @@
         }
       ]
     },
-
-
+    {
+      "name": "lock",
+      "usage": "",
+      "description": "لقفل المجموعة",
+      "replies": [
+        {
+          "key": "locked",
+          "value": "تم قفل المجموعة"
+        }
+      ]
+    },
+    {
+      "name": "unlock",
+      "usage": "",
+      "description": "لفتح المجموعة",
+      "replies": [
+        {
+          "key": "unlocked",
+          "value": "تم فتح المجموعة"
+        }
+      ]
+    },
+    {
+      "name": "mention",
+      "usage": "",
+      "description": "لعمل منشن للكل"
+    },
     {
       "name": "userinfo",
       "usage": "({{mention}})",
@@ -221,11 +260,38 @@
           "value": "الرجاء إدخال رابط صحيح"
         }
       ]
-    },{
-      "name":"tts",
-      "usage":"text",
-      "description":"لتحويل النص إلى صوت"
-
+    },
+    {
+      "name": "kick",
+      "usage": "({{mention}})",
+      "description": "لطرد العضو/الإعضاء من المجموعة",
+      "replies": [
+        {
+          "key": "kickedUsers",
+          "value": "تم طرد {{count}} أعضاء:\n\n{{users}}"
+        },
+        {
+          "key": "notOwner",
+          "value": "فقط مالك المجموعة يمكنه طرد كل الأعضاء"
+        },
+        {
+          "key": "confirmKickAll",
+          "value": "هل أنت متأكد من طرد كل الأعضاء؟ أكتب Yes للتأكيد"
+        },
+        {
+          "key": "kickAllCancelled",
+          "value": "تم إلغاء طرد كل الأعضاء"
+        },
+        {
+          "key": "kickAll",
+          "value": "تم طرد كل الأعضاء"
+        }
+      ]
+    },
+    {
+      "name": "tts",
+      "usage": "text",
+      "description": "لتحويل النص إلى صوت"
     }
   ],
   "variables": [

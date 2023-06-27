@@ -111,6 +111,21 @@
       ]
     },
     {
+      "name": "invite",
+      "usage": "[{{link}}]",
+      "description": "lade den Bot in deine Gruppe ein",
+      "replies": [
+        {
+          "key": "noValidLink",
+          "value": "Bitte schick einen gültigen Einladungslink"
+        },
+        {
+          "key": "acceptedInvite",
+          "value": "Einladung aktzeptiert, danke für das hinzufügen der Gruppe"
+        }
+      ]
+    },
+    {
       "name": "filter",
       "usage": "[{{filter}}] ({{percent}})",
       "description": "Füge einen Filter zu einem Bild hinzu",
@@ -139,6 +154,33 @@
           "value": "Ungültige url, bitte send eine gültige instagram url"
         }
       ]
+    },
+    {
+      "name": "lock",
+      "usage": "",
+      "description": "Sperrt den Chat",
+      "replies": [
+        {
+          "key": "locked",
+          "value": "Chat gesperrt"
+        }
+      ]
+    },
+    {
+      "name": "unlock",
+      "usage": "",
+      "description": "Hebt die Sperre des Chats auf",
+      "replies": [
+        {
+          "key": "unlocked",
+          "value": "Chat Sperre aufgehoben"
+        }
+      ]
+    },
+    {
+      "name": "mention",
+      "usage": "",
+      "description": "Erwähne alle Mitlgider in einer Gruppe"
     },
     {
       "name": "userinfo",
@@ -220,6 +262,33 @@
         {
           "key": "invalidUrl",
           "value": "Ungültige url, bitte sende eine gültige twitter url"
+        }
+      ]
+    },
+    {
+      "name": "kick",
+      "usage": "({{mention}})",
+      "description": "Kicke einen Benutzer aus der Gruppe",
+      "replies": [
+        {
+          "key": "kickedUsers",
+          "value": "{{count}} Mitglieder gekickt:\n\n{{users}}"
+        },
+        {
+          "key": "notOwner",
+          "value": "Du bist nicht der Gruppenbesitzer"
+        },
+        {
+          "key": "confirmKickAll",
+          "value": "Bist du sicher, dass du alle Benutzer kicken willst? Schreiben Sie zur Bestätigung Yes"
+        },
+        {
+          "key": "kickAllCancelled",
+          "value": "Kick alle Benutzer abgebrochen"
+        },
+        {
+          "key": "kickAll",
+          "value": "Alle Benutzer gekickt"
         }
       ]
     },

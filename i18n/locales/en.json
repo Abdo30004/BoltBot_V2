@@ -111,6 +111,21 @@
       ]
     },
     {
+      "name": "invite",
+      "usage": "[{{link}}]",
+      "description": "invite the bot to your group",
+      "replies": [
+        {
+          "key": "noValidLink",
+          "value": "Please send a valid group invite link"
+        },
+        {
+          "key": "acceptedInvite",
+          "value": "Invite accepted, thanks for adding me to your group"
+        }
+      ]
+    },
+    {
       "name": "filter",
       "usage": "[{{filter}}] ({{percent}})",
       "description": "Apply a filter to a photo",
@@ -141,6 +156,33 @@
       ]
     },
     {
+      "name": "lock",
+      "usage": "",
+      "description": "Locks the chat",
+      "replies": [
+        {
+          "key": "locked",
+          "value": "Chat locked"
+        }
+      ]
+    },
+    {
+      "name": "unlock",
+      "usage": "",
+      "description": "Unlocks the chat",
+      "replies": [
+        {
+          "key": "unlocked",
+          "value": "Chat unlocked"
+        }
+      ]
+    },
+    {
+      "name": "mention",
+      "usage": "",
+      "description": "Mention all members in the group"
+    },
+    {
       "name": "userinfo",
       "usage": "({{mention}})",
       "description": "Shows info about a user",
@@ -169,7 +211,7 @@
     {
       "name": "extract",
       "usage": "({{language}})",
-      "description": "Extract text from an image",
+      "description": " ",
       "replies": [
         {
           "key": "noMedia",
@@ -222,6 +264,33 @@
         {
           "key": "invalidUrl",
           "value": "Invalid url, please send a valid twitter url"
+        }
+      ]
+    },
+    {
+      "name": "kick",
+      "usage": "({{mention}})",
+      "description": "Kick a user(s) from the group",
+      "replies": [
+        {
+          "key": "kickedUsers",
+          "value": "kicked {{count}} members:\n\n{{users}}"
+        },
+        {
+          "key": "notOwner",
+          "value": "You are not the owner of the group"
+        },
+        {
+          "key": "confirmKickAll",
+          "value": "Are you sure you want to kick all members from the group? Write Yes to confirm"
+        },
+        {
+          "key": "kickAllCancelled",
+          "value": "Kick all members cancelled"
+        },
+        {
+          "key": "kickAll",
+          "value": "kicked all members from the group"
         }
       ]
     },
