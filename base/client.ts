@@ -31,12 +31,6 @@ class Client extends BaseClient {
     { time: number; sent: boolean; count: number }
   > = new Collection();
   public path: string;
-  public cache: {
-    users: Collection<string, Contact>;
-    chats: Collection<string, Chat>;
-    blocks: string[];
-  };
-
   public db: {
     connection: typeof connection;
     schemas: typeof Schemas;
@@ -51,11 +45,7 @@ class Client extends BaseClient {
     };
     super(Object.assign(defaultOptions, options));
     this.commands = new Collection();
-    this.cache = {
-      users: new Collection(),
-      chats: new Collection(),
-      blocks: [],
-    };
+
     this.path = cwd();
   }
 

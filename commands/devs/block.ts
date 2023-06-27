@@ -16,9 +16,7 @@ const command: Command = {
     for (let blocked of blockedList) {
       await blocked.block();
     }
-    client.cache.blocks = client.cache.blocks.concat(
-      blockedList.map((b) => b.id._serialized)
-    );
+
     await message.reply(
       `Blocked ${blockedList.length} users\n\n${blockedList
         .map((blocked, i) => `${i + 1}-${blocked.id.user}`)

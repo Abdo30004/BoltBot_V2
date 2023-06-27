@@ -11,7 +11,6 @@ const command: Command = {
       await message.reply("No one is blocked");
       return false;
     }
-    client.cache.blocks = blockList.map((b) => b.id._serialized);
     await message.reply(
       `All Blocked ${blockList.length} users\n\n${blockList
         .map((blocked, i) => `${i + 1}-${blocked.id.user}`)

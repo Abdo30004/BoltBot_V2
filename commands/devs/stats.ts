@@ -10,6 +10,8 @@ const command: Command = {
   category: "devs",
   execute: async (client, message, _translate, args) => {
     let blockCount = (await client.getBlockedContacts()).length;
+    let chats = await client.getChats();
+    let users = await client.getContacts();
     let reply = `*Bot's Stats*\n\nReady at: ${moment(client.uptime).format(
       "YYYY/MM/DD HH:mm:ss"
     )}\n\nProcess Uptime: ${moment
@@ -20,11 +22,12 @@ const command: Command = {
       process.memoryUsage().heapUsed / 1024 / 1024
     )}MB\n\nCPU Usage: ${Math.round(
       process.cpuUsage().user / 1024 / 1024
-    )}%\n\nUsers: ${client.cache.users.size}\n\nChats: ${
-      client.cache.chats.size
-    }\n\nGroups: ${
-      client.cache.chats.filter((chat) => chat.isGroup).size
+    )}%\n\nUsers: ${users.length}\n\nChats: ${chats.length}\n\nGroups: ${
+      chats.filter((chat) => chat.isGroup).length
+    }Dms: ${chats.filter((chat) => !chat.isGroup).length}\n\nCommands: ${
+      client.commands.size
     }\n\nBlocklist: ${blockCount}\n\nCommands: ${client.commands.size}`;
+
     await message.reply(reply);
     return true;
   },
