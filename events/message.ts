@@ -30,7 +30,8 @@ const event: Event = {
             .flat()
         )
     );
-
+    let author = await message.getContact();
+    if (!!client.config.devs.includes(author.id._serialized)) return;
     if (!command && didYouMean) {
       let didCmd =
         client.commands.get(didYouMean) ||
@@ -57,7 +58,7 @@ const event: Event = {
     if (!command) return;
 
     let chat = await message.getChat();
-    let author = await message.getContact();
+
     if (command.devOnly && !client.config.devs.includes(author.id._serialized))
       return;
     let countryCode = await author.getCountryCode();

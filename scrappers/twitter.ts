@@ -2,6 +2,7 @@ import axios from "axios";
 
 const _twitterapi = (id: string) =>
   `https://api.twitter.com/1.1/statuses/show/${id}.json?tweet_mode=extended`;
+
 /*
 const getAuthorization = async () => {
   const { data } = await axios.get("https://pastebin.com/raw/nz3ApKQM");
@@ -30,6 +31,7 @@ export const getTwitter = async (
   url: string
 ): Promise<{ type: string; link: string; mime: string }[]> => {
   const id = [...url.match(/status\/\d+/g)]?.[0]?.replace("status/", "");
+  console.log(id);
   if (!id) return null;
   let { data } = await axios
     .get(_twitterapi(id), {
@@ -41,7 +43,10 @@ export const getTwitter = async (
           "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36",
       },
     })
-    .catch((err) => null);
+    .catch((err) => {
+      console.log(err.response.data);
+      return null;
+    });
   if (!data?.extended_entities) return null;
 
   let medias = data.extended_entities.media.map((media: any) => {
@@ -65,5 +70,6 @@ export const getTwitter = async (
 
   return medias;
 };
-
-
+getTwitter("https://twitter.com/i/status/1675969074952654850").then(
+  console.log
+);

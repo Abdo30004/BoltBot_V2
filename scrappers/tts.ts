@@ -4,7 +4,7 @@ import axios from "axios";
 import { load } from "cheerio";
 import fs from "fs";
 
-export const getTTS = async (text: string) => {
+export const getTTS = async (text: string): Promise<string> => {
   let lang = detect(text);
   let supported = [
     "af",
@@ -88,7 +88,7 @@ export const getTTS = async (text: string) => {
     "xh",
     "zu",
   ];
-  let base64 = null;
+  let base64: string | null = null;
 
   switch (text.length > 200) {
     case true:
@@ -110,4 +110,3 @@ export const getTTS = async (text: string) => {
 
   return base64;
 };
-

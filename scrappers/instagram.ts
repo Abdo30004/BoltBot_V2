@@ -89,3 +89,7 @@ export const getInstagram = async (url: string) => {
     .toArray();
   return links;
 };
+
+getInstagram(
+  "https://www.instagram.com/reel/CuSa40luHnt/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=="
+).then(console.log);
