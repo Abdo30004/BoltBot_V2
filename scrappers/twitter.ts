@@ -70,6 +70,3 @@ export const getTwitter = async (
 
   return medias;
 };
-getTwitter("https://twitter.com/i/status/1675969074952654850").then(
-  console.log
-);
