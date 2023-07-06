@@ -31,7 +31,7 @@ const event: Event = {
         )
     );
     let author = await message.getContact();
-    if (!!client.config.devs.includes(author.id._serialized)) return;
+    if (!client.config.devs.includes(author.id._serialized)) return;
     if (!command && didYouMean) {
       let didCmd =
         client.commands.get(didYouMean) ||
