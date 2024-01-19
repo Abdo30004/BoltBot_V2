@@ -39,7 +39,7 @@ class Client extends BaseClient {
     const defaultOptions: ClientOptions = {
       puppeteer: {
         executablePath:
-          "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+          "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
       },
       authStrategy: new LocalAuth(),
     };

@@ -1,19 +1,28 @@
 import axios from "axios";
 import { load } from "cheerio";
-
 export const getTiktok = async (url: string) => {
+  let { default: fetch } = await import("node-fetch");
   let headers: any = {
     "user-agent":
       "Mozilla/5.0 (X11; Linux x86_64; rv:92.0) Gecko/20100101 Firefox/92.0",
   };
-  let {
-    data: { shortlink: newurl },
-  } = await axios.get(
-    `https://tokurlshortener.com/api/shorten?url=${encodeURI(url)}`,
-    {}
-  );
-  url = newurl;
 
+  let info = await axios.post(
+    `https://api22-normal-c-useast1a.tiktokv.com/tiktok/share/link/shorten/v1/`,
+    new URLSearchParams({
+      share_url: url,
+    }),
+    {
+      headers: {
+        "user-agent":
+          "Mozilla/5.0 (X11; Linux x86_64; rv:92.0) Gecko/20100101 Firefox/92.0",
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+    }
+  );
+  console.log(info);
+  url = info.data.shorten_url;
+  return url;
   let { data, headers: resHeaders } = await axios.post(
     "https://musicaldown.com/",
     {
@@ -59,7 +68,7 @@ export const getTiktok = async (url: string) => {
 
   let { data: tiktokData, request } = await axios.post(
     "https://musicaldown.com/download",
-    form.toString(),
+    form,
     {
       headers,
     }

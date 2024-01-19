@@ -23,27 +23,27 @@ let getParams = async (url: string) => {
   return keys;
 };
 
-function decode1(d: any, e: any, f: any) {
-  var g =
-    "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ+/".split(
-      ""
-    );
-  var h = g.slice(0, e);
-  var i = g.slice(0, f);
-  var j = d
-    .split("")
-    .reverse()
-    .reduce(function (a: any, b: any, c: any) {
-      if (h.indexOf(b) !== -1) return (a += h.indexOf(b) * Math.pow(e, c));
-    }, 0);
-  var k = "";
-  while (j > 0) {
-    k = i[j % f] + k;
-    j = (j - (j % f)) / f;
-  }
-  return k || "0";
-}
 function decode2(h: any, u: any, n: any, t: any, e: any, r: any) {
+  function decode1(d: any, e: any, f: any) {
+    var g =
+      "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ+/".split(
+        ""
+      );
+    var h = g.slice(0, e);
+    var i = g.slice(0, f);
+    var j = d
+      .split("")
+      .reverse()
+      .reduce(function (a: any, b: any, c: any) {
+        if (h.indexOf(b) !== -1) return (a += h.indexOf(b) * Math.pow(e, c));
+      }, 0);
+    var k = "";
+    while (j > 0) {
+      k = i[j % f] + k;
+      j = (j - (j % f)) / f;
+    }
+    return k || "0";
+  }
   r = "";
   for (var i = 0, len = h.length; i < len; i++) {
     var s = "";
@@ -89,7 +89,3 @@ export const getInstagram = async (url: string) => {
     .toArray();
   return links;
 };
-
-getInstagram(
-  "https://www.instagram.com/reel/CuSa40luHnt/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=="
-).then(console.log);

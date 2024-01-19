@@ -19,7 +19,7 @@ export const getInstagram = async (url: string) => {
     .post("https://instaphotodownloader.com/res", form, {
       headers: {
         "User-Agent":
-          "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.69",
         "Content-Type": "application/x-www-form-urlencoded",
         Cookie: cookie,
         Referer: "https://instaphotodownloader.com/",
@@ -38,6 +38,3 @@ export const getInstagram = async (url: string) => {
     .toArray();
   return links;
 };
-getInstagram(
-  "https://www.instagram.com/stories/yhi_abderhmane/3131884811252214970/"
-).then(console.log);

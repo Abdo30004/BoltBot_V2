@@ -9,19 +9,20 @@ String.prototype.title = function () {
   return this.charAt(0).toUpperCase() + this.slice(1);
 };
 
-const command: Command = {
+const Helpcommand: Command = {
   name: "help",
   aliases: ["commands", "أوامر", "اوامر", "مساعدة"],
   category: "public",
   execute: async (client, message, translate, args) => {
     if (args[0]) {
-      let command =
+      let commandHelped =
         client.commands.get(args[0].toLowerCase()) ||
         client.commands.find(
           (cmd) =>
             cmd.aliases && cmd.aliases?.includes(`${args[0].toLowerCase()}`)
         );
-      if (!command || command.devOnly) {
+
+      if (!commandHelped || commandHelped.devOnly) {
         await message.reply(
           translate.getReply("commandNotFound", [
             { key: "command", value: args[0].toLowerCase() },
@@ -29,23 +30,24 @@ const command: Command = {
         );
         return false;
       }
+      let locale = client.i18n.getCommand(translate.locale, commandHelped.name);
       await message.reply(
         translate.getReply("commandInfo", [
           {
-            key: "command",
-            value: command.name,
+            key: "name",
+            value: commandHelped.name,
           },
           {
             key: "usage",
-            value: `\`${translate.usage}\``,
+            value: `\`${locale.usage}\``,
           },
           {
             key: "description",
-            value: translate.description,
+            value: locale.description,
           },
           {
             key: "aliases",
-            value: command.aliases?.join(", ") || "None",
+            value: commandHelped.aliases?.join(", ") || "None",
           },
         ])
       );
@@ -85,4 +87,4 @@ const command: Command = {
   },
 };
 
-export default command;
+export default Helpcommand;
